@@ -6,6 +6,11 @@ hash = "9a9d6bf3715b20cbf83b967e4dd8b77972d1256e52a7b1c2bbfa4122f5acc931"
 metafile = true
 
 [[files]]
+file = "mods/badoptimizations.pw.toml"
+hash = "be28a9ff89c60140b2983eb91089e77bec90bc5a0379c25472be01cb14dcbb97"
+metafile = true
+
+[[files]]
 file = "mods/catalogue.pw.toml"
 hash = "98db626859ef290e5f7be9084d9f8a4b93ef441a8762ff08cebcf36308b36225"
 metafile = true
@@ -13,6 +18,11 @@ metafile = true
 [[files]]
 file = "mods/chipped.pw.toml"
 hash = "24c6c3fe917ffbcef04e788dec3e003d0ed03433bc00f9cf4f23fe9b85636aa7"
+metafile = true
+
+[[files]]
+file = "mods/chloride.pw.toml"
+hash = "fea72fc60fc9ff83090ede284a8fe65090cb2fed2fd4f697de5ebe6071ff5b41"
 metafile = true
 
 [[files]]
@@ -36,8 +46,33 @@ hash = "8e5f6550359e71ecbea95705ec61fb03313550e6f481cabf48043929909aabae"
 metafile = true
 
 [[files]]
+file = "mods/embeddium.pw.toml"
+hash = "778c42263b2ba7c9e73553bdcd70f48a3e485ba52b6a83474160d48be696b71f"
+metafile = true
+
+[[files]]
+file = "mods/entityculling.pw.toml"
+hash = "95218d2192befc4f1f60adda3e7898f38af351df02f78e1e481b77a8afd6d01c"
+metafile = true
+
+[[files]]
+file = "mods/fast-ip-ping.pw.toml"
+hash = "2741b6724a6c7d625c1c9e647a8d20ab89cd4a3975c18706da30771754c00510"
+metafile = true
+
+[[files]]
+file = "mods/fastboot.pw.toml"
+hash = "9ecbea3080b9c5c9927aa7c2933c868ac6f75fdcabce905e704d427312fea8ff"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "05d96d5b17399f048469ff4b44451eb8d99cc7a2a075ff55718c397cb508b0c2"
+metafile = true
+
+[[files]]
+file = "mods/flerovium.pw.toml"
+hash = "d9b81ab8f53b87951b83cf02820692cbd6aba055d69c363ef2a5ac763e108a30"
 metafile = true
 
 [[files]]
@@ -48,6 +83,16 @@ metafile = true
 [[files]]
 file = "mods/framework.pw.toml"
 hash = "11bc4d2951f2bbb0dd17c77534f05c909987e19203398558713bc515f441d5a2"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "6bdf101d3d5ec8729a8095d5853f80eb925a47c889cd10de6704b20cc7f3c73e"
+metafile = true
+
+[[files]]
+file = "mods/iris.pw.toml"
+hash = "f67aa60c765593a8c70f78296a460349c6aef5f4a16d173eae02e8803b545ad4"
 metafile = true
 
 [[files]]
@@ -66,8 +111,28 @@ hash = "076be436a9dd1df44f71473123db01ad52b26afce495615d91ec5150e1960d98"
 metafile = true
 
 [[files]]
+file = "mods/krypton-foxified.pw.toml"
+hash = "b843ce75c788f0720b6e23d9021ce55d37415d72802ee60d95bd2fc5809ba96c"
+metafile = true
+
+[[files]]
+file = "mods/lambdynamiclights.pw.toml"
+hash = "1cf89ce7378bd8fee782ea2a6f57e520b3109331b2dbb4b01f2c85d9db3e5814"
+metafile = true
+
+[[files]]
 file = "mods/lithium.pw.toml"
 hash = "b8ce87d9a7164676e68e69e9e6706cd6e9123b1fe740612b1ba39b43ce8675ef"
+metafile = true
+
+[[files]]
+file = "mods/loadsupport.pw.toml"
+hash = "158122a35494206c28763f248721583c1e06624505a9c5f7f83d4522809f0f61"
+metafile = true
+
+[[files]]
+file = "mods/modelfix.pw.toml"
+hash = "6f0dcbcffd4400c6cef07f1eeb48cdc25bac0fa01270936feab4c549aff4738e"
 metafile = true
 
 [[files]]
@@ -81,13 +146,53 @@ hash = "58ceb046380be656ff449cd62b79bc9540ff08b8502e1e8291c9715e5ca3c829"
 metafile = true
 
 [[files]]
+file = "mods/moreculling.pw.toml"
+hash = "91696791780719730cb8826de0c53d8513a7c2b320f7d641dbeb6ca974e5cec3"
+metafile = true
+
+[[files]]
 file = "mods/no-chat-reports.pw.toml"
 hash = "5da18814472be5dc93a21886983646da3a7236413800075ac75229be82d114fa"
 metafile = true
 
 [[files]]
+file = "mods/packet-fixer.pw.toml"
+hash = "4735b502110228fe33b9a957794689f309e3a7019fff26390a10f750d074ed32"
+metafile = true
+
+[[files]]
+file = "mods/redirected.pw.toml"
+hash = "b0038c775e22fa883d474eb1ef0f686cc544091844e24a8a4b5774838059e808"
+metafile = true
+
+[[files]]
+file = "mods/reeses-sodium-options.pw.toml"
+hash = "09306b955060349986ccf6a6d2a67f1e019fa172a7dc690dd6007f81c966309a"
+metafile = true
+
+[[files]]
 file = "mods/resourceful-lib.pw.toml"
 hash = "c0b066684294c33972d562e0cb08ea17b2d31bcf86cd1d6c63b8e968f0eac7a2"
+metafile = true
+
+[[files]]
+file = "mods/scalablelux.pw.toml"
+hash = "2c1661e65d47c2942d2c3e926698d0762672224f1925c7f25105b964ce25b093"
+metafile = true
+
+[[files]]
+file = "mods/sodium-extra.pw.toml"
+hash = "a1fb713df668ed21dda0602e99cb23b991c8faff841e130d7aae46258c3d6a45"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "0281ed9713f3141bdac363056a791845510e14761ea65b4b2813cf96d664b20a"
+metafile = true
+
+[[files]]
+file = "mods/txnilib.pw.toml"
+hash = "bbf8f2ba1e4bba18c1f61b2f003063052f56dd9951ceae3e227b6cbf9affd29f"
 metafile = true
 
 [[files]]
