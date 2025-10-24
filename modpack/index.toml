@@ -1,6 +1,11 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "ea336d25c3e21ef168aec20e1ea470c96949ad29632646ee8e8ab0d74b4bbfc9"
+metafile = true
+
+[[files]]
 file = "mods/athena-ctm.pw.toml"
 hash = "9a9d6bf3715b20cbf83b967e4dd8b77972d1256e52a7b1c2bbfa4122f5acc931"
 metafile = true
@@ -81,6 +86,11 @@ hash = "11bc4d2951f2bbb0dd17c77534f05c909987e19203398558713bc515f441d5a2"
 metafile = true
 
 [[files]]
+file = "mods/geckolib.pw.toml"
+hash = "960fb33c17aca9c635f99009c1f16d75c312d043e302a599f6ce8040452079e6"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "6bdf101d3d5ec8729a8095d5853f80eb925a47c889cd10de6704b20cc7f3c73e"
 metafile = true
@@ -103,6 +113,11 @@ metafile = true
 [[files]]
 file = "mods/jei.pw.toml"
 hash = "076be436a9dd1df44f71473123db01ad52b26afce495615d91ec5150e1960d98"
+metafile = true
+
+[[files]]
+file = "mods/kiwi.pw.toml"
+hash = "fee071613ac562de54c89d958ae210bb81d9b357cce4dacb200831c202474e80"
 metafile = true
 
 [[files]]
@@ -171,6 +186,11 @@ hash = "c0b066684294c33972d562e0cb08ea17b2d31bcf86cd1d6c63b8e968f0eac7a2"
 metafile = true
 
 [[files]]
+file = "mods/snow-real-magic.pw.toml"
+hash = "a1deef8071fb83a13df63c289576813b82f0687eebda9b48b7667620d5d45103"
+metafile = true
+
+[[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "a1fb713df668ed21dda0602e99cb23b991c8faff841e130d7aae46258c3d6a45"
 metafile = true
@@ -183,6 +203,11 @@ metafile = true
 [[files]]
 file = "mods/txnilib.pw.toml"
 hash = "bbf8f2ba1e4bba18c1f61b2f003063052f56dd9951ceae3e227b6cbf9affd29f"
+metafile = true
+
+[[files]]
+file = "mods/winter-overhaul.pw.toml"
+hash = "cef75a3276f7464779f2a293d508d1a5aa6c5504718d24977725a060397c5794"
 metafile = true
 
 [[files]]

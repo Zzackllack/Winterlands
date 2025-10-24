@@ -1,0 +1,13 @@
+name = "Winter Overhaul"
+filename = "WinterOverhaul-NeoForge-4.0.2+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5M97aUS6/versions/jMBjksDu/WinterOverhaul-NeoForge-4.0.2%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "4c4f11754cc83e0be885db1f7fd02cf1de4674d3d544131c96438a75b6a6fc26dd29bb8fb19fe1df90e1d72ad8e8228126829228ac02ea92dc8e56d9ea0c9afe"
+
+[update]
+[update.modrinth]
+mod-id = "5M97aUS6"
+version = "jMBjksDu"
