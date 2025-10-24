@@ -1,0 +1,13 @@
+name = "Festive Frenzy"
+filename = "festive_frenzy-v7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/LF4hLUh2/versions/BTqAcbp3/festive_frenzy-v7.jar"
+hash-format = "sha512"
+hash = "a3eccd3dc760da0722ab6f6216a1124c9fe744927a33df0ff5762b25e943b9280339c75fdbb023eb069e3cc38f1ee22bc562e9f6e5734f523ad8b21f2d5e3069"
+
+[update]
+[update.modrinth]
+mod-id = "LF4hLUh2"
+version = "BTqAcbp3"

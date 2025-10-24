@@ -41,6 +41,11 @@ hash = "74705ad5043cf5866d0b558e9cded4b78eaf12afc2f78ab12c0863cc2d4c54d0"
 metafile = true
 
 [[files]]
+file = "mods/connector-extras.pw.toml"
+hash = "52e2cb54ee2933bf00e9b7886f47938a2dce1bf998293be2b38552083ffa5f9a"
+metafile = true
+
+[[files]]
 file = "mods/connector.pw.toml"
 hash = "097a2a9f31c3cccc019c63e412e6dd7d561e133a0c9117a7b32fdae11579fd56"
 metafile = true
@@ -68,6 +73,11 @@ metafile = true
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "05d96d5b17399f048469ff4b44451eb8d99cc7a2a075ff55718c397cb508b0c2"
+metafile = true
+
+[[files]]
+file = "mods/festive-frenzy.pw.toml"
+hash = "a0e7e0f1fe9a434d8fcf7136828573cab6b518242d9a10f4359c98e8bbda6663"
 metafile = true
 
 [[files]]
