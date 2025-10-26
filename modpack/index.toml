@@ -21,6 +21,11 @@ hash = "be28a9ff89c60140b2983eb91089e77bec90bc5a0379c25472be01cb14dcbb97"
 metafile = true
 
 [[files]]
+file = "mods/c2me-neoforge.pw.toml"
+hash = "df38bd557d9d549bd4db699c3efec071ca24017541ce6359a96d0385b7463b22"
+metafile = true
+
+[[files]]
 file = "mods/catalogue.pw.toml"
 hash = "98db626859ef290e5f7be9084d9f8a4b93ef441a8762ff08cebcf36308b36225"
 metafile = true
@@ -181,11 +186,6 @@ hash = "a9593968393bae08257ba9aae887ad60fc49991f676b637006b2bcd89907f09a"
 metafile = true
 
 [[files]]
-file = "mods/moonrise-opt.pw.toml"
-hash = "58ceb046380be656ff449cd62b79bc9540ff08b8502e1e8291c9715e5ca3c829"
-metafile = true
-
-[[files]]
 file = "mods/moreculling.pw.toml"
 hash = "91696791780719730cb8826de0c53d8513a7c2b320f7d641dbeb6ca974e5cec3"
 metafile = true
@@ -213,6 +213,11 @@ metafile = true
 [[files]]
 file = "mods/resourceful-lib.pw.toml"
 hash = "c0b066684294c33972d562e0cb08ea17b2d31bcf86cd1d6c63b8e968f0eac7a2"
+metafile = true
+
+[[files]]
+file = "mods/scalablelux.pw.toml"
+hash = "2c1661e65d47c2942d2c3e926698d0762672224f1925c7f25105b964ce25b093"
 metafile = true
 
 [[files]]
