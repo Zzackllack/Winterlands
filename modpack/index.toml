@@ -126,6 +126,11 @@ hash = "960fb33c17aca9c635f99009c1f16d75c312d043e302a599f6ce8040452079e6"
 metafile = true
 
 [[files]]
+file = "mods/gravestone-mod.pw.toml"
+hash = "2ac1df7fad83d36e69b4aaad32f0b952c9b039d7345592bb66934f40a8606224"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "6bdf101d3d5ec8729a8095d5853f80eb925a47c889cd10de6704b20cc7f3c73e"
 metafile = true
@@ -263,9 +268,4 @@ metafile = true
 [[files]]
 file = "mods/winterly.pw.toml"
 hash = "a9a347772bda808174e443775daac61f7e6e26f275e766e079619fe330404203"
-metafile = true
-
-[[files]]
-file = "mods/yigd.pw.toml"
-hash = "ef80891ed72e87e1fd2fda3bcee9e8a50e5c4cf836283ae8ef4c81e7fd213fd0"
 metafile = true
