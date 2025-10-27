@@ -191,6 +191,11 @@ hash = "a9593968393bae08257ba9aae887ad60fc49991f676b637006b2bcd89907f09a"
 metafile = true
 
 [[files]]
+file = "mods/moonlight.pw.toml"
+hash = "1aacabeaeae215e2ce6ba51a1c087460152cefa1fe32070fb80fbe1fa1360b05"
+metafile = true
+
+[[files]]
 file = "mods/moreculling.pw.toml"
 hash = "91696791780719730cb8826de0c53d8513a7c2b320f7d641dbeb6ca974e5cec3"
 metafile = true
@@ -243,6 +248,11 @@ metafile = true
 [[files]]
 file = "mods/snow-real-magic.pw.toml"
 hash = "a1deef8071fb83a13df63c289576813b82f0687eebda9b48b7667620d5d45103"
+metafile = true
+
+[[files]]
+file = "mods/snowy-spirit.pw.toml"
+hash = "dabf477dc67da8c7d3e8ba42c2b504f55ec5df4e2ef61f7f52cb243ee083f1d1"
 metafile = true
 
 [[files]]
