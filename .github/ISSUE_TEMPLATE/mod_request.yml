@@ -15,6 +15,7 @@ body:
     attributes:
       label: Mod name
       placeholder: "ExampleMod"
+    validations:
       required: true
 
   - type: input

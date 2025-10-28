@@ -23,8 +23,8 @@ body:
     id: minecraft_version
     attributes:
       label: Minecraft version
-      description: e.g., 1.20.1
-      placeholder: "1.20.1"
+    validations:
+      required: true
 
   - type: input
     id: modpack_version
@@ -39,6 +39,7 @@ body:
       label: Describe the bug
       description: A clear and concise description of the problem
       placeholder: "What went wrong?"
+    validations:
       required: true
 
   - type: textarea
@@ -69,7 +70,7 @@ body:
     id: crash_report_url
     attributes:
       label: Link to crash report (if any)
-      description: Link to crash-*.txt or similar (optional)
+      description: "Link to crash-*.txt or similar (optional)"
       placeholder: "https://mclo.gs/..."
 
   - type: checkboxes
