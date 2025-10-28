@@ -1,0 +1,40 @@
+name: Pull request
+description: Provide a clear description of the changes and testing performed.
+title: "[PR] "
+labels: ["needs review"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your contribution! Fill out the fields below so maintainers
+        can review your changes efficiently.
+
+  - type: input
+    id: related_issue
+    attributes:
+      label: Related issue
+      description: Link to related issue (optional) — e.g., #123
+      placeholder: "#<issue-number>"
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary of changes
+      description: Brief description of what this PR changes and why
+      required: true
+
+  - type: textarea
+    id: testing_notes
+    attributes:
+      label: Testing notes
+      description: How did you test this? Steps to reproduce or test environment
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have read `.github/CONTRIBUTING.md` and followed the guidelines
+        - label: I tested the change locally and verified the pack loads
+        - label: I updated docs where applicable
