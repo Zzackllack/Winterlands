@@ -1,0 +1,90 @@
+name: Bug report
+description: Report a bug in the modpack or a mod included with it. Please include modloader, Minecraft version, modpack version, and logs.
+title: "[BUG] "
+labels:
+  - bug
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! Please fill out the
+        fields below as completely as possible and add links to logs/crash
+        reports rather than pasting large logs directly.
+
+  - type: input
+    id: modloader_version
+    attributes:
+      label: Modloader & version
+      description: e.g., Forge 1.20.1-47.1.0, Fabric 1.20.1+build
+      placeholder: "Forge 1.xx - or Fabric 1.xx"
+
+  - type: input
+    id: minecraft_version
+    attributes:
+      label: Minecraft version
+      description: e.g., 1.20.1
+      placeholder: "1.20.1"
+
+  - type: input
+    id: modpack_version
+    attributes:
+      label: Modpack version
+      description: Version from `pack.toml` / `index.toml` or the string you used
+      placeholder: "e.g., 1.0.0"
+
+  - type: textarea
+    id: bug_summary
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of the problem
+      placeholder: "What went wrong?"
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: To reproduce
+      description: Steps to reproduce the behavior (as specific as possible)
+      placeholder: |
+        1. Start the game
+        2. Do X
+        3. Observe Y
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: What you expected to happen
+      placeholder: "What should have happened?"
+
+  - type: input
+    id: latest_log_url
+    attributes:
+      label: Link to latest.log or logs (Gist / Pastebin / mclo.gs)
+      description: Please upload logs to a public paste service and paste the link
+      placeholder: "https://gist.github.com/..."
+
+  - type: input
+    id: crash_report_url
+    attributes:
+      label: Link to crash report (if any)
+      description: Link to crash-*.txt or similar (optional)
+      placeholder: "https://mclo.gs/..."
+
+  - type: checkboxes
+    id: reproduction_checklist
+    attributes:
+      label: Reproduction checklist (helpful)
+      description: Check items that apply
+      options:
+        - label: I tested with the latest version of the modpack
+        - label: I removed non-default mods to check for conflicts
+        - label: I can reproduce this consistently
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Other context (other mods present, recent changes, attempted fixes)
+      placeholder: "Anything else to help reproduce or diagnose?"

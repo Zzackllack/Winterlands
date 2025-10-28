@@ -1,0 +1,83 @@
+name: Mod request
+description: Request that a mod be added to the modpack. Include compatibility checks and license/author info.
+title: "[MOD REQUEST] "
+labels:
+  - enhancement
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the details below to request adding a mod to the pack.
+
+  - type: input
+    id: mod_name
+    attributes:
+      label: Mod name
+      placeholder: "ExampleMod"
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author / maintainer
+      placeholder: "Author Name / Team"
+
+  - type: input
+    id: project_link
+    attributes:
+      label: Link (CurseForge / Modrinth / GitHub / other)
+      placeholder: "https://..."
+
+  - type: input
+    id: file_link
+    attributes:
+      label: Exact file / release to include (link)
+      placeholder: "Direct release link (optional)"
+
+  - type: input
+    id: suggested_version
+    attributes:
+      label: Suggested version
+      placeholder: "e.g., 1.2.3"
+
+  - type: checkboxes
+    id: compatibility
+    attributes:
+      label: Compatibility checklist
+      description: Please check items you have verified
+      options:
+        - label: Mod is compatible with the modpack Minecraft version (state version tested)
+        - label: Mod is compatible with the modloader & version used by this pack
+        - label: Required dependencies are listed and compatible
+
+  - type: checkboxes
+    id: license_permission
+    attributes:
+      label: License / author permission
+      description: Confirm license or permission status
+      options:
+        - label: I confirm the mod's license allows inclusion in a distribution (modpack)
+        - label: The author has granted permission to include the mod
+        - label: I'm unsure and need help confirming the license
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why should this mod be included?
+      description: Explain what the mod adds and why it fits the pack or improves gameplay
+      placeholder: "Brief explanation (theme, gameplay, problem solved)"
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and considerations
+      description: Similar mods already included or configuration recommendations
+      placeholder: "Any comparable mods or recommended settings?"
+
+  - type: textarea
+    id: notes_for_maintainers
+    attributes:
+      label: Notes for maintainers
+      description: Compatibility caveats, known conflicts, privacy concerns, backend services, etc.
+      placeholder: "Anything the maintainers should know"
