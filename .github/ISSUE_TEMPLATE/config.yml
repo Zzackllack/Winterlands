@@ -1,0 +1,11 @@
+# Configuration for the issue template chooser
+# See: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+
+# Encourage contributors to use the provided templates by disabling blank issues
+blank_issues_enabled: false
+
+# If you'd prefer some reports to be sent elsewhere, add contact links here.
+contact_links:
+  - name: Repository Discussions
+    url: https://github.com/Zzackllack/Winterlands/discussions
+    about: Ask pack-related questions and discuss mod requests here.
