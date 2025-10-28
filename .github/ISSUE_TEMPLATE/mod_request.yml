@@ -70,13 +70,6 @@ body:
       placeholder: "Brief explanation (theme, gameplay, problem solved)"
 
   - type: textarea
-    id: alternatives
-    attributes:
-      label: Alternatives and considerations
-      description: Similar mods already included or configuration recommendations
-      placeholder: "Any comparable mods or recommended settings?"
-
-  - type: textarea
     id: notes_for_maintainers
     attributes:
       label: Notes for maintainers

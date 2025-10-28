@@ -16,8 +16,8 @@ body:
     id: modloader_version
     attributes:
       label: Modloader & version
-      description: e.g., Forge 1.20.1-47.1.0, Fabric 1.20.1+build
-      placeholder: "Forge 1.xx - or Fabric 1.xx"
+      description: e.g. NeoForge 21.1.213
+      placeholder: "NeoForge 21.1.213"
 
   - type: input
     id: minecraft_version
@@ -30,8 +30,8 @@ body:
     id: modpack_version
     attributes:
       label: Modpack version
-      description: Version from `pack.toml` / `index.toml` or the string you used
-      placeholder: "e.g., 1.0.0"
+      description: Version from `pack.toml` / `index.toml` or the version you see on the Modrinth/Download Page.
+      placeholder: "1.0.0"
 
   - type: textarea
     id: bug_summary
@@ -64,7 +64,7 @@ body:
     attributes:
       label: Link to latest.log or logs (Gist / Pastebin / mclo.gs)
       description: Please upload logs to a public paste service and paste the link
-      placeholder: "https://gist.github.com/..."
+      placeholder: "https://mclo.gs/..."
 
   - type: input
     id: crash_report_url
