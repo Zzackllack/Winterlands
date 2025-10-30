@@ -1,12 +1,17 @@
+# Update the version paramater the following:
+# major are: big changes as multiple new mods/resourcepacks/shaders/configs etc. 
+# minor are: new content mods 
+# patch are: mod updates, new performance mods or config changes
+
 name = "Winterlands"
 author = "Zacklack"
-version = "1.0.10"
+version = "3.6.10"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "6a6ac686f40abe9335ce97fea413eab44f66712bee4488c00c6686c94892ac61"
+hash = "86fb972d46d5768be13ed4b89b2430b416e4a5aac53d97351eace978368cc1a9"
 
 [versions]
 minecraft = "1.21.1"
