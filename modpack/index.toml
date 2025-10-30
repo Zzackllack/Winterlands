@@ -71,6 +71,11 @@ hash = "f36d13fe08a755712437ae38d4a339af7a73003152a8d3638984a11964fd83ae"
 metafile = true
 
 [[files]]
+file = "mods/creativecore.pw.toml"
+hash = "36fe638633083667b1fd66b53fd1e0d76467dec3a58062fede8207350bd6771d"
+metafile = true
+
+[[files]]
 file = "mods/cubes-without-borders.pw.toml"
 hash = "8e5f6550359e71ecbea95705ec61fb03313550e6f481cabf48043929909aabae"
 metafile = true
@@ -176,6 +181,11 @@ hash = "b8ce87d9a7164676e68e69e9e6706cd6e9123b1fe740612b1ba39b43ce8675ef"
 metafile = true
 
 [[files]]
+file = "mods/littlepictureframes.pw.toml"
+hash = "54d22964b6b51c4807e187bbf9e543cd882639789af478f7b7a2b7a2b05375eb"
+metafile = true
+
+[[files]]
 file = "mods/loadsupport.pw.toml"
 hash = "158122a35494206c28763f248721583c1e06624505a9c5f7f83d4522809f0f61"
 metafile = true
@@ -268,6 +278,11 @@ metafile = true
 [[files]]
 file = "mods/variants-and-ventures.pw.toml"
 hash = "2f63120a431d0a9665f110e7bf0f81e80af0a45cb742f3c7a54e6db883bf1f79"
+metafile = true
+
+[[files]]
+file = "mods/watermedia.pw.toml"
+hash = "2748f1e5d253d178c51c7df6897af4744a5db77bd6507d6abcc257187f2c7109"
 metafile = true
 
 [[files]]
