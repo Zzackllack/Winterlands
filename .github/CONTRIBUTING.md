@@ -16,3 +16,11 @@ contributions smooth and reviews fast.
 
 If your PR touches configuration or dependency updates, provide rationale in
 the PR body and note any risks.
+
+## Update the version parameter
+
+Update the version parameter as follows:
+
+- major: big changes — multiple new mods, resourcepacks, shaders, configs, etc.
+- minor: new content mods
+- patch: mod updates, new performance mods, fixes, or config changes
