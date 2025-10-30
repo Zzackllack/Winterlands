@@ -1,6 +1,11 @@
+# Update the version paramater the following:
+# major are: big changes as multiple new mods/resourcepacks/shaders/configs etc. 
+# minor are: new content mods 
+# patch are: mod updates, new performance mods or config changes
+
 name = "Winterlands"
 author = "Zacklack"
-version = "1.0.10"
+version = "3.5.10"
 pack-format = "packwiz:1.1.0"
 
 [index]
