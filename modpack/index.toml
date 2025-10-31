@@ -36,6 +36,11 @@ hash = "fea72fc60fc9ff83090ede284a8fe65090cb2fed2fd4f697de5ebe6071ff5b41"
 metafile = true
 
 [[files]]
+file = "mods/christmas-culinary-desires-decorations.pw.toml"
+hash = "16899a69f1c4b685eedd1060e4d2b2d5e493a955d615528c7a070ee329479b36"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
 metafile = true
