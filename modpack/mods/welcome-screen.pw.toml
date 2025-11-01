@@ -1,0 +1,13 @@
+name = "Welcome Screen"
+filename = "welcomescreen-neoforge-1.0.0-1.21.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/EzQkPElf/versions/Jy1AfUlC/welcomescreen-neoforge-1.0.0-1.21.1.jar"
+hash-format = "sha512"
+hash = "c1cdc5fe5f361c923ae91a2eecfe59a720a8d6c99a5e6bb5366423aa77c82a41a39e951a92a049a8a12a995d3ddd21e2a96e64ee688f8e35f7dcec8521fc131a"
+
+[update]
+[update.modrinth]
+mod-id = "EzQkPElf"
+version = "Jy1AfUlC"
