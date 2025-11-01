@@ -61,6 +61,16 @@ hash = "16899a69f1c4b685eedd1060e4d2b2d5e493a955d615528c7a070ee329479b36"
 metafile = true
 
 [[files]]
+file = "mods/christmas-delight.pw.toml"
+hash = "1c0aa4ce97caaeeff518e87711dff2769402148d74467f75154bc0e9843e4979"
+metafile = true
+
+[[files]]
+file = "mods/christmas-music-discs.pw.toml"
+hash = "2431862f81be0d8edaaff42458dca32161506c36bed320fe73cc462672137af0"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
 metafile = true
@@ -227,7 +237,7 @@ metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
-hash = "960fb33c17aca9c635f99009c1f16d75c312d043e302a599f6ce8040452079e6"
+hash = "402ca5410076adcf4bff4211d5d734572e0549955d3613ea0942309ec29a409b"
 metafile = true
 
 [[files]]
@@ -326,6 +336,16 @@ hash = "158122a35494206c28763f248721583c1e06624505a9c5f7f83d4522809f0f61"
 metafile = true
 
 [[files]]
+file = "mods/maidens-merry-making.pw.toml"
+hash = "a47313c9b72c96ff3cc331d82c18af0abb049ea2aaccab2f57076bac7e3341ab"
+metafile = true
+
+[[files]]
+file = "mods/mamas-herbs-and-harvest.pw.toml"
+hash = "02be9f7704a6581dcf3d1733d60dc7224bc583a91381ffb8bdb45c631abff29e"
+metafile = true
+
+[[files]]
 file = "mods/melody.pw.toml"
 hash = "9dff522b00f5269538d0351536f34b22384996de30be454ef1369f1b1e5c1aeb"
 metafile = true
@@ -388,6 +408,11 @@ metafile = true
 [[files]]
 file = "mods/particular-reforged.pw.toml"
 hash = "d610540ab8d81af8b6aa292aed319c7cb7bb60c55b56ecf8b2af889e4ca327a3"
+metafile = true
+
+[[files]]
+file = "mods/patchouli.pw.toml"
+hash = "b7fec81bc4939896a1feb78c16cb17fd3140092e7ceca993bf982387e6b7bdca"
 metafile = true
 
 [[files]]
