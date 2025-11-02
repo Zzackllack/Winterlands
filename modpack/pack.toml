@@ -1,12 +1,12 @@
 name = "Winterlands"
 author = "Zacklack"
-version = "4.1.2"
+version = "4.1.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "7fb351add0ea6901e3574c0d03bc59edae69fd120a3bd97a6d6ecba55d49e183"
+hash = "4ee235f6508924136029f9372f041481bce3f9c8c37ccac6f196e1f78d4d3258"
 
 [versions]
 minecraft = "1.21.1"
