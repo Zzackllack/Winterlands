@@ -21,11 +21,6 @@ hash = "fe3f752f78cd25803f7013c94bb602567bf242be165462f2287b430d457a144e"
 metafile = true
 
 [[files]]
-file = "mods/anti-xray.pw.toml"
-hash = "17b18053866060ac19d564e721d035febcdba82fd94adaadde43a35cbd9eedcf"
-metafile = true
-
-[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "ea336d25c3e21ef168aec20e1ea470c96949ad29632646ee8e8ab0d74b4bbfc9"
 metafile = true
