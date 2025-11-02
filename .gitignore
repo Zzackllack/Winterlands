@@ -5,3 +5,5 @@
 *.mrpack
 
 .DS_Store
+
+/server
