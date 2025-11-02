@@ -1,0 +1,13 @@
+name = "Bigshot"
+filename = "BigShot-neoforge-1.21.1-8.0.2.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/vNU5pyXC/versions/uix8fOXY/BigShot-neoforge-1.21.1-8.0.2.jar"
+hash-format = "sha512"
+hash = "404bcbd2a5bc14ad3981e67a6932dcf0cc059de55ac568124d721492c0a41faecad6a4bd13e9e282804628c48b1c1eb5a936caf5d8944e0225c320913e7cb31f"
+
+[update]
+[update.modrinth]
+mod-id = "vNU5pyXC"
+version = "uix8fOXY"
