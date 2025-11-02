@@ -1,0 +1,13 @@
+name = "No Fog"
+filename = "nofog-neoforge-1.21-1.21.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/46n24c6r/versions/i5E2f2v3/nofog-neoforge-1.21-1.21.1.jar"
+hash-format = "sha512"
+hash = "5d83b098511dec9e81415588026558cf72f8099ab0f80d02bac82dc1f6ba712c594ac9a44a3ce765fa319076db76a9fcd244ea485a482039b237baf39883f94c"
+
+[update]
+[update.modrinth]
+mod-id = "46n24c6r"
+version = "i5E2f2v3"
