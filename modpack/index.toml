@@ -561,11 +561,6 @@ hash = "9ffaf9a44c00156d1e613884271c8224db4cbf019e5d032d5b444bdba983122f"
 metafile = true
 
 [[files]]
-file = "mods/observable.pw.toml"
-hash = "3e477c97729015ac6184c0b56cb148947b7c0dc5cca764336ee96719f05f05e6"
-metafile = true
-
-[[files]]
 file = "mods/oceans-delight.pw.toml"
 hash = "152f6cfe8ee891ba80faa800dd3df3058be14882f9f8d07cb38eb6a6f96ece4b"
 metafile = true
