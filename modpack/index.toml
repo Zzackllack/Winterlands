@@ -166,11 +166,6 @@ hash = "85bfeee744eff6e3cb9146da32407874d569237298072c4455224566e322e476"
 metafile = true
 
 [[files]]
-file = "mods/create-dynamic-lights.pw.toml"
-hash = "56ff7fa56eb6ae7d32cdd1f7ce84022d1ed25b416dd9142572ef0d2360d49ec9"
-metafile = true
-
-[[files]]
 file = "mods/create-food.pw.toml"
 hash = "946a389729193083c0f937e22f778be1e88f7429bdd25abefb22316af49d7da5"
 metafile = true
