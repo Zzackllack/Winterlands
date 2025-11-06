@@ -551,11 +551,6 @@ hash = "5da18814472be5dc93a21886983646da3a7236413800075ac75229be82d114fa"
 metafile = true
 
 [[files]]
-file = "mods/notebook.pw.toml"
-hash = "e031ce7304c79f3a9c318f09555a686dc711fe93935100fbb0aa1b5b1c6dda3a"
-metafile = true
-
-[[files]]
 file = "mods/numismatics.pw.toml"
 hash = "9ffaf9a44c00156d1e613884271c8224db4cbf019e5d032d5b444bdba983122f"
 metafile = true
