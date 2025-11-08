@@ -156,6 +156,11 @@ hash = "d901f874a1e09747b8d0d072c38c426eceead1f29c8ba36680f8f0082996b152"
 metafile = true
 
 [[files]]
+file = "mods/crash-assistant.pw.toml"
+hash = "467271d680bf7c8ef581c2768ecd6210e27daac948a1215ae4c163e5b32ddf3a"
+metafile = true
+
+[[files]]
 file = "mods/create-confectionery.pw.toml"
 hash = "85bfeee744eff6e3cb9146da32407874d569237298072c4455224566e322e476"
 metafile = true
@@ -331,6 +336,11 @@ hash = "9ecbea3080b9c5c9927aa7c2933c868ac6f75fdcabce905e704d427312fea8ff"
 metafile = true
 
 [[files]]
+file = "mods/fastevent.pw.toml"
+hash = "e8f80a31178b51937be55f6c78038c38d6b23f38905688edfa9ca5adab2cbc31"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "05d96d5b17399f048469ff4b44451eb8d99cc7a2a075ff55718c397cb508b0c2"
 metafile = true
@@ -363,6 +373,11 @@ metafile = true
 [[files]]
 file = "mods/geckolib.pw.toml"
 hash = "402ca5410076adcf4bff4211d5d734572e0549955d3613ea0942309ec29a409b"
+metafile = true
+
+[[files]]
+file = "mods/gputape.pw.toml"
+hash = "c23254e855e6e646ad1f774f0d2871b3bebab2a1fe847385d586089baef49347"
 metafile = true
 
 [[files]]
@@ -636,6 +651,16 @@ hash = "83108a6c53c80936870d7c44a83395d0bf48842f5c38e8ef25b42e4b8d80be9b"
 metafile = true
 
 [[files]]
+file = "mods/ruok.pw.toml"
+hash = "684e61f77cf7bf70f751f8a0a16f849a8db12c16885787f0836fd36112e8e120"
+metafile = true
+
+[[files]]
+file = "mods/saturn.pw.toml"
+hash = "d36d8736123e9d6dd79466ab908e83fc35529d25001b1a6770f22681c1316277"
+metafile = true
+
+[[files]]
 file = "mods/scalablelux.pw.toml"
 hash = "2c1661e65d47c2942d2c3e926698d0762672224f1925c7f25105b964ce25b093"
 metafile = true
@@ -658,6 +683,11 @@ metafile = true
 [[files]]
 file = "mods/slice-and-dice.pw.toml"
 hash = "6b100c6847b82f48ac150816c2e9ce8fd590a4dc92a49e38634b7f6c6b5a2e71"
+metafile = true
+
+[[files]]
+file = "mods/smsn.pw.toml"
+hash = "17498eac21cee5b2524cc2abc49df82c62e10972d7334b963ab4e76a90dcb983"
 metafile = true
 
 [[files]]

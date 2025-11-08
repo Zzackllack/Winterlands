@@ -1,0 +1,13 @@
+name = "RuOK"
+filename = "ruok-neoforge_1.21.1-1.7.2fix.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/aTsegPV0/versions/8GBa8wLD/ruok-neoforge_1.21.1-1.7.2fix.jar"
+hash-format = "sha512"
+hash = "f3d47d56a0acc2977f9ecb6956d9c1e72fa1f42a563165302af357060c69c60db9e3e4c9e3715cc029835ff97fb8614d5c022571e62b092fb719523f2e8edd19"
+
+[update]
+[update.modrinth]
+mod-id = "aTsegPV0"
+version = "8GBa8wLD"
