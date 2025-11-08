@@ -1,0 +1,13 @@
+name = "RunicLib"
+filename = "neoforge-runiclib-1.21.1-4.3.9.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/mk0Htq87/versions/YLcPBAGS/neoforge-runiclib-1.21.1-4.3.9.jar"
+hash-format = "sha512"
+hash = "6dfdbe084f1ad93a13b1f6477d47d1d24c8deaf70a29efc2ec0b3a9b5de0bdc6efbf84d1e7b46280d0a32ac99a22798b63a3659a5614ac81e6233e8476f511cf"
+
+[update]
+[update.modrinth]
+mod-id = "mk0Htq87"
+version = "YLcPBAGS"
