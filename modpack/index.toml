@@ -1,6 +1,42 @@
 hash-format = "sha256"
 
 [[files]]
+file = "configs/jade/jade.json"
+hash = "01cc6ff68637a89375f6364255bad91c074515614926b1b5094cde48f207ca9a"
+
+[[files]]
+file = "configs/jade/plugins.json"
+hash = "15d3c1a601e76acde3cb2ba083cd66e5a3da637da854dbcc4f643661c7d021ca"
+
+[[files]]
+file = "configs/jade/sort-order.json"
+hash = "cc8216c5613439d090d555e47c86967cd342f04c077a7434b4d82d3d66a6cca8"
+
+[[files]]
+file = "configs/jei/jei-client.ini"
+hash = "b7af6950ef7f62f930f548760f1304efc16396a91b16056fc5cbd63e28b294c9"
+
+[[files]]
+file = "configs/jei/jei-colors.ini"
+hash = "755f199a3868224bdccb2a8ffd8f1a4eb2d96140757f444ba31f8d677a66034f"
+
+[[files]]
+file = "configs/jei/jei-debug.ini"
+hash = "9e445273b8868aae630a7ec5b20ce5212aa813d855be81bcc874bd4aa43e16a4"
+
+[[files]]
+file = "configs/jei/jei-mod-id-format.ini"
+hash = "6a91c09d1cabc1980d90ab102a03ec58c0551213ab16a459b599d768b334d054"
+
+[[files]]
+file = "configs/supplementaries-client.toml"
+hash = "a9ae48af66aa11bd5305444b2ac7a2eeb62f1f0c0ff34fa5ff13ff04aabd13c5"
+
+[[files]]
+file = "configs/supplementaries-common.toml"
+hash = "e4fc4edf82c0ce179180a63b3080588913e7fbd7c657f0de6496fc1a517fc1ee"
+
+[[files]]
 file = "mods/3dskinlayers.pw.toml"
 hash = "7b5fba1b2499c191160be6b1b01c54ace077ae7d3c5228ae4af4d360e3d0a336"
 metafile = true
@@ -43,11 +79,6 @@ metafile = true
 [[files]]
 file = "mods/badoptimizations.pw.toml"
 hash = "be28a9ff89c60140b2983eb91089e77bec90bc5a0379c25472be01cb14dcbb97"
-metafile = true
-
-[[files]]
-file = "mods/better-foliage-renewed.pw.toml"
-hash = "01fcacd1e98c9c7e4e78dde9991229c58b2bbe36da5f5beda5001c5aa19f8e72"
 metafile = true
 
 [[files]]
@@ -701,6 +732,11 @@ hash = "87540c0d6ab0668d93a31b77eb794c76acee411475365a148eb1225e029d5a0d"
 metafile = true
 
 [[files]]
+file = "mods/snowy-spirit.pw.toml"
+hash = "dabf477dc67da8c7d3e8ba42c2b504f55ec5df4e2ef61f7f52cb243ee083f1d1"
+metafile = true
+
+[[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "a1fb713df668ed21dda0602e99cb23b991c8faff841e130d7aae46258c3d6a45"
 metafile = true
@@ -803,11 +839,6 @@ metafile = true
 [[files]]
 file = "mods/yacl.pw.toml"
 hash = "64eaf7478e42d5143f4feeee87c56f779f4c3523f9fb06d8342484d36aa4442b"
-metafile = true
-
-[[files]]
-file = "mods/youkaishomecoming.pw.toml"
-hash = "a7a526b9362db210f20bdc5f64b400827c09a8f626cf0e35fe66b15d49c8f236"
 metafile = true
 
 [[files]]
