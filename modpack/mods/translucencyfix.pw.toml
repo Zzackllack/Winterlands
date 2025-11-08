@@ -1,0 +1,13 @@
+name = "Translucency Fix"
+filename = "translucencyfix-2.3.0-neoforge.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/xp45cyDI/versions/oGQSB7bk/translucencyfix-2.3.0-neoforge.jar"
+hash-format = "sha512"
+hash = "1e7ec17639ce2e2b8aaf6e07d9d22cb7a4d1a5caad4a85821c3c5f2bc483502b6b4b9608b2d25415d45512973ea34ee4d37d43d1e8367b12d520000fefa9dac2"
+
+[update]
+[update.modrinth]
+mod-id = "xp45cyDI"
+version = "oGQSB7bk"
