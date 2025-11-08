@@ -256,7 +256,7 @@ metafile = true
 
 [[files]]
 file = "mods/crash-assistant.pw.toml"
-hash = "bdb1f0f640e215aae6984d40e00527a275f5de4e16434bee078b0087399de0bc"
+hash = "467271d680bf7c8ef581c2768ecd6210e27daac948a1215ae4c163e5b32ddf3a"
 metafile = true
 
 [[files]]
@@ -961,7 +961,7 @@ metafile = true
 
 [[files]]
 file = "mods/smsn.pw.toml"
-hash = "fcc841d304b93dec0b1ad2e3813bdee1d17f78384aa65d03151ec766695a7762"
+hash = "17498eac21cee5b2524cc2abc49df82c62e10972d7334b963ab4e76a90dcb983"
 metafile = true
 
 [[files]]
