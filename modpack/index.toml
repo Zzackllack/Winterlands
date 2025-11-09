@@ -880,11 +880,6 @@ hash = "3165000789e965102d58efe87dd0af170eba28462c3ecb53c1192592c92139a7"
 metafile = true
 
 [[files]]
-file = "mods/rsls.pw.toml"
-hash = "6e60236946a1e2909eb5c59776c79feba58489523e4283b3b64ce6641638d585"
-metafile = true
-
-[[files]]
 file = "mods/runiclib.pw.toml"
 hash = "83108a6c53c80936870d7c44a83395d0bf48842f5c38e8ef25b42e4b8d80be9b"
 metafile = true
@@ -987,11 +982,6 @@ metafile = true
 [[files]]
 file = "mods/storage-delight.pw.toml"
 hash = "0ccdb1ac3f7fffacc28ffa235bdf7e37105c088095f96b6e3fc9748d64328b94"
-metafile = true
-
-[[files]]
-file = "mods/subtle-effects.pw.toml"
-hash = "46d28a5f6168b55be612a6f5d616dd0a28bb33f8bf2c6b23c30c0bae17e8ae3c"
 metafile = true
 
 [[files]]
@@ -1102,16 +1092,6 @@ metafile = true
 [[files]]
 file = "mods/what-are-they-up-to.pw.toml"
 hash = "9ce52d07c0c3d146a2a44f8bc187138ce7a5558a4e3ab540c86234702b6de274"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-minimap.pw.toml"
-hash = "9d76c3683cfea5c5976823a000eacc9944db9f097894356d2a029cf36642ffa4"
-metafile = true
-
-[[files]]
-file = "mods/xaeros-world-map.pw.toml"
-hash = "9b8940ac83dde84cfc59860c6544a4b1194e635786c26bd47dc15eee79e63598"
 metafile = true
 
 [[files]]
