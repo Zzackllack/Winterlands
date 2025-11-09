@@ -100,18 +100,8 @@ hash = "be28a9ff89c60140b2983eb91089e77bec90bc5a0379c25472be01cb14dcbb97"
 metafile = true
 
 [[files]]
-file = "mods/barbeques-delight-forge.pw.toml"
-hash = "ae63e4f67427755b231839f860c21db3737d8aae799e7d2677e756271294238c"
-metafile = true
-
-[[files]]
 file = "mods/beautify.pw.toml"
 hash = "5e3421b58c8c905e686ed7b63d2fe086fe3265009347ca01aba99f13cb8edca3"
-metafile = true
-
-[[files]]
-file = "mods/bellsandwhistles.pw.toml"
-hash = "e1f4a53e3e52b534add5dd018597fefd345d9bd6350b9c46ef0ec281fc62af8e"
 metafile = true
 
 [[files]]
@@ -285,11 +275,6 @@ hash = "ccd912d3f084b90ae88115cb9b041031aa4da4bb18213b585805fd11b19bdb48"
 metafile = true
 
 [[files]]
-file = "mods/create-dragons-plus.pw.toml"
-hash = "485c1d97761536a52331e5d50055ecd514086e2f23937f259e33e06cc638ca91"
-metafile = true
-
-[[files]]
 file = "mods/create-encased.pw.toml"
 hash = "7c07f70035a9ef0fa613bb1acab3db9377a7de11461761c4a33a52df71382c23"
 metafile = true
@@ -422,11 +407,6 @@ metafile = true
 [[files]]
 file = "mods/egg-delight.pw.toml"
 hash = "0737dca47fa6a695bafb4b1a784263672fee3b42349eebd7093dfe1d8d5706a8"
-metafile = true
-
-[[files]]
-file = "mods/enders-delight.pw.toml"
-hash = "a693f3ca25b4b4ece785887d5a095abb1ab959804fbf6c89f119100f1de1df4b"
 metafile = true
 
 [[files]]
@@ -622,6 +602,11 @@ metafile = true
 [[files]]
 file = "mods/jei.pw.toml"
 hash = "076be436a9dd1df44f71473123db01ad52b26afce495615d91ec5150e1960d98"
+metafile = true
+
+[[files]]
+file = "mods/journeymap.pw.toml"
+hash = "cc903c56f854019dc420ab9a088e1a3a328e7839291aafae038f37005e59988e"
 metafile = true
 
 [[files]]
