@@ -105,6 +105,11 @@ hash = "5e3421b58c8c905e686ed7b63d2fe086fe3265009347ca01aba99f13cb8edca3"
 metafile = true
 
 [[files]]
+file = "mods/better-stats.pw.toml"
+hash = "7b87ea6e0623ada323e65fa0420e0827f6e88689898a0454376e460ad8cbc5dc"
+metafile = true
+
+[[files]]
 file = "mods/bettersmithingtable.pw.toml"
 hash = "a284f59acb65e06f1fea88f8a44e31ea8deba9feb4f17e00fab35a6498a641f1"
 metafile = true
@@ -252,11 +257,6 @@ metafile = true
 [[files]]
 file = "mods/crate-delight.pw.toml"
 hash = "68a6089104825858beb345ab44c435fff997cf5f1560b39e215574b3e1ae5c2c"
-metafile = true
-
-[[files]]
-file = "mods/create-central-kitchen.pw.toml"
-hash = "8cd33949146121a4522626672939679c49b79e2353b6ba34fcb5fbcef0e4fd91"
 metafile = true
 
 [[files]]
@@ -442,6 +442,11 @@ metafile = true
 [[files]]
 file = "mods/explosive-enhancement-forge.pw.toml"
 hash = "fc8948d1a8837b7a89a3b754335fd53086ba89c78af9c3d07fa899761c6a9e50"
+metafile = true
+
+[[files]]
+file = "mods/exportstats.pw.toml"
+hash = "6d81967238d0aba3debb0d5488306bed4052a27acbbb3a6a332ad6792f8d178f"
 metafile = true
 
 [[files]]
@@ -915,6 +920,11 @@ hash = "ce9ddada6ffd55a512149cc474c6a453281a997a5fdf1b7b4a2cc73f875e704a"
 metafile = true
 
 [[files]]
+file = "mods/searchstats.pw.toml"
+hash = "e0f952317c108547176ca8989c4ecb81b734e642b8ebe7ddf9aae94a10c4dea2"
+metafile = true
+
+[[files]]
 file = "mods/serene-seasons.pw.toml"
 hash = "73b1e4f6608fcd396acc3e4e7aa753d314c8810ef4caf831ed93d9932d93f896"
 metafile = true
@@ -977,6 +987,11 @@ metafile = true
 [[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "2e4c8891ec22ca246b414728493ff52fe177bc9c4369ed23a5a80e8332e79c67"
+metafile = true
+
+[[files]]
+file = "mods/tcdcommons.pw.toml"
+hash = "ffa71e1ce188b71291daa8bb67e8094ff7d0ef695add362200591c28e75cf457"
 metafile = true
 
 [[files]]
