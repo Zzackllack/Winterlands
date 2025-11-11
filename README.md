@@ -3,6 +3,7 @@
 [![modrinth](https://badges.penpow.dev/badges/available/modrinth/compact.svg)](https://modrinth.com/project/winterlands)
 [![website](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/documentation/website_46h.png)](https://winterlands.zacklack.de)
 ![neoforge](./misc/badges/neoforge/compact/compact_46h.png)
+![license](./misc/badges/BSD%203-Clause%20License/compact/compact_46h.png)
 
 This Monorepo contains:
 
