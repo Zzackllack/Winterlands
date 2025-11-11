@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+@theme {
+  --font-sans:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-display: "Space Grotesk", var(--font-sans);
+  --color-night: #020617;
+  --color-ice: #e6f0ff;
+  --color-frost: #c2e7ff;
+  --color-aurora: #5bd5ff;
+  --color-berry: #f472b6;
+  --color-forest: #20c997;
+  --color-snow: #f8fbff;
+  --color-snow-dim: rgba(248, 251, 255, 0.85);
+  --color-ink: #0f172a;
+  --color-muted: #8593ab;
+  --shadow-soft: 0 25px 65px rgba(6, 24, 46, 0.45);
+  --radius-card: 1.5rem;
+}
+
+:root {
+  color-scheme: light dark;
+  background-color: var(--color-night);
+}
+
+body {
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(circle at top, rgba(91, 213, 255, 0.25), transparent 45%),
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(244, 114, 182, 0.18),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 0%,
+      rgba(32, 201, 151, 0.15),
+      transparent 35%
+    ),
+    var(--color-night);
+  color: var(--color-snow);
+  min-height: 100vh;
+  margin: 0;
+}
+
+::selection {
+  background: rgba(91, 213, 255, 0.5);
+  color: #01233f;
+}
+
+@utility frosted-panel {
+  backdrop-filter: blur(22px);
+  background: linear-gradient(
+    135deg,
+    rgba(6, 24, 46, 0.7),
+    rgba(2, 6, 23, 0.85)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+}
+
+@utility glass-button {
+  background: linear-gradient(
+    120deg,
+    rgba(91, 213, 255, 0.2),
+    rgba(32, 201, 151, 0.2)
+  );
+  border: 1px solid rgba(91, 213, 255, 0.35);
+  border-radius: 999px;
+  color: var(--color-snow);
+  font-weight: 600;
+  transition:
+    background 300ms,
+    box-shadow 300ms,
+    transform 300ms;
+  &:hover {
+    background: linear-gradient(
+      120deg,
+      rgba(91, 213, 255, 0.35),
+      rgba(244, 114, 182, 0.3)
+    );
+    box-shadow: 0 12px 35px rgba(91, 213, 255, 0.3);
+    transform: translateY(-2px);
+  }
+}
+
+@utility focus-ring {
+  outline: 2px solid rgba(91, 213, 255, 0.8);
+  outline-offset: 3px;
+}
+
+@utility gradient-border {
+  border: 1px solid transparent;
+  border-radius: var(--radius-card);
+  background:
+    linear-gradient(var(--color-night), var(--color-night)) padding-box,
+    linear-gradient(120deg, rgba(91, 213, 255, 0.9), rgba(244, 114, 182, 0.8))
+      border-box;
+}
+
+@utility text-glow {
+  text-shadow: 0 0 25px rgba(91, 213, 255, 0.65);
+}
+
+.prose-muted :is(p, li, td) {
+  color: var(--color-snow);
+  opacity: 0.8;
+}
+
+.prose {
+  line-height: 1.7;
+}
+
+.prose p:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.swup-transition-fade {
+  opacity: 0;
+  transform: translateY(0.75rem);
+  transition:
+    opacity 260ms ease,
+    transform 260ms ease;
+}
+
+.swup-transition-fade.swup-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHpwLXnSoODwAAAABJRU5ErkJggg==");
+  opacity: 0.08;
+  mix-blend-mode: screen;
+  z-index: 5;
+}

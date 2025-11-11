@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import LicenseTable from '../components/sections/LicenseTable.astro';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const licenses = await getCollection('licenses');
+const detailBlocks = await Promise.all(
+  licenses.map(async (entry) => ({
+    mod: entry.data.mod,
+    slug: entry.slug,
+    Content: (await entry.render()).Content,
+  })),
+);
+---
+<BaseLayout title="Winterlands Licensing" description="Every dependency approved for redistribution.">
+  <section class="mx-auto max-w-6xl px-6 py-16">
+    <SectionHeading
+      eyebrow="Compliance"
+      title="Licenses & Permissions"
+      description="Stay on the right side of redistribution agreements. Update a markdown file, redeploy the page."
+    />
+    <LicenseTable licenses={licenses} />
+    <div class="mt-12 space-y-8">
+      {detailBlocks.map(({ mod, slug, Content }) => (
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6" id={slug}>
+          <h3 class="font-display text-2xl">{mod}</h3>
+          <div class="prose prose-invert prose-muted mt-4 max-w-none">
+            <Content />
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

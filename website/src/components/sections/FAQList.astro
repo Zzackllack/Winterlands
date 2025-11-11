@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+type AstroRenderable = any;
+
+interface FAQBlock {
+  entry: CollectionEntry<'faqs'>;
+  Content: AstroRenderable;
+}
+
+interface Props {
+  faqs: FAQBlock[];
+}
+
+const { faqs } = Astro.props as Props;
+const grouped = faqs.reduce<Record<string, FAQBlock[]>>((acc, block) => {
+  const key = block.entry.data.category;
+  acc[key] = acc[key] ?? [];
+  acc[key].push(block);
+  return acc;
+}, {});
+---
+<div class="space-y-10">
+  {Object.entries(grouped).map(([category, entries]) => (
+    <section class="rounded-3xl border border-white/10 bg-white/5 p-6" aria-label={category}>
+      <h3 class="font-display text-2xl text-white">{category}</h3>
+      <div class="mt-4 space-y-4">
+        {entries
+          .sort((a, b) => a.entry.data.order - b.entry.data.order)
+          .map(({ entry, Content }) => (
+            <details class="rounded-2xl border border-white/5 bg-white/5/5 p-4">
+              <summary class="cursor-pointer text-lg text-white">{entry.data.question}</summary>
+              <div class="prose prose-invert prose-muted mt-3 max-w-none">
+                <Content />
+              </div>
+            </details>
+          ))}
+      </div>
+    </section>
+  ))}
+</div>

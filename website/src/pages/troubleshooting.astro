@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import FAQList from '../components/sections/FAQList.astro';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { env } from '../lib/env';
+
+const faqEntries = (await getCollection('faqs')).sort((a, b) => a.data.order - b.data.order);
+const faqs = await Promise.all(
+  faqEntries.map(async (entry) => ({
+    entry,
+    Content: (await entry.render()).Content,
+  })),
+);
+const { githubSupportUrl } = env;
+const issueUrl = githubSupportUrl;
+--- 
+<BaseLayout title="Troubleshooting Winterlands" description="Answers pulled straight from our docs and scripts.">
+  <section class="mx-auto max-w-6xl px-6 py-16">
+    <SectionHeading
+      eyebrow="Support"
+      title="Keep your realm online"
+      description="From analyzer output to issue templates, everything lives in the repo."
+    />
+    <div class="grid gap-8 lg:grid-cols-[2fr_1fr]">
+      <FAQList faqs={faqs} />
+      <aside class="frosted-panel h-full p-6">
+        <h3 class="font-display text-2xl">Need hands-on help?</h3>
+        <p class="mt-3 text-white/70">Open an issue with analyzer logs and manual verification steps.</p>
+        <a
+          href={issueUrl}
+          class="glass-button mt-6 inline-flex w-full justify-center px-5 py-3"
+          target="_blank"
+          rel="noreferrer noopener"
+          data-no-swup
+        >
+          Create GitHub Issue
+        </a>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>
