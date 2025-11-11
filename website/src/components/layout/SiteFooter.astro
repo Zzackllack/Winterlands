@@ -15,31 +15,26 @@ const { modrinthUrl, githubUrl } = Astro.props as Props;
         <p class="font-display text-2xl">See you in the snow.</p>
         <p class="text-sm text-white/70">NeoForge 1.21.1 · Packwiz managed · Winter ready</p>
       </div>
-      <a
-        href={modrinthUrl}
-        class="glass-button inline-flex items-center gap-2 px-5 py-3 text-sm"
-        target="_blank"
-        rel="noreferrer noopener"
-        data-no-swup
-      >
-        Download on Modrinth
+      <a href={modrinthUrl} class="modrinth-button" target="_blank" rel="noreferrer noopener">
+        <img src="/modrinth.svg" alt="" class="modrinth-button__icon" />
+        <span>Download on <span class="modrinth-button__accent">Modrinth</span></span>
       </a>
     </div>
     <div class="mt-8 grid gap-6 md:grid-cols-2">
       <div class="flex flex-wrap gap-4 text-sm text-white/70">
         {navLinks.map((link) => (
-          <a href={link.href} class="hover:text-white" data-swup-preload>
+          <a href={link.href} class="hover:text-white">
             {link.label}
           </a>
         ))}
       </div>
       <div class="flex flex-wrap justify-end gap-4 text-sm text-white/70">
         {socials.map((item) => (
-          <a href={item.href} target="_blank" rel="noreferrer" class="hover:text-white" data-no-swup>
+          <a href={item.href} target="_blank" rel="noreferrer" class="hover:text-white">
             {item.label}
           </a>
         ))}
-        <a href={githubUrl} class="hover:text-white" target="_blank" rel="noreferrer" data-no-swup>
+        <a href={githubUrl} class="hover:text-white" target="_blank" rel="noreferrer">
           Issues
         </a>
       </div>

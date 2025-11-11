@@ -13,19 +13,19 @@ const showcaseMods = featuredMods(allMods).slice(0, 3);
 
 const features = [
   {
-    title: 'Motion-crafted storytelling',
-    summary: 'Seasonal questlines and cinematic shaders are wired directly into our datapacks to keep narratives fresh.',
-    icon: 'Story',
+    title: 'Frostbitten biomes',
+    summary: 'Custom worldgen sprinkles auroras, frozen caverns, and cozy hamlets across every seed.',
+    icon: 'Biomes',
   },
   {
-    title: 'Ops automation',
-    summary: 'Scripts under modpack/scripts keep CI, manual-download caches, and analyzer output in sync.',
-    icon: 'Ops',
+    title: 'Holiday events',
+    summary: 'Timed quests and gift drops rotate monthly so returning players always have a surprise.',
+    icon: 'Events',
   },
   {
-    title: 'Export ready',
-    summary: 'packwiz refresh + dual exports (Modrinth & CurseForge) are just a single CLI away.',
-    icon: 'CI/CD',
+    title: 'Performance tuned',
+    summary: 'Packwiz, dynamic resources, and analyzer scripts keep 220 mods smooth on mid-tier rigs.',
+    icon: 'Performance',
   },
 ];
 const { modrinthUrl } = env;
@@ -36,8 +36,8 @@ const { modrinthUrl } = env;
   <section class="mx-auto mt-16 max-w-6xl px-6">
     <SectionHeading
       eyebrow="Featured Mods"
-      title="Curated experiences"
-      description="A rotating highlight of the client + server tech driving the frost."
+      title="Play-defining picks"
+      description="These are the blocks, foods, and machines you’ll touch in the first in-game day."
     />
     <div class="grid gap-6 md:grid-cols-3">
       {showcaseMods.map((mod) => (
@@ -53,9 +53,9 @@ const { modrinthUrl } = env;
 
   <section class="mx-auto mt-20 max-w-6xl px-6">
     <SectionHeading
-      eyebrow="Pipeline"
-      title="Why studios pick Winterlands"
-      description="We obsess over the tooling so you can obsess over the screenshots."
+      eyebrow="World Feel"
+      title="Why Winterlands feels alive"
+      description="Everything—from ambience to automation—is tuned for story-rich survival sessions."
     />
     <FeatureCarousel client:visible features={features} />
   </section>

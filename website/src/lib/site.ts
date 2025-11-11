@@ -8,23 +8,23 @@ export const navLinks = [
 
 export const heroHighlights = [
   {
-    title: 'Curated NeoForge Stack',
-    description: '150+ mods tuned for silky 120 FPS exploration with cinematic snowfall.',
+    title: 'Blizzard-ready survival',
+    description: 'Bundle up with freeze meters, bonfires, and story quests built for snowy nights.',
   },
   {
-    title: 'Verified Multiplayer Ready',
-    description: 'Server + client parity enforced by our analyzer tooling and CI snapshots.',
+    title: 'Cozy cabin tech',
+    description: 'Farmer’s delight + Create-style logistics tuned for chill, low-lag automation.',
   },
   {
-    title: 'Seasonal Events',
-    description: 'Monthly world events keep Winterlands fresh without wiping your progress.',
+    title: 'Festive hunts',
+    description: 'Limited-time mobs, sled races, and gift drops rotate each holiday season.',
   },
 ];
 
 export const stats = [
-  { label: 'Mods Managed', value: '158', detail: 'Packwiz locked' },
-  { label: 'Weekly Downloads', value: '12k', detail: 'Modrinth + Curse' },
-  { label: 'Active Servers', value: '340', detail: 'Community hosted' },
+  { label: 'Mods Packed', value: '220', detail: 'NeoForge 1.21.1' },
+  { label: 'Release Status', value: 'Pre-launch', detail: 'Playtests running' },
+  { label: 'Servers Online', value: '0', detail: 'Community rollout soon' },
 ];
 
 export const socials = [

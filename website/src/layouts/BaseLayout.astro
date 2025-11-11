@@ -1,6 +1,7 @@
 ---
 import SiteFooter from '../components/layout/SiteFooter.astro';
 import SiteHeader from '../components/layout/SiteHeader.astro';
+import SnowOverlay from '../components/islands/SnowOverlay.tsx';
 import { env } from '../lib/env';
 import '../styles/global.css';
 
@@ -24,10 +25,11 @@ const { modrinthUrl, githubSupportUrl } = env;
   </head>
   <body class={`min-h-screen antialiased ${pageClass}`}>
     <div class="noise-overlay" aria-hidden="true"></div>
+    <SnowOverlay client:load />
     <header class="relative z-20">
       <SiteHeader ctaHref={modrinthUrl} />
     </header>
-    <main id="swup" class="relative z-10">
+    <main class="relative z-10">
       <slot />
     </main>
     <footer class="relative z-20">

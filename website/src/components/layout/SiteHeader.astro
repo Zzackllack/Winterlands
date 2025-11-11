@@ -14,25 +14,15 @@ const { ctaHref } = Astro.props as Props;
   </a>
   <nav class="hidden items-center gap-6 text-sm md:flex">
     {navLinks.map((link) => (
-      <a
-        href={link.href}
-        class="text-white/80 transition hover:text-white"
-        data-swup-preload
-        aria-label={`Go to ${link.label}`}
-      >
+      <a href={link.href} class="text-white/80 transition hover:text-white" aria-label={`Go to ${link.label}`}>
         {link.label}
       </a>
     ))}
   </nav>
   <div class="flex items-center gap-3">
-    <a
-      href={ctaHref}
-      class="glass-button inline-flex items-center gap-2 px-5 py-3 text-sm"
-      target="_blank"
-      rel="noreferrer noopener"
-      data-no-swup
-    >
-      Download on Modrinth
+    <a href={ctaHref} class="modrinth-button" target="_blank" rel="noreferrer noopener">
+      <img src="/modrinth.svg" alt="" class="modrinth-button__icon" />
+      <span>Download on <span class="modrinth-button__accent">Modrinth</span></span>
     </a>
   </div>
 </div>

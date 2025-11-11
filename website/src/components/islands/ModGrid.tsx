@@ -94,7 +94,6 @@ export default function ModGrid({ mods }: { mods: ModLite[] }) {
                   className="mt-4 inline-flex items-center text-sm text-white hover:text-white/90"
                   target="_blank"
                   rel="noreferrer"
-                  data-no-swup
                 >
                   Modrinth page →
                 </a>
