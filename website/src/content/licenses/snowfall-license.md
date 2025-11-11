@@ -9,9 +9,3 @@ restrictions:
   - Commercial video renders require permission
 source: https://modrinth.com/resourcepack/snowfall-particles/license
 ---
-
-| Clause | Details |
-| --- | --- |
-| Redistribution | Keep license + credits.txt when bundling. |
-| Attribution text | "Snowfall Particles FX by Winterlands Collective" |
-| Contact | hello@winterlands.dev |
