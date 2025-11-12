@@ -1,26 +1,27 @@
-import 'dotenv/config';
-import { promises as fs } from 'node:fs';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { parse } from 'toml';
+import "dotenv/config";
+import { promises as fs } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { parse } from "toml";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const repoRoot = path.resolve(__dirname, '..', '..');
-const modsDir = path.resolve(repoRoot, 'modpack', 'mods');
-const outputPath = path.resolve(__dirname, '../src/data/mods.generated.ts');
-const curseforgeKey = process.env.CURSEFORGE_API_KEY ?? process.env.CF_API_KEY ?? '';
+const repoRoot = path.resolve(__dirname, "..", "..");
+const modsDir = path.resolve(repoRoot, "modpack", "mods");
+const outputPath = path.resolve(__dirname, "../src/data/mods.generated.ts");
+const curseforgeKey =
+  process.env.CURSEFORGE_API_KEY ?? process.env.CF_API_KEY ?? "";
 
-type Side = 'client' | 'server' | 'both';
-type Provider = 'modrinth' | 'curseforge';
+type Side = "client" | "server" | "both";
+type Provider = "modrinth" | "curseforge";
 
 interface PackwizMod {
   side?: Side;
   update?: {
     modrinth?: {
-      'mod-id'?: string;
+      "mod-id"?: string;
     };
     curseforge?: {
-      'project-id'?: number;
+      "project-id"?: number;
     };
   };
 }
@@ -51,66 +52,125 @@ interface ModEntry {
 }
 
 async function readModFiles() {
+  console.log("[readModFiles] Reading mods directory:", modsDir);
   const entries = await fs.readdir(modsDir);
-  return entries.filter((file) => file.endsWith('.toml'));
+  const tomlFiles = entries.filter((file) => file.endsWith(".toml"));
+  console.log(`[readModFiles] Found ${tomlFiles.length} .toml files`);
+  if (tomlFiles.length > 0) {
+    console.log("[readModFiles] Files:", tomlFiles.join(", "));
+  }
+  return tomlFiles;
 }
 
 function normalizeSide(value?: string): Side {
-  if (value === 'client' || value === 'server' || value === 'both') return value;
-  return 'both';
+  if (value === "client" || value === "server" || value === "both")
+    return value;
+  return "both";
 }
 
 async function fetchJson<T>(url: string, init?: RequestInit) {
-  const response = await fetch(url, init);
-  if (!response.ok) {
-    throw new Error(`Request failed ${response.status} ${response.statusText} for ${url}`);
+  console.log(`[fetchJson] GET ${url}`);
+  if (init?.headers) {
+    console.log(
+      "[fetchJson] request headers:",
+      Object.keys(init.headers).join(", ")
+    );
   }
-  return response.json() as Promise<T>;
+  const response = await fetch(url, init);
+  console.log(
+    `[fetchJson] Response ${response.status} ${response.statusText} for ${url}`
+  );
+  if (!response.ok) {
+    // attempt to include a small response body for debugging if available
+    let bodyPreview = "";
+    try {
+      const text = await response.text();
+      bodyPreview = text.slice(0, 500).replace(/\s+/g, " ");
+    } catch {
+      bodyPreview = "<no preview>";
+    }
+    throw new Error(
+      `Request failed ${response.status} ${response.statusText} for ${url} — preview: ${bodyPreview}`
+    );
+  }
+  const json = await response.json();
+  console.log(`[fetchJson] Successful JSON parse for ${url}`);
+  return json as T;
 }
 
 async function fetchModrinthProject(id: string) {
-  return fetchJson<any>(`https://api.modrinth.com/v2/project/${id}`);
+  const url = `https://api.modrinth.com/v2/project/${id}`;
+  console.log(`[modrinth] Fetching project ${id} -> ${url}`);
+  return fetchJson<any>(url);
 }
 
 async function fetchCurseforgeProject(id: number) {
+  console.log(`[curseforge] Fetching project ${id}`);
   if (!curseforgeKey) {
-    throw new Error('CURSEFORGE_API_KEY is required for CurseForge lookups.');
+    console.error(
+      "[curseforge] No API key found in environment (CURSEFORGE_API_KEY or CF_API_KEY)"
+    );
+    throw new Error("CURSEFORGE_API_KEY is required for CurseForge lookups.");
   }
-  return fetchJson<any>(`https://api.curseforge.com/v1/mods/${id}`, {
+  console.log("[curseforge] API key present: yes (not logging the key)");
+  const url = `https://api.curseforge.com/v1/mods/${id}`;
+  return fetchJson<any>(url, {
     headers: {
-      Accept: 'application/json',
-      'x-api-key': curseforgeKey,
+      Accept: "application/json",
+      "x-api-key": curseforgeKey,
     },
   });
 }
 
 function sanitize(text?: string) {
-  return (text ?? '').replace(/\r\n/g, '\n').trim();
+  return (text ?? "").replace(/\r\n/g, "\n").trim();
 }
 
 async function buildEntries(): Promise<ModEntry[]> {
   const files = await readModFiles();
   const mods: ModEntry[] = [];
 
+  console.log(`[buildEntries] Processing ${files.length} mod files`);
   for (const file of files) {
-    const raw = await fs.readFile(path.join(modsDir, file), 'utf8');
-    const parsed = parse(raw) as PackwizMod;
-    const side = normalizeSide(parsed.side);
+    console.log(`\n[buildEntries] ----- Processing file: ${file} -----`);
+    const filePath = path.join(modsDir, file);
+    console.log(`[buildEntries] Reading ${filePath}`);
+    const raw = await fs.readFile(filePath, "utf8");
+    let parsed: PackwizMod;
+    try {
+      parsed = parse(raw) as PackwizMod;
+      console.log(
+        `[buildEntries] Parsed TOML for ${file} - side: ${parsed.side ?? "<unset>"}`
+      );
+    } catch (err) {
+      console.error(`[buildEntries] Failed to parse TOML for ${file}:`, err);
+      throw err;
+    }
 
-    if (parsed.update?.modrinth?.['mod-id']) {
-      const modId = parsed.update.modrinth['mod-id'];
-      if (!modId) continue;
+    const side = normalizeSide(parsed.side);
+    console.log(`[buildEntries] Normalized side: ${side}`);
+
+    if (parsed.update?.modrinth?.["mod-id"]) {
+      const modId = parsed.update.modrinth["mod-id"];
+      console.log(`[buildEntries] Detected Modrinth mod-id: ${modId}`);
+      if (!modId) {
+        console.warn(`[buildEntries] Empty mod-id in ${file}, skipping`);
+        continue;
+      }
       const data = await fetchModrinthProject(modId);
-      mods.push({
+      console.log(
+        `[buildEntries] Modrinth response: slug=${data.slug} title=${data.title}`
+      );
+      const entry: ModEntry = {
         slug: data.slug,
         name: data.title,
         summary: sanitize(data.description ?? data.body?.slice(0, 200)),
-        description: sanitize(data.body ?? data.description ?? ''),
-        source: 'modrinth',
+        description: sanitize(data.body ?? data.description ?? ""),
+        source: "modrinth",
         projectId: modId,
         side,
-        clientSupport: data.client_side ?? 'unknown',
-        serverSupport: data.server_side ?? 'unknown',
+        clientSupport: data.client_side ?? "unknown",
+        serverSupport: data.server_side ?? "unknown",
         categories: Array.isArray(data.categories) ? data.categories : [],
         license: {
           id: data.license?.id,
@@ -124,23 +184,40 @@ async function buildEntries(): Promise<ModEntry[]> {
           source: data.source_url ?? undefined,
           download: `https://modrinth.com/mod/${data.slug}`,
         },
-      });
-    } else if (parsed.update?.curseforge?.['project-id']) {
-      const projectId = parsed.update.curseforge['project-id'];
-      if (typeof projectId !== 'number') continue;
+      };
+      console.log(
+        `[buildEntries] Adding mod entry: ${entry.name} (${entry.slug})`
+      );
+      mods.push(entry);
+    } else if (parsed.update?.curseforge?.["project-id"]) {
+      const projectId = parsed.update.curseforge["project-id"];
+      console.log(
+        `[buildEntries] Detected CurseForge project-id: ${projectId}`
+      );
+      if (typeof projectId !== "number") {
+        console.warn(
+          `[buildEntries] project-id is not a number in ${file}, skipping`
+        );
+        continue;
+      }
       const response = await fetchCurseforgeProject(projectId);
       const data = response.data;
-      mods.push({
+      console.log(
+        `[buildEntries] CurseForge response: name=${data.name} slug=${data.slug}`
+      );
+      const entry: ModEntry = {
         slug: data.slug ?? String(projectId),
         name: data.name,
         summary: sanitize(data.summary),
-        description: sanitize(data.summary ?? ''),
-        source: 'curseforge',
+        description: sanitize(data.summary ?? ""),
+        source: "curseforge",
         projectId: String(projectId),
         side,
-        clientSupport: side === 'server' ? 'unsupported' : 'required',
-        serverSupport: side === 'client' ? 'unsupported' : 'required',
-        categories: Array.isArray(data.categories) ? data.categories.map((c: any) => c.name).filter(Boolean) : [],
+        clientSupport: side === "server" ? "unsupported" : "required",
+        serverSupport: side === "client" ? "unsupported" : "required",
+        categories: Array.isArray(data.categories)
+          ? data.categories.map((c: any) => c.name).filter(Boolean)
+          : [],
         license: {
           id: data.license?.id ? String(data.license.id) : undefined,
           name: data.license?.name,
@@ -153,12 +230,23 @@ async function buildEntries(): Promise<ModEntry[]> {
           source: data.links?.sourceUrl,
           download: data.links?.websiteUrl,
         },
-      });
+      };
+      console.log(
+        `[buildEntries] Adding mod entry: ${entry.name} (${entry.slug})`
+      );
+      mods.push(entry);
+    } else {
+      console.log(
+        `[buildEntries] No recognized update provider (modrinth/curseforge) in ${file}, skipping`
+      );
     }
 
+    // politeness delay to avoid hammering APIs
+    console.log("[buildEntries] Sleeping 150ms between requests");
     await new Promise((resolve) => setTimeout(resolve, 150));
   }
 
+  console.log("[buildEntries] Sorting entries by name");
   return mods.sort((a, b) => a.name.localeCompare(b.name));
 }
 
@@ -168,13 +256,18 @@ function renderFile(mods: ModEntry[]) {
 }
 
 async function run() {
+  console.log("[run] Starting generate-mod-data script");
   try {
     const mods = await buildEntries();
+    console.log(`[run] Built ${mods.length} mod entries`);
     const file = renderFile(mods);
+    console.log(`[run] Writing output to ${outputPath}`);
     await fs.writeFile(outputPath, file);
-    console.log(`Generated ${mods.length} mods → ${path.relative(repoRoot, outputPath)}`);
+    console.log(
+      `Generated ${mods.length} mods → ${path.relative(repoRoot, outputPath)}`
+    );
   } catch (error) {
-    console.error('[generate-mod-data] Failed:', error);
+    console.error("[generate-mod-data] Failed:", error);
     process.exit(1);
   }
 }
