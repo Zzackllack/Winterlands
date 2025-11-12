@@ -126,6 +126,22 @@ function sanitize(text?: string) {
   return (text ?? "").replace(/\r\n/g, "\n").trim();
 }
 
+function optionalString(value: unknown): string | undefined {
+  if (typeof value === "string") {
+    const trimmed = value.trim();
+    return trimmed.length ? trimmed : undefined;
+  }
+  return undefined;
+}
+
+function pickString(...values: Array<string | null | undefined>) {
+  for (const value of values) {
+    const result = optionalString(value);
+    if (result) return result;
+  }
+  return undefined;
+}
+
 async function buildEntries(): Promise<ModEntry[]> {
   const files = await readModFiles();
   const mods: ModEntry[] = [];
@@ -173,15 +189,15 @@ async function buildEntries(): Promise<ModEntry[]> {
         serverSupport: data.server_side ?? "unknown",
         categories: Array.isArray(data.categories) ? data.categories : [],
         license: {
-          id: data.license?.id,
-          name: data.license?.name,
-          url: data.license?.url,
+          id: optionalString(data.license?.id),
+          name: optionalString(data.license?.name),
+          url: optionalString(data.license?.url),
           allowModrinthRedistribution: true,
         },
         links: {
-          site: data.website_url ?? data.source_url ?? data.issues_url,
-          issues: data.issues_url ?? undefined,
-          source: data.source_url ?? undefined,
+          site: pickString(data.website_url, data.source_url, data.issues_url),
+          issues: optionalString(data.issues_url),
+          source: optionalString(data.source_url),
           download: `https://modrinth.com/mod/${data.slug}`,
         },
       };
@@ -220,15 +236,15 @@ async function buildEntries(): Promise<ModEntry[]> {
           : [],
         license: {
           id: data.license?.id ? String(data.license.id) : undefined,
-          name: data.license?.name,
-          url: data.links?.websiteUrl,
+          name: optionalString(data.license?.name),
+          url: optionalString(data.links?.websiteUrl),
           allowModrinthRedistribution: false,
         },
         links: {
-          site: data.links?.websiteUrl,
-          issues: data.links?.issuesUrl,
-          source: data.links?.sourceUrl,
-          download: data.links?.websiteUrl,
+          site: optionalString(data.links?.websiteUrl),
+          issues: optionalString(data.links?.issuesUrl),
+          source: optionalString(data.links?.sourceUrl),
+          download: optionalString(data.links?.websiteUrl),
         },
       };
       console.log(
