@@ -37,7 +37,7 @@ Follow `.github/SECURITY.md` for disclosure—never post tokenized URLs publicly
 
 ## Winterlands Website
 
-- Framework & tooling: Astro 5 with React 19 islands, Tailwind CSS 4 (via `@tailwindcss/vite`), pnpm. Integrations include `@astrojs/react`, `@astrojs/mdx`, and Astro content collections for mods, licenses, and FAQs.
+- Framework & tooling: Astro 5 with React 19 islands, Tailwind CSS 4 (via `@tailwindcss/vite`), pnpm. Integrations include `@astrojs/react`, `@astrojs/mdx`, and Astro content collections for FAQs only.
 - UI: Custom winter palette, Minecraft-inspired headings, replicated Modrinth CTA badge (`public/modrinth.svg`), full-viewport snowfall canvas (`SnowOverlay`), and section components (`Hero`, `FeatureCarousel`, `ModGrid`, `LicenseTable`, `FAQList`).
-- Data flow: Markdown lives under `src/content/{mods,licenses,faqs}` with schemas enforced in `src/content/config.ts`. Licensing page now renders only the summary table; markdown body content removed.
+- Data flow: Mods/licensing data are generated via `pnpm --filter website generate:mods`, which parses `modpack/mods/*.toml`, queries Modrinth/CurseForge APIs, and writes `src/data/mods.generated.ts`. Licensing page and mod grid both read from that single source.
 - Animations/visuals: Motion for hover/tap interactions, Anime.js for subtle accents, canvas snowfall instead of Three.js to keep bundle lean.

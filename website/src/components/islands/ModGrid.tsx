@@ -2,33 +2,24 @@
 
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import type { ModEntry } from '../../data/mods.generated';
 
-export interface ModLite {
-  slug: string;
-  name: string;
-  side: 'client' | 'server' | 'both';
-  version: string;
-  tags: string[];
-  summary: string;
-  homepage?: string;
-}
-
-const tabs: Array<{ value: ModLite['side'] | 'all'; label: string }> = [
+const tabs: Array<{ value: ModEntry['side'] | 'all'; label: string }> = [
   { value: 'all', label: 'All' },
   { value: 'client', label: 'Client' },
   { value: 'server', label: 'Server' },
   { value: 'both', label: 'Client + Server' },
 ];
 
-export default function ModGrid({ mods }: { mods: ModLite[] }) {
+export default function ModGrid({ mods }: { mods: ModEntry[] }) {
   const [activeSide, setActiveSide] = useState<typeof tabs[number]['value']>('all');
   const [query, setQuery] = useState('');
 
   const filtered = useMemo(() => {
     return mods.filter((mod) => {
       const matchesSide = activeSide === 'all' || mod.side === activeSide;
-      const matchesQuery = mod.name.toLowerCase().includes(query.toLowerCase()) ||
-        mod.summary.toLowerCase().includes(query.toLowerCase());
+      const haystack = [mod.name, mod.summary, mod.description, mod.categories.join(' ')].join(' ').toLowerCase();
+      const matchesQuery = haystack.includes(query.toLowerCase());
       return matchesSide && matchesQuery;
     });
   }, [mods, activeSide, query]);
@@ -77,25 +68,25 @@ export default function ModGrid({ mods }: { mods: ModLite[] }) {
                   <p className="text-sm uppercase tracking-[0.35em] text-white/50">{mod.side}</p>
                 </div>
                 <span className="rounded-full border border-white/15 px-3 py-1 text-xs text-white/70">
-                  v{mod.version}
+                  {mod.source === 'modrinth' ? 'Modrinth' : 'CurseForge'}
                 </span>
               </div>
               <p className="mt-4 text-white/70">{mod.summary}</p>
               <div className="mt-4 flex flex-wrap gap-2">
-                {mod.tags.map((tag) => (
+                {mod.categories.map((tag) => (
                   <span key={tag} className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/60">
                     {tag}
                   </span>
                 ))}
               </div>
-              {mod.homepage && (
+              {mod.links.site && (
                 <a
-                  href={mod.homepage}
+                  href={mod.links.site}
                   className="mt-4 inline-flex items-center text-sm text-white hover:text-white/90"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Modrinth page →
+                  Visit project →
                 </a>
               )}
             </motion.article>

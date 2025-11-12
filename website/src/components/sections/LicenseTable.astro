@@ -1,13 +1,13 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import { sortLicenses } from '../../lib/data';
+import type { ModEntry } from '../../data/mods.generated';
+import { buildLicenseRows } from '../../lib/modData';
 
 interface Props {
-  licenses: CollectionEntry<'licenses'>[];
+  mods: ModEntry[];
 }
 
-const { licenses } = Astro.props as Props;
-const entries = sortLicenses(licenses);
+const { mods } = Astro.props as Props;
+const rows = buildLicenseRows(mods);
 ---
 <div class="overflow-hidden rounded-3xl border border-white/10">
   <table class="w-full border-collapse text-sm">
@@ -15,35 +15,37 @@ const entries = sortLicenses(licenses);
       <tr>
         <th class="px-4 py-3 text-left font-semibold">Mod</th>
         <th class="px-4 py-3 text-left font-semibold">License</th>
-        <th class="px-4 py-3 text-left font-semibold">Permissions</th>
-        <th class="px-4 py-3 text-left font-semibold">Restrictions</th>
+        <th class="px-4 py-3 text-left font-semibold">Source</th>
+        <th class="px-4 py-3 text-left font-semibold">Modrinth Terms</th>
       </tr>
     </thead>
     <tbody>
-      {entries.map((entry) => (
+      {rows.map((row) => (
         <tr class="odd:bg-white/5 even:bg-white/0">
           <td class="px-4 py-4">
-            <p class="font-medium text-white">{entry.data.mod}</p>
-            {entry.data.source && (
-              <a href={entry.data.source} class="text-xs text-white/60" target="_blank" rel="noreferrer">
+            <p class="font-medium text-white">{row.name}</p>
+            {row.sourceUrl && (
+              <a href={row.sourceUrl} class="text-xs text-white/60" target="_blank" rel="noreferrer">
                 Source →
               </a>
             )}
           </td>
-          <td class="px-4 py-4 text-white/80">{entry.data.license}</td>
+          <td class="px-4 py-4 text-white/80">{row.license}</td>
           <td class="px-4 py-4">
-            <ul class="space-y-1 text-white/70">
-              {entry.data.permissions.map((rule) => (
-                <li>• {rule}</li>
-              ))}
-            </ul>
+            {row.sourceUrl ? (
+              <a href={row.sourceUrl} class="text-white/70 hover:text-white" target="_blank" rel="noreferrer">
+                Project page
+              </a>
+            ) : (
+              <span class="text-white/60">N/A</span>
+            )}
           </td>
-          <td class="px-4 py-4">
-            <ul class="space-y-1 text-red-200/80">
-              {entry.data.restrictions.map((rule) => (
-                <li>• {rule}</li>
-              ))}
-            </ul>
+          <td class="px-4 py-4 text-white">
+            {row.allowByModrinth ? (
+              <span class="text-emerald-300">Covered</span>
+            ) : (
+              <span class="text-red-300">Manual review</span>
+            )}
           </td>
         </tr>
       ))}

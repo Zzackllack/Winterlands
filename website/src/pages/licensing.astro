@@ -1,10 +1,8 @@
 ---
-import { getCollection } from 'astro:content';
 import LicenseTable from '../components/sections/LicenseTable.astro';
 import SectionHeading from '../components/ui/SectionHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-const licenses = await getCollection('licenses');
+import { mods } from '../data/mods.generated';
 ---
 <BaseLayout title="Winterlands Licensing" description="Every dependency approved for redistribution.">
   <section class="mx-auto max-w-6xl px-6 py-16">
@@ -13,6 +11,6 @@ const licenses = await getCollection('licenses');
       title="Licenses & Permissions"
       description="Stay on the right side of redistribution agreements. Update a markdown file, redeploy the page."
     />
-    <LicenseTable licenses={licenses} />
+    <LicenseTable mods={mods} />
   </section>
 </BaseLayout>
