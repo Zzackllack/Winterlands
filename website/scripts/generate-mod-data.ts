@@ -142,6 +142,17 @@ function pickString(...values: Array<string | null | undefined>) {
   return undefined;
 }
 
+function normalizeLicense(id?: string, name?: string) {
+  const combined = (name ?? id ?? '').toLowerCase();
+  if (combined.includes('all-rights-reserved') || combined === 'arr') {
+    return { id: 'ARR', name: 'All Rights Reserved' } as const;
+  }
+  return {
+    id,
+    name,
+  } as const;
+}
+
 async function buildEntries(): Promise<ModEntry[]> {
   const files = await readModFiles();
   const mods: ModEntry[] = [];
@@ -189,8 +200,10 @@ async function buildEntries(): Promise<ModEntry[]> {
         serverSupport: data.server_side ?? "unknown",
         categories: Array.isArray(data.categories) ? data.categories : [],
         license: {
-          id: optionalString(data.license?.id),
-          name: optionalString(data.license?.name),
+          ...normalizeLicense(
+            optionalString(data.license?.id),
+            optionalString(data.license?.name)
+          ),
           url: optionalString(data.license?.url),
           allowModrinthRedistribution: true,
         },
@@ -235,8 +248,10 @@ async function buildEntries(): Promise<ModEntry[]> {
           ? data.categories.map((c: any) => c.name).filter(Boolean)
           : [],
         license: {
-          id: data.license?.id ? String(data.license.id) : undefined,
-          name: optionalString(data.license?.name),
+          ...normalizeLicense(
+            data.license?.id ? String(data.license.id) : undefined,
+            optionalString(data.license?.name)
+          ),
           url: optionalString(data.links?.websiteUrl),
           allowModrinthRedistribution: false,
         },
