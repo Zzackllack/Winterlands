@@ -34,3 +34,10 @@ Use Conventional Commit prefixes (`feat:`, `fix:`, `chore:`) and branch names fr
 
 ## Security & Configuration Tips
 Follow `.github/SECURITY.md` for disclosure—never post tokenized URLs publicly. Keep proprietary jars out of git by relying on the cache scripts. When configs reference private endpoints or keys, externalize them to env vars or explain the redaction process so exports remain safe.
+
+## Winterlands Website
+
+- Framework & tooling: Astro 5 with React 19 islands, Tailwind CSS 4 (via `@tailwindcss/vite`), pnpm. Integrations include `@astrojs/react`, `@astrojs/mdx`, and Astro content collections for FAQs only.
+- UI: Custom winter palette, Minecraft-inspired headings, replicated Modrinth CTA badge (`public/modrinth.svg`), full-viewport snowfall canvas (`SnowOverlay`), and section components (`Hero`, `FeatureCarousel`, `ModGrid`, `LicenseTable`, `FAQList`).
+- Data flow: Mods/licensing data are generated via `pnpm --filter website generate:mods`, which parses `modpack/mods/*.toml`, queries Modrinth/CurseForge APIs, and writes `src/data/mods.generated.ts`. Licensing page and mod grid both read from that single source.
+- Animations/visuals: Motion for hover/tap interactions, Anime.js for subtle accents, canvas snowfall instead of Three.js to keep bundle lean.

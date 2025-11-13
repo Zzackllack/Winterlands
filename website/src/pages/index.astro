@@ -1,0 +1,61 @@
+---
+import FeatureCarousel from '../components/islands/FeatureCarousel.tsx';
+import Hero from '../components/islands/Hero.tsx';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { featuredMods } from '../lib/modData';
+import { env } from '../lib/env';
+import { mods } from '../data/mods.generated';
+import "../styles/global.css";
+
+const showcaseMods = featuredMods(mods, 3);
+
+const features = [
+  {
+    title: 'Frostbitten biomes',
+    summary: 'Custom worldgen sprinkles auroras, frozen caverns, and cozy hamlets across every seed.',
+    icon: 'Biomes',
+  },
+  {
+    title: 'Holiday events',
+    summary: 'Timed quests and gift drops rotate monthly so returning players always have a surprise.',
+    icon: 'Events',
+  },
+  {
+    title: 'Performance tuned',
+    summary: 'Packwiz, dynamic resources, and analyzer scripts keep 220 mods smooth on mid-tier rigs.',
+    icon: 'Performance',
+  },
+];
+const { modrinthUrl } = env;
+---
+<BaseLayout title="Winterlands Modpack">
+  <Hero client:load modrinthUrl={modrinthUrl} />
+
+  <section class="mx-auto mt-16 max-w-6xl px-6">
+    <SectionHeading
+      eyebrow="Featured Mods"
+      title="Play-defining picks"
+      description="These are the blocks, foods, and machines you’ll touch in the first in-game day."
+    />
+    <div class="grid gap-6 md:grid-cols-3">
+      {showcaseMods.map((mod) => (
+        <article class="frosted-panel p-6">
+          <p class="text-xs uppercase tracking-[0.3em] text-white/60">{mod.side}</p>
+          <h3 class="mt-2 font-display text-2xl text-white">{mod.name}</h3>
+          <p class="mt-3 text-white/70">{mod.summary}</p>
+          <p class="mt-4 text-sm text-white/60">{mod.source === 'modrinth' ? 'Modrinth' : 'CurseForge'}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto mt-20 max-w-6xl px-6">
+    <SectionHeading
+      eyebrow="World Feel"
+      title="Why Winterlands feels alive"
+      description="Everything—from ambience to automation—is tuned for story-rich survival sessions."
+    />
+    <FeatureCarousel client:visible features={features} />
+  </section>
+</BaseLayout>

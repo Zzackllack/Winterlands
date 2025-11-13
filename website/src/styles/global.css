@@ -1,0 +1,182 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Press+Start+2P&display=swap");
+
+@theme {
+  --font-sans:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-display: "Space Grotesk", var(--font-sans);
+  --font-block: "Press Start 2P", "Space Grotesk", sans-serif;
+  --color-night: #02111f;
+  --color-ice: #d9f3ff;
+  --color-frost: #a1e6ff;
+  --color-aurora: #5ad0ff;
+  --color-berry: #d62839;
+  --color-forest: #2d6a4f;
+  --color-snow: #f5fbff;
+  --color-snow-dim: rgba(245, 251, 255, 0.85);
+  --color-ink: #041427;
+  --color-muted: #8fb4c3;
+  --shadow-soft: 0 35px 70px rgba(1, 8, 16, 0.65);
+  --radius-card: 1.5rem;
+}
+
+:root {
+  color-scheme: light dark;
+  background-color: var(--color-night);
+}
+
+body {
+  font-family: var(--font-sans);
+  background:
+    linear-gradient(180deg, #02111f 0%, #02243f 45%, #032f52 75%, #031421 100%),
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(90, 208, 255, 0.35),
+      transparent 55%
+    ),
+    radial-gradient(circle at 80% 0%, rgba(45, 106, 79, 0.25), transparent 45%),
+    radial-gradient(
+      circle at 10% 90%,
+      rgba(214, 40, 57, 0.18),
+      transparent 50%
+    ),
+    var(--color-night);
+  background-attachment: fixed;
+  color: var(--color-snow);
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(90, 208, 255, 0.5);
+  color: #01233f;
+}
+
+@utility frosted-panel {
+  backdrop-filter: blur(22px);
+  background: linear-gradient(
+    135deg,
+    rgba(4, 20, 39, 0.8),
+    rgba(2, 9, 18, 0.9)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+}
+
+@utility glass-button {
+  background: linear-gradient(
+    120deg,
+    rgba(90, 208, 255, 0.2),
+    rgba(45, 106, 79, 0.25)
+  );
+  border: 1px solid rgba(90, 208, 255, 0.35);
+  border-radius: 999px;
+  color: var(--color-snow);
+  font-weight: 600;
+  transition:
+    background 300ms,
+    box-shadow 300ms,
+    transform 300ms;
+  &:hover {
+    background: linear-gradient(
+      120deg,
+      rgba(90, 208, 255, 0.4),
+      rgba(214, 40, 57, 0.35)
+    );
+    box-shadow: 0 12px 35px rgba(90, 208, 255, 0.35);
+    transform: translateY(-2px);
+  }
+}
+
+@utility focus-ring {
+  outline: 2px solid rgba(90, 208, 255, 0.8);
+  outline-offset: 3px;
+}
+
+@utility gradient-border {
+  border: 1px solid transparent;
+  border-radius: var(--radius-card);
+  background:
+    linear-gradient(var(--color-night), var(--color-night)) padding-box,
+    linear-gradient(135deg, rgba(90, 208, 255, 0.85), rgba(45, 106, 79, 0.7))
+      border-box;
+}
+
+@utility text-glow {
+  text-shadow: 0 0 25px rgba(90, 208, 255, 0.65);
+}
+
+.prose-muted :is(p, li, td) {
+  color: var(--color-snow);
+  opacity: 0.8;
+}
+
+.prose {
+  line-height: 1.7;
+}
+
+.prose p:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHpwLXnSoODwAAAABJRU5ErkJggg==");
+  opacity: 0.08;
+  mix-blend-mode: screen;
+  z-index: 5;
+}
+
+.frozen-text {
+  font-family: var(--font-block);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ice);
+  text-shadow:
+    0 1px 0 #fff,
+    0 2px 3px rgba(3, 30, 52, 0.55),
+    0 0 25px rgba(90, 208, 255, 0.65);
+}
+
+.modrinth-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid #0f3d1d;
+  background: linear-gradient(180deg, #0f3418 0%, #071d0d 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 6px 18px rgba(5, 20, 9, 0.65);
+  color: #e6ffe5;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.modrinth-button:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.55);
+}
+
+.modrinth-button__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.modrinth-button__accent {
+  color: #40ff7b;
+}

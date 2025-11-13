@@ -1,0 +1,39 @@
+---
+import SiteFooter from '../components/layout/SiteFooter.astro';
+import SiteHeader from '../components/layout/SiteHeader.astro';
+import SnowOverlay from '../components/islands/SnowOverlay.tsx';
+import { env } from '../lib/env';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  pageClass?: string;
+}
+
+const { title = 'Winterlands Modpack', description = 'Cinematic NeoForge 1.21.1 adventures built for snowy nights.', pageClass = '' } = Astro.props as Props;
+const { modrinthUrl, githubSupportUrl } = env;
+---
+<!DOCTYPE html>
+<html lang="en" class="bg-[#010b1c] text-white">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="icon" type="image/jpeg" href="/logo-winterlands.jpg" />
+  </head>
+  <body class={`min-h-screen antialiased ${pageClass}`}>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <SnowOverlay client:load />
+    <header class="relative z-20">
+      <SiteHeader ctaHref={modrinthUrl} />
+    </header>
+    <main class="relative z-10">
+      <slot />
+    </main>
+    <footer class="relative z-20">
+      <SiteFooter modrinthUrl={modrinthUrl} githubUrl={githubSupportUrl} />
+    </footer>
+  </body>
+</html>
