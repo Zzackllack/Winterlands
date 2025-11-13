@@ -5,7 +5,7 @@ import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://winterlands.example.com',
+  site: process.env.SITE_URL ?? '',
   output: 'static',
 
   integrations: [
