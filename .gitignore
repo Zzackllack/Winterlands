@@ -33,3 +33,17 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+*.ipr
+*.iws
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+run/
