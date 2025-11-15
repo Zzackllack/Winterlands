@@ -585,6 +585,11 @@ hash = "80b749335d8a885db433930654303ac924de8e3a70071859492dbb7a93faa519"
 metafile = true
 
 [[files]]
+file = "mods/immersive-snow.pw.toml"
+hash = "759ebd337fa67f558a204baef57041ca0392fd206c786a3e7643a5c6b27f4cee"
+metafile = true
+
+[[files]]
 file = "mods/iris.pw.toml"
 hash = "f67aa60c765593a8c70f78296a460349c6aef5f4a16d173eae02e8803b545ad4"
 metafile = true
