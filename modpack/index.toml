@@ -329,6 +329,28 @@ file = "config/jei/jei-mod-id-format.ini"
 hash = "6a91c09d1cabc1980d90ab102a03ec58c0551213ab16a459b599d768b334d054"
 
 [[files]]
+file = "config/paxi/datapack_load_order.json"
+hash = "d0aaf3172f34275479f0669aa5b0a94b85788ae638f3062b948ec49d31c38293"
+
+[[files]]
+file = "config/paxi/datapacks/WinterLock.zip"
+hash = "60b35e6a92f0d5329e4a9d641f31925ae68a9dcb1d9e0e1df47ed642428f1551"
+
+[[files]]
+file = "config/paxi/datapacks/littlepictureframes-creative-frame-recipe.pw.toml"
+hash = "5107a6d54f1e7b864f88f8b06bb9dcb93fa878bf8d952d70cbec3b23d12f2f66"
+metafile = true
+
+[[files]]
+file = "config/paxi/datapacks/supplementaries-compat.pw.toml"
+hash = "992c35a183db3463058a3671ed6d168f66e22cfca28f8e05b58755e4a7f81728"
+metafile = true
+
+[[files]]
+file = "config/paxi/resourcepack_load_order.json"
+hash = "d0aaf3172f34275479f0669aa5b0a94b85788ae638f3062b948ec49d31c38293"
+
+[[files]]
 file = "config/sereneseasons/fertility.toml"
 hash = "b5553c2b075d14fd18fbc39d01afa038910418626fdefc10c0e5cdb134091744"
 
@@ -1154,6 +1176,11 @@ metafile = true
 [[files]]
 file = "mods/patchouli.pw.toml"
 hash = "04ba8a8c91a6c25c42321493a2d233762bb01169fac5fd834e434887cdbf8596"
+metafile = true
+
+[[files]]
+file = "mods/paxi.pw.toml"
+hash = "215d597764d5c5db89e700fc3495b72dc0a7f09c975de19dc8c580bde3469a5e"
 metafile = true
 
 [[files]]

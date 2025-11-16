@@ -33,3 +33,5 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+!modpack/config/paxi/datapacks/WinterLock.zip
