@@ -3,9 +3,6 @@ type = customizablemenus
 net.minecraft.client.gui.screens.TitleScreen {
 }
 
-net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
-}
-
 net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
 }
 
@@ -79,5 +76,14 @@ net.minecraft.client.gui.screens.PauseScreen {
 }
 
 net.minecraft.client.gui.screens.DisconnectedScreen {
+}
+
+loaderCommon.neoforge.com.seibel.distanthorizons.common.wrappers.gui.ClassicConfigGUI$ConfigScreen {
+}
+
+net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
+}
+
+me.axieum.mcmod.authme.api.gui.screen.AuthMethodScreen {
 }
 
