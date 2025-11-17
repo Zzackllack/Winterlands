@@ -87,3 +87,6 @@ net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
 me.axieum.mcmod.authme.api.gui.screen.AuthMethodScreen {
 }
 
+de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+}
+
