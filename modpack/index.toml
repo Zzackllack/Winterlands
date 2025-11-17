@@ -724,6 +724,11 @@ hash = "3f8fb0012b658c3ed2dfcde1385aa6255ee46cd18b77975d68665aaf0ee2a94d"
 metafile = true
 
 [[files]]
+file = "mods/drippy-loading-screen.pw.toml"
+hash = "9e0bfb309603870b77dfd202f1456c6e96649d47bf3c4628d56be50fd82a5ccf"
+metafile = true
+
+[[files]]
 file = "mods/dungeons_delight.pw.toml"
 hash = "de4e1121a68239bb65134f5160a5e2f1f15e1de816eaebd3455ad6a159996282"
 metafile = true
@@ -876,6 +881,11 @@ metafile = true
 [[files]]
 file = "mods/fruits-delight.pw.toml"
 hash = "def7571eff20310b3d563ff41d92f43a90587f441f905eca0483a67c389999d6"
+metafile = true
+
+[[files]]
+file = "mods/fullbright-forge.pw.toml"
+hash = "6737a940d577175a7bd94e48f85b66015c9f75d4c8b5d2d6d9a2ee4d440fae15"
 metafile = true
 
 [[files]]
@@ -1051,6 +1061,11 @@ metafile = true
 [[files]]
 file = "mods/mamas-herbs-and-harvest.pw.toml"
 hash = "02be9f7704a6581dcf3d1733d60dc7224bc583a91381ffb8bdb45c631abff29e"
+metafile = true
+
+[[files]]
+file = "mods/mcef.pw.toml"
+hash = "92b4b8c5d262a7a56d88fe054872ea250dc55680a6bf040c3f97c6e597fbfae1"
 metafile = true
 
 [[files]]
