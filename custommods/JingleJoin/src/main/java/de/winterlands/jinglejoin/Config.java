@@ -21,7 +21,7 @@ public class Config {
     static {
         final ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
-        JOIN_JINGLE_PATH = builder.comment("Path").define("jinge_join","temp-default");
+        JOIN_JINGLE_PATH = builder.comment("Path").define("jingle_join","temp-default");
         SPEC = builder.build();
     }
 }

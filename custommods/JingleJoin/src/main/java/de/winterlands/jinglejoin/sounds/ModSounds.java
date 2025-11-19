@@ -32,7 +32,6 @@ public class ModSounds {
 
     public static Holder<SoundEvent> getRandomSound(){
         Holder<SoundEvent> sound = JOIN_SOUNDS[RANDOM.nextInt(JOIN_SOUNDS.length)];
-        System.out.println("GetRandomSOund called, "+sound.getRegisteredName());
 
         return sound;
     }
