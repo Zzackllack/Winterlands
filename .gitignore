@@ -31,9 +31,6 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-# jetbrains setting folder
-.idea/
-
 # IntelliJ IDEA
 .idea/
 *.iml
@@ -47,3 +44,4 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 
 run/
+!modpack/config/paxi/datapacks/WinterLock.zip
