@@ -1,0 +1,93 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - JingleJoin",
+        "order": 0
+      },
+      "projectName": "JingleJoin",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@G:\\Coding\\Minecraft-Server-Stuff\\GitHub Repos\\Chillicord-Winterlands\\custommods\\JingleJoin\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@G:\\Coding\\Minecraft-Server-Stuff\\GitHub Repos\\Chillicord-Winterlands\\custommods\\JingleJoin\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003djinglejoin%%G:\\Coding\\Minecraft-Server-Stuff\\GitHub Repos\\Chillicord-Winterlands\\custommods\\JingleJoin\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Data",
+      "presentation": {
+        "group": "Mod Development - JingleJoin",
+        "order": 1
+      },
+      "projectName": "JingleJoin",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@G:\\Coding\\Minecraft-Server-Stuff\\GitHub Repos\\Chillicord-Winterlands\\custommods\\JingleJoin\\build\\moddev\\dataRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@G:\\Coding\\Minecraft-Server-Stuff\\GitHub Repos\\Chillicord-Winterlands\\custommods\\JingleJoin\\build\\moddev\\dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003djinglejoin%%G:\\Coding\\Minecraft-Server-Stuff\\GitHub Repos\\Chillicord-Winterlands\\custommods\\JingleJoin\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "GameTestServer",
+      "presentation": {
+        "group": "Mod Development - JingleJoin",
+        "order": 2
+      },
+      "projectName": "JingleJoin",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@G:\\Coding\\Minecraft-Server-Stuff\\GitHub Repos\\Chillicord-Winterlands\\custommods\\JingleJoin\\build\\moddev\\gameTestServerRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@G:\\Coding\\Minecraft-Server-Stuff\\GitHub Repos\\Chillicord-Winterlands\\custommods\\JingleJoin\\build\\moddev\\gameTestServerRunVmArgs.txt",
+        "-Dfml.modFolders\u003djinglejoin%%G:\\Coding\\Minecraft-Server-Stuff\\GitHub Repos\\Chillicord-Winterlands\\custommods\\JingleJoin\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - JingleJoin",
+        "order": 3
+      },
+      "projectName": "JingleJoin",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@G:\\Coding\\Minecraft-Server-Stuff\\GitHub Repos\\Chillicord-Winterlands\\custommods\\JingleJoin\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@G:\\Coding\\Minecraft-Server-Stuff\\GitHub Repos\\Chillicord-Winterlands\\custommods\\JingleJoin\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003djinglejoin%%G:\\Coding\\Minecraft-Server-Stuff\\GitHub Repos\\Chillicord-Winterlands\\custommods\\JingleJoin\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}
