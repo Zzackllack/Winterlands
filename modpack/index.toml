@@ -394,6 +394,11 @@ hash = "2b02594380f31aa857c89d296afb53bec67621b491956be09a54ab6845552e2a"
 metafile = true
 
 [[files]]
+file = "mods/advancementdisable.pw.toml"
+hash = "adf18a2245d6d9c6d1c6636e14a9a12fb502926d10fc9511abf0264c24d2ffc2"
+metafile = true
+
+[[files]]
 file = "mods/animal_feeding_trough.pw.toml"
 hash = "fe3f752f78cd25803f7013c94bb602567bf242be165462f2287b430d457a144e"
 metafile = true
@@ -1336,6 +1341,16 @@ metafile = true
 [[files]]
 file = "mods/sooty-chimneys.pw.toml"
 hash = "8cf1e8022b041816bb87fddae486ef3d1498f9f43b7232a9b1a26590318b962b"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+hash = "a2028f1fdc803760a29877b07b2958cecdc6402eb946f9d5a0fff9fe72b8671d"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+hash = "8ed3c58f23d9255343a590b90e1216ac58142b920c9bffdd14c7fdc32e3ee002"
 metafile = true
 
 [[files]]
