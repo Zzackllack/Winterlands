@@ -469,11 +469,6 @@ hash = "b8837889b804dacb837572fcf16032cd531b5814e1817ed0d6a35523cc9c5d86"
 metafile = true
 
 [[files]]
-file = "mods/brewin-and-chewin.pw.toml"
-hash = "ef7c9b68b65e7baab19dc84903f068de6714e6f306052940f53c747743d3025e"
-metafile = true
-
-[[files]]
 file = "mods/c2me-neoforge.pw.toml"
 hash = "683dbecfc509287f8a28fe2a73f180e5a488b9751c61a5a297c581287c5a57da"
 metafile = true
@@ -1131,11 +1126,6 @@ metafile = true
 [[files]]
 file = "mods/no-telemetry.pw.toml"
 hash = "ebd48452773a4b6b4b7dcedbfb71c8986ec97780fcce040542c8e8fd67f22c56"
-metafile = true
-
-[[files]]
-file = "mods/now-playing.pw.toml"
-hash = "700d7eec503d4cca8287a26354699301c0087b387598695d240bece175a3637b"
 metafile = true
 
 [[files]]
