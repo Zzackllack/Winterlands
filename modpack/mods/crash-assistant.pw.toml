@@ -1,13 +1,13 @@
 name = "Crash Assistant"
-filename = "CrashAssistant-neoforge-1.20.6-1.21.4-1.10.20.jar"
+filename = "CrashAssistant-neoforge-1.20.6-1.21.4-1.10.23.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/ix1qq8Ux/versions/UeEYjm21/CrashAssistant-neoforge-1.20.6-1.21.4-1.10.20.jar"
+url = "https://cdn.modrinth.com/data/ix1qq8Ux/versions/a7sNXocE/CrashAssistant-neoforge-1.20.6-1.21.4-1.10.23.jar"
 hash-format = "sha512"
-hash = "deff690a526438552953bef1074efb5638c54369cb79a99a21ff4d0d895088599d4ade7ec48de87d325dcc937200120b7344f6a9f9f87e4a199a184da0fc81ab"
+hash = "3cfc96a37a740bb6da8a71310c6397b085a41610cb71134bfc36a8cb061d7f8117770bd60f2805654355ad7df97944c958dbcfdd9611dc87a6b41edccc90ff7c"
 
 [update]
 [update.modrinth]
 mod-id = "ix1qq8Ux"
-version = "UeEYjm21"
+version = "a7sNXocE"
