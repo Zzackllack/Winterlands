@@ -45,3 +45,5 @@ build/
 
 run/
 !modpack/config/paxi/datapacks/WinterLock.zip
+
+/.vscode
