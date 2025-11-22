@@ -331,6 +331,10 @@ file = "config/paxi/resourcepack_load_order.json"
 hash = "d0aaf3172f34275479f0669aa5b0a94b85788ae638f3062b948ec49d31c38293"
 
 [[files]]
+file = "config/satisfying_buttons-client.toml"
+hash = "16a1d58cee3f3c8b1ee51a0afc2bd719d67cdd036d5da083811130861b833b3f"
+
+[[files]]
 file = "config/sereneseasons/fertility.toml"
 hash = "b5553c2b075d14fd18fbc39d01afa038910418626fdefc10c0e5cdb134091744"
 
