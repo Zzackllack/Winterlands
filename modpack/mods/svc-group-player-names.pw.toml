@@ -1,0 +1,13 @@
+name = "Simple Voice Chat Group Player Names"
+filename = "svcgroupplayernames-1.21.1-1.1.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/CGnR1h5Q/versions/iYImWm0k/svcgroupplayernames-1.21.1-1.1.1.jar"
+hash-format = "sha512"
+hash = "cc6bdf4697225a42c2981ddedac1e2bbc433e4e38ef03743f936360cbf43f303bc020136a468e531447a29f7357bf579d8fd3376b976b9f12eefd5e5f5be63d8"
+
+[update]
+[update.modrinth]
+mod-id = "CGnR1h5Q"
+version = "iYImWm0k"

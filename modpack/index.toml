@@ -13,20 +13,8 @@ file = "config/crash_assistant/crash_assistant_localization_overrides/en_us.json
 hash = "89bbc3769aa9831075c14c274830f55d570c8663ceb8e4eeceaab60313b38ec1"
 
 [[files]]
-file = "config/fancymenu/assets/button-1.png"
-hash = "89da09656e6690acb1b84290bd10a0150518caee70e41d3ed90f4f2f0ffd35ed"
-
-[[files]]
-file = "config/fancymenu/assets/button-2.png"
-hash = "2bad0652be29109ef53a867790a58f9c96ba15afef5afc90c5b9b528795b4afe"
-
-[[files]]
-file = "config/fancymenu/assets/button-3.png"
-hash = "6b9b287396b02310958102b81d41875558806761b99b88a9beb12f8db0162de8"
-
-[[files]]
-file = "config/fancymenu/assets/button-5.png"
-hash = "126764e4049c720b79131fc44540707db746185a62deddd671df74748c7a33da"
+file = "config/drippyloadingscreen/options.txt"
+hash = "7ffdcf19ad2d8b87200a61134505b77fade2b91f0f84b76516afc21476d2cc3e"
 
 [[files]]
 file = "config/fancymenu/assets/buttons/button.png"
@@ -117,14 +105,6 @@ file = "config/fancymenu/assets/logo.icns"
 hash = "5bfe4b8dcb600f4f8e5a6e6865a93fe83579ad50d281a8f9094d0b3d1b5d73b5"
 
 [[files]]
-file = "config/fancymenu/assets/main-screen-button-background.png"
-hash = "5eeb092a15b4b34a8156034ad478b3364d61a1c89bb49de34f282501a10ca310"
-
-[[files]]
-file = "config/fancymenu/assets/main-screen-darker-button-background.png"
-hash = "fe7d775953f452058bd4f5c117fad60dd0c07dca8e409ba73727254540a24e0d"
-
-[[files]]
 file = "config/fancymenu/assets/sliders/disabled/slider.png"
 hash = "2121fedf299cfa968f6757f5a0d1dd222628d215a939c824bdbd200d49103d4f"
 
@@ -145,10 +125,6 @@ file = "config/fancymenu/assets/snow_footsteps.wav"
 hash = "d0f340c4127c883b5090e3e95844cd2e62eab9a8de112b2495ea30ce9a760a9f"
 
 [[files]]
-file = "config/fancymenu/assets/website_icon.png"
-hash = "768da611c2dbe8c6a10dcd8f8c1f9d3768b60c3c493afb8a836f15046b1f6511"
-
-[[files]]
 file = "config/fancymenu/assets/window-icon-16x16.png"
 hash = "e33edb8a36a7313f8368cb4a4340345fc2ecdf7421918011c31e528b969131ee"
 
@@ -165,16 +141,12 @@ file = "config/fancymenu/assets/winterlands-schriftzug.png"
 hash = "19698170404ef2833ca82fead99ff68be99a8295e3e231430ccb42e45d81a426"
 
 [[files]]
-file = "config/fancymenu/assets/winterlands_hintergrund_1.png"
-hash = "6219da1b4a4a68c5be3c6dc6ca044314896f8cb17ea5760e926b67d2c959e5ee"
-
-[[files]]
 file = "config/fancymenu/custom_gui_screens.txt"
-hash = "a08b8d317e3a6ee3c44b74d3cf1ff9bea5cce2fa89be48f89403e2e6d14c8bf5"
+hash = "8e36b09a1bf896c524cd6aaddade6b78df730003de102067434784027e7185ab"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
-hash = "febad48a7177053bd63e43d320816848bc508283de177de5bc41e7c2949c405a"
+hash = "0bf8fc13bc5d98b2936ca4f3f4459094260a531af49e07a92da212113f9d4835"
 
 [[files]]
 file = "config/fancymenu/customization/chat_options_screen_layout.txt"
@@ -195,6 +167,10 @@ hash = "9e0f9c029c25319df2cf909f414233c626146ac88a7bc4b721eb1763dea5b9ce"
 [[files]]
 file = "config/fancymenu/customization/controls_screen_layout.txt"
 hash = "3295ae29b2cdb3f0b65a69ecc06ff048486767549ea4f7d48766f28c0a877261"
+
+[[files]]
+file = "config/fancymenu/customization/drippy_loading_overlay_layout.txt"
+hash = "510941a153ad825c472f9489710b2d2be8edee4c5729ae9b4a186928552aed07"
 
 [[files]]
 file = "config/fancymenu/customization/generic_dirt_message_screen_layout.txt"
@@ -258,7 +234,7 @@ hash = "e77eede298bde42a0b69674a816fae055eaa07f8c4b8ac35c6ae966f715f9778"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_testlayout.txt"
-hash = "cef8f60fd111d899d8987d20138b35f750e3e598a875c4e680ea6e7c24ea15cb"
+hash = "6e1d2072ff76650ae9bb4f40736d547ef0f074f76ae4669bc47547543bce9ccb"
 
 [[files]]
 file = "config/fancymenu/customization/traben.entity_texture_features.config.screens.etfconfigscreenmain_layout.txt"
@@ -266,7 +242,11 @@ hash = "dd56204b4a1cfa6df124a8e9d8f76aee6f422176575119d4b7e5a9ddb436c938"
 
 [[files]]
 file = "config/fancymenu/customization/universal_layout.txt"
-hash = "6af1b1995659ff726f270a97e44f8150e7d4955c17455c9260dcc42245e832fe"
+hash = "f42ed3415e1a53fd2aac53a7aecb251d6df1d6c2d2de94738fca5685e4afa4d8"
+
+[[files]]
+file = "config/fancymenu/customization/winterlands_browser_layout.txt"
+hash = "f19b096231b46ee0b526bd21384fbcea03a43f8faa32fc18f6695da7e73373ad"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
@@ -895,7 +875,7 @@ metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
-hash = "402ca5410076adcf4bff4211d5d734572e0549955d3613ea0942309ec29a409b"
+hash = "960fb33c17aca9c635f99009c1f16d75c312d043e302a599f6ce8040452079e6"
 metafile = true
 
 [[files]]
@@ -971,6 +951,11 @@ metafile = true
 [[files]]
 file = "mods/jei.pw.toml"
 hash = "1c409471400cd68f5105d87fa1fdf2ae71c1ad00934a2a306abffad60d1bf86f"
+metafile = true
+
+[[files]]
+file = "mods/journey-pac.pw.toml"
+hash = "c1a7d513c59eeb49bd2f377236357a280cc2e1d206c3eb3985a3a4615ed97aec"
 metafile = true
 
 [[files]]
@@ -1161,6 +1146,11 @@ metafile = true
 [[files]]
 file = "mods/oceans-delight.pw.toml"
 hash = "152f6cfe8ee891ba80faa800dd3df3058be14882f9f8d07cb38eb6a6f96ece4b"
+metafile = true
+
+[[files]]
+file = "mods/open-parties-and-claims.pw.toml"
+hash = "9d4e4bd1007b5529b2b35439d00d74f0554f2bd8ae0d4d72aeab9d8063c60beb"
 metafile = true
 
 [[files]]
@@ -1369,6 +1359,11 @@ hash = "2e4c8891ec22ca246b414728493ff52fe177bc9c4369ed23a5a80e8332e79c67"
 metafile = true
 
 [[files]]
+file = "mods/svc-group-player-names.pw.toml"
+hash = "402dd34a27e1b98209ba4b9860c256967f95a7baf5881f6f3fb46d571a627f8e"
+metafile = true
+
+[[files]]
 file = "mods/tiny-item-animations.pw.toml"
 hash = "922febf9d28f1db3be54a689b99180eaa62f10e92e1df6938e8d5743b801f294"
 metafile = true
@@ -1466,6 +1461,11 @@ metafile = true
 [[files]]
 file = "mods/what-are-they-up-to.pw.toml"
 hash = "9ce52d07c0c3d146a2a44f8bc187138ce7a5558a4e3ab540c86234702b6de274"
+metafile = true
+
+[[files]]
+file = "mods/winter-overhaul.pw.toml"
+hash = "cef75a3276f7464779f2a293d508d1a5aa6c5504718d24977725a060397c5794"
 metafile = true
 
 [[files]]
