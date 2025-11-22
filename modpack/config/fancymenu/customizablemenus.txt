@@ -90,3 +90,6 @@ me.axieum.mcmod.authme.api.gui.screen.AuthMethodScreen {
 de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
 }
 
+net.neoforged.neoforge.client.gui.ModMismatchDisconnectedScreen {
+}
+
