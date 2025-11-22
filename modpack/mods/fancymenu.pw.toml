@@ -1,13 +1,13 @@
 name = "FancyMenu"
-filename = "fancymenu_neoforge_3.7.0_MC_1.21.1.jar"
+filename = "fancymenu_neoforge_3.8.0_MC_1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Wq5SjeWM/versions/f5YVr9M0/fancymenu_neoforge_3.7.0_MC_1.21.1.jar"
+url = "https://cdn.modrinth.com/data/Wq5SjeWM/versions/gVwxHWqa/fancymenu_neoforge_3.8.0_MC_1.21.1.jar"
 hash-format = "sha512"
-hash = "d0bc62f71faf92ece7adf38eeeb698e8d3b512810eaaf8e71b5dcb558bfc8e731291f9131f8f5af6fb90d2c148aef1e14a9f927e8155ba436040d765ee622cde"
+hash = "8ee60a3fe6365440949317fd2e3ad588bf43395f26a5a7f75ac9576073dbcb5a3eea166b9ddf6a79e5289ad537bc090c2432a81668b9e3467bc366a0ce9b388c"
 
 [update]
 [update.modrinth]
 mod-id = "Wq5SjeWM"
-version = "f5YVr9M0"
+version = "gVwxHWqa"

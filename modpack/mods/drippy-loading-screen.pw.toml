@@ -1,13 +1,13 @@
 name = "Drippy Loading Screen"
-filename = "drippyloadingscreen_neoforge_3.0.12_MC_1.21.1.jar"
+filename = "drippyloadingscreen_neoforge_3.1.0_MC_1.21.1.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/v3CYg2V9/versions/EPNdj6T1/drippyloadingscreen_neoforge_3.0.12_MC_1.21.1.jar"
+url = "https://cdn.modrinth.com/data/v3CYg2V9/versions/2BfDBRBV/drippyloadingscreen_neoforge_3.1.0_MC_1.21.1.jar"
 hash-format = "sha512"
-hash = "909504e2aa65b7040292f6ee358ffdfdbdb8ce16fc6dce2adb0905750546fabc307180cf4438336588da3039dc2206da3ecb113c5e0dd2031a3198cba5d72dcf"
+hash = "2c4deb6ccef676b4e676370bf0d984f18774ad6fc229e4f048ab2bfa848334731d04669f0d2873b08a1e02cc868d95735f47fb79a01a28433b1cdd45d523c727"
 
 [update]
 [update.modrinth]
 mod-id = "v3CYg2V9"
-version = "EPNdj6T1"
+version = "2BfDBRBV"
