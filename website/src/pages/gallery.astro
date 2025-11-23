@@ -1,0 +1,15 @@
+---
+import Gallery from '../components/islands/Gallery';
+import SectionHeading from '../components/ui/SectionHeading.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Gallery" description="Screenshots and mood from the Winterlands modpack.">
+  <section class="mx-auto max-w-6xl px-6 py-16 space-y-10">
+    <SectionHeading
+      eyebrow="Gallery"
+      title="Snowy vistas & cozy builds"
+      description="Peek at playtest captures, aurora nights, and the cabins we keep warm."
+    />
+    <Gallery client:load />
+  </section>
+</BaseLayout>
