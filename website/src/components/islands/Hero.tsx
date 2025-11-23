@@ -10,7 +10,7 @@ interface HeroProps {
 export default function Hero({ modrinthUrl }: HeroProps) {
 
   return (
-    <section className="relative isolate overflow-hidden px-6 pb-20 pt-16 sm:pt-24">
+    <section className="relative isolate overflow-hidden px-4 pb-14 pt-16 sm:px-8 sm:pt-22 lg:px-12">
       <div className="relative grid items-center gap-12 lg:grid-cols-[1.1fr_minmax(0,_0.9fr)]">
         <motion.div
           initial={{ opacity: 0, y: 40 }}

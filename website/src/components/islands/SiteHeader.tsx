@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "astro/components/Image.astro";
 import { Menu } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
@@ -20,7 +19,7 @@ export default function SiteHeader({ ctaHref }: Props) {
   }, []);
 
   return (
-    <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-6 md:px-6 md:py-8">
+    <div className="relative mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-6 md:px-6 md:py-8">
       <a
         href="/"
         className="flex items-center gap-3 text-lg font-semibold tracking-wide"
@@ -72,6 +71,7 @@ export default function SiteHeader({ ctaHref }: Props) {
           className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition hover:border-white/30 hover:bg-white/10 md:hidden focus:outline-none"
           onClick={() => setOpen((value) => !value)}
           aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
         >
           <motion.div
             animate={{ rotate: open ? 90 : 0, scale: open ? 1.05 : 1 }}
@@ -89,7 +89,7 @@ export default function SiteHeader({ ctaHref }: Props) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute left-0 right-0 top-full mx-auto mt-2 w-[calc(100%-1.5rem)] max-w-xl rounded-2xl border border-white/10 bg-[#0a172a]/95 p-4 shadow-2xl backdrop-blur"
+            className="absolute left-0 right-0 top-full z-40 mx-auto mt-2 w-[calc(100%-1.5rem)] max-w-xl rounded-2xl border border-white/10 bg-[#0a172a]/95 p-4 shadow-2xl backdrop-blur"
           >
             <div className="flex flex-col divide-y divide-white/5">
               {navLinks.map((link) => (
