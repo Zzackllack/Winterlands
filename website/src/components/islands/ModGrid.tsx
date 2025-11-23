@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import type { ModEntry } from '../../data/mods.generated';
+import { trackEvent } from '../../lib/analytics';
 
 const tabs: Array<{ value: ModEntry['side'] | 'all'; label: string }> = [
   { value: 'all', label: 'All' },
@@ -121,6 +122,9 @@ export default function ModGrid({ mods }: { mods: ModEntry[] }) {
                   className="mt-4 inline-flex items-center text-sm text-white hover:text-white/90"
                   target="_blank"
                   rel="noreferrer"
+                  onClick={() =>
+                    trackEvent('mod-link', { slug: mod.slug, source: mod.source, location: 'mod-grid' })
+                  }
                 >
                   Visit project →
                 </a>

@@ -2,6 +2,7 @@
 
 import { motion } from 'motion/react';
 import { heroHighlights } from '../../lib/site';
+import { trackEvent } from '../../lib/analytics';
 
 interface HeroProps {
   modrinthUrl: string;
@@ -40,13 +41,18 @@ export default function Hero({ modrinthUrl }: HeroProps) {
               rel="noreferrer noopener"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
+              onClick={() => trackEvent('modrinth-cta', { location: 'hero' })}
             >
               <img src="/modrinth.svg" alt="" className="modrinth-button__icon" />
               <span>
                 Download on <span className="modrinth-button__accent">Modrinth</span>
               </span>
             </motion.a>
-            <a href="/mods" className="inline-flex items-center text-white/70 transition hover:text-white">
+            <a
+              href="/mods"
+              className="inline-flex items-center text-white/70 transition hover:text-white"
+              onClick={() => trackEvent('mods-browse-link', { location: 'hero' })}
+            >
               Browse all 220 mods →
             </a>
           </div>

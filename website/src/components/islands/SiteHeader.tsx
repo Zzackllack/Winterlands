@@ -4,6 +4,7 @@ import { Menu } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { navLinks } from "../../lib/site";
+import { trackEvent } from "../../lib/analytics";
 
 interface Props {
   ctaHref: string;
@@ -44,6 +45,9 @@ export default function SiteHeader({ ctaHref }: Props) {
             href={link.href}
             className="text-white/80 transition hover:text-white"
             aria-label={`Go to ${link.label}`}
+            onClick={() =>
+              trackEvent("nav-link", { label: link.label, href: link.href, location: "header-desktop" })
+            }
           >
             {link.label}
           </a>
@@ -56,6 +60,7 @@ export default function SiteHeader({ ctaHref }: Props) {
           className="modrinth-button shrink-0"
           target="_blank"
           rel="noreferrer noopener"
+          onClick={() => trackEvent("modrinth-cta", { location: "header" })}
         >
           <img src="/modrinth.svg" alt="" className="modrinth-button__icon" />
           <span className="hidden sm:inline">
@@ -97,7 +102,10 @@ export default function SiteHeader({ ctaHref }: Props) {
                   key={link.href}
                   href={link.href}
                   className="flex items-center px-2 py-3 text-base text-white/80 hover:text-white"
-                  onClick={() => setOpen(false)}
+                  onClick={() => {
+                    trackEvent("nav-link", { label: link.label, href: link.href, location: "header-mobile" });
+                    setOpen(false);
+                  }}
                 >
                   <span>{link.label}</span>
                 </a>

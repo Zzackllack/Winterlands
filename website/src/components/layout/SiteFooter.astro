@@ -15,7 +15,14 @@ const { modrinthUrl, githubUrl } = Astro.props as Props;
         <p class="font-display text-xl sm:text-2xl">See you in the snow.</p>
         <p class="text-sm text-white/70">NeoForge 1.21.1 · Winter ready · Christmas ready</p>
       </div>
-      <a href={modrinthUrl} class="modrinth-button w-full justify-center sm:w-auto" target="_blank" rel="noreferrer noopener">
+      <a
+        href={modrinthUrl}
+        class="modrinth-button w-full justify-center sm:w-auto"
+        target="_blank"
+        rel="noreferrer noopener"
+        data-umami-event="modrinth-cta"
+        data-umami-event-location="footer"
+      >
         <img src="/modrinth.svg" alt="Modrinth" class="modrinth-button__icon" loading="lazy" />
         <span>Download on <span class="modrinth-button__accent">Modrinth</span></span>
       </a>
