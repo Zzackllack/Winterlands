@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/advancementdisable.toml"
+hash = "a0b07ee8bdb6e4622db9ef36a40b49dff6825505d93514bd777ce9e9cdd0a1c2"
+
+[[files]]
 file = "config/crash_assistant/config.toml"
 hash = "4ebe25a5ea7f4572075acbd8c594beb7a206a76736f0775d9d65701dc46530e1"
 
@@ -15,6 +19,10 @@ hash = "89bbc3769aa9831075c14c274830f55d570c8663ceb8e4eeceaab60313b38ec1"
 [[files]]
 file = "config/drippyloadingscreen/options.txt"
 hash = "7ffdcf19ad2d8b87200a61134505b77fade2b91f0f84b76516afc21476d2cc3e"
+
+[[files]]
+file = "config/fancymenu/animation_controller_states.json"
+hash = "69232a69f23fc2907e958ec23572c978b9d8a90d1c61ae2f333c0f7a10f86efb"
 
 [[files]]
 file = "config/fancymenu/assets/buttons/button.png"
@@ -146,7 +154,7 @@ hash = "8e36b09a1bf896c524cd6aaddade6b78df730003de102067434784027e7185ab"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
-hash = "0bf8fc13bc5d98b2936ca4f3f4459094260a531af49e07a92da212113f9d4835"
+hash = "d22d3925b9e48a35aaa0cb76ffe21ef7391bc4dcde1118a185c8bef1466b3cf2"
 
 [[files]]
 file = "config/fancymenu/customization/chat_options_screen_layout.txt"
@@ -169,8 +177,12 @@ file = "config/fancymenu/customization/controls_screen_layout.txt"
 hash = "3295ae29b2cdb3f0b65a69ecc06ff048486767549ea4f7d48766f28c0a877261"
 
 [[files]]
+file = "config/fancymenu/customization/death_screen_layout.txt"
+hash = "4d5eee7cdf2f0ff12aafd0856f284dd1d9d4355dbb445c99956e497a91300b1a"
+
+[[files]]
 file = "config/fancymenu/customization/drippy_loading_overlay_layout.txt"
-hash = "510941a153ad825c472f9489710b2d2be8edee4c5729ae9b4a186928552aed07"
+hash = "67ab7e257070facdb42a169dc2f7254e28ec925cf1fbc34fc699a3145f5940d6"
 
 [[files]]
 file = "config/fancymenu/customization/generic_dirt_message_screen_layout.txt"
@@ -234,7 +246,7 @@ hash = "e77eede298bde42a0b69674a816fae055eaa07f8c4b8ac35c6ae966f715f9778"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_testlayout.txt"
-hash = "6e1d2072ff76650ae9bb4f40736d547ef0f074f76ae4669bc47547543bce9ccb"
+hash = "4ed36574eb3438be3b56cb05142978aee23bae2f4fb0bb80bec69c45d097c537"
 
 [[files]]
 file = "config/fancymenu/customization/traben.entity_texture_features.config.screens.etfconfigscreenmain_layout.txt"
@@ -242,7 +254,7 @@ hash = "dd56204b4a1cfa6df124a8e9d8f76aee6f422176575119d4b7e5a9ddb436c938"
 
 [[files]]
 file = "config/fancymenu/customization/universal_layout.txt"
-hash = "f42ed3415e1a53fd2aac53a7aecb251d6df1d6c2d2de94738fca5685e4afa4d8"
+hash = "659b91fd1a7bacf7f1057bb60abe6f33592bb27fc8125389bc5a78402e75afd4"
 
 [[files]]
 file = "config/fancymenu/customization/winterlands_browser_layout.txt"
@@ -262,7 +274,7 @@ hash = "0f6ecd3bee866452d736535f19d0d351b27204ddbf0461c8916c656b82ad7513"
 
 [[files]]
 file = "config/fancymenu/options.txt"
-hash = "d35a7ae19ed862cced29a23a5b944f91649c825d6a8395e0b6f1128414c5afdd"
+hash = "e35b336c6750b105bcd25733a66951631972579fd7caf0b9eb0a3bbf7f5e3969"
 
 [[files]]
 file = "config/fancymenu/ui_themes/dark.json"
@@ -278,7 +290,7 @@ hash = "3d7d4cda73d6bde134a568ccbe4e8d2e7fbe701570012b71fa45acdb2258c823"
 
 [[files]]
 file = "config/fancymenu/video_element_controller_metas.json"
-hash = "0ec03d72119c2d30b586a6350588363fcd50970612a97a2e604cb00bf64f0892"
+hash = "7b8fe44efbf422d7c041c2545bb1e9fe6b783041231fb0b8e26104173a9ff5cb"
 
 [[files]]
 file = "config/jade/jade.json"
@@ -294,7 +306,7 @@ hash = "cc8216c5613439d090d555e47c86967cd342f04c077a7434b4d82d3d66a6cca8"
 
 [[files]]
 file = "config/jei/jei-client.ini"
-hash = "b7af6950ef7f62f930f548760f1304efc16396a91b16056fc5cbd63e28b294c9"
+hash = "afe47eea7072aea600ce1c9a078bb781838570aac58da2632d60f0e27e45f76a"
 
 [[files]]
 file = "config/jei/jei-colors.ini"
@@ -400,6 +412,11 @@ metafile = true
 [[files]]
 file = "mods/advancementdisable.pw.toml"
 hash = "adf18a2245d6d9c6d1c6636e14a9a12fb502926d10fc9511abf0264c24d2ffc2"
+metafile = true
+
+[[files]]
+file = "mods/amplified-nether.pw.toml"
+hash = "04cb3ee26933b77b5bf87660921801171536ccee2ab16572232b287f86cc2ae8"
 metafile = true
 
 [[files]]
@@ -678,6 +695,11 @@ hash = "cd4c4ec6ef26d2b61e0cb0bdd398e8d528b88ebf739fc0898bc8cb2f7a88debb"
 metafile = true
 
 [[files]]
+file = "mods/ct-overhaul-village.pw.toml"
+hash = "fdbb543842b547818a37ffd5a0c53c05171544c17a2ff5bb3a5f2da25187c53d"
+metafile = true
+
+[[files]]
 file = "mods/cubes-without-borders.pw.toml"
 hash = "8e5f6550359e71ecbea95705ec61fb03313550e6f481cabf48043929909aabae"
 metafile = true
@@ -773,6 +795,11 @@ hash = "efce3d2641cbf0963e2b43d37f68839cca9727bcd9455998ee82a5a18d679058"
 metafile = true
 
 [[files]]
+file = "mods/explorify.pw.toml"
+hash = "d93c3c494955dfc44e2590ded2ee8414d582e87f2fca00575f08576ae2197d57"
+metafile = true
+
+[[files]]
 file = "mods/explosive-enhancement-forge.pw.toml"
 hash = "fc8948d1a8837b7a89a3b754335fd53086ba89c78af9c3d07fa899761c6a9e50"
 metafile = true
@@ -848,13 +875,18 @@ hash = "ec1bd5b80399287ca33a113086bee9d5697b7e673c9f593e5a1aeca4c9bad4c9"
 metafile = true
 
 [[files]]
-file = "mods/framework.pw.toml"
-hash = "11bc4d2951f2bbb0dd17c77534f05c909987e19203398558713bc515f441d5a2"
+file = "mods/formations-nether.pw.toml"
+hash = "cfdef44464ccf6c3a9b0fa7a48bbbfa40049765c01c3aaf225fddd167cd5eeec"
 metafile = true
 
 [[files]]
-file = "mods/friends-and-foes-forge.pw.toml"
-hash = "2a587ebd6dda118f58e81dee4967be814162b98fab353a763d46401e1dea586c"
+file = "mods/formations.pw.toml"
+hash = "41ea41c71242b710df4768bdd0f3f2433c64600d2d1405472c01993bd7f5da25"
+metafile = true
+
+[[files]]
+file = "mods/framework.pw.toml"
+hash = "11bc4d2951f2bbb0dd17c77534f05c909987e19203398558713bc515f441d5a2"
 metafile = true
 
 [[files]]
@@ -1018,6 +1050,11 @@ hash = "7b8e8af83e8583adc91b2d859e5355f1bd0516a346d2584b8b01c004467d18af"
 metafile = true
 
 [[files]]
+file = "mods/lithostitched.pw.toml"
+hash = "f8edc1d5fadb1b65f8f869893ec637ec8a5e5f92fb0a7f140e9e62977668f895"
+metafile = true
+
+[[files]]
 file = "mods/littlepictureframes.pw.toml"
 hash = "54d22964b6b51c4807e187bbf9e543cd882639789af478f7b7a2b7a2b05375eb"
 metafile = true
@@ -1055,6 +1092,11 @@ metafile = true
 [[files]]
 file = "mods/melody.pw.toml"
 hash = "9dff522b00f5269538d0351536f34b22384996de30be454ef1369f1b1e5c1aeb"
+metafile = true
+
+[[files]]
+file = "mods/mes-moogs-end-structures.pw.toml"
+hash = "9d6563ede5f11c5b2e48f728f16665cfb21d307e6cccebedb7f65a5e1fdce071"
 metafile = true
 
 [[files]]
@@ -1358,8 +1400,18 @@ hash = "8ed3c58f23d9255343a590b90e1216ac58142b920c9bffdd14c7fdc32e3ee002"
 metafile = true
 
 [[files]]
+file = "mods/sparsestructures.pw.toml"
+hash = "8c71edbbb86e5d3e1c14ea6629382539d44e75b1061725df9c3abceb889a8591"
+metafile = true
+
+[[files]]
 file = "mods/storage-delight.pw.toml"
 hash = "0ccdb1ac3f7fffacc28ffa235bdf7e37105c088095f96b6e3fc9748d64328b94"
+metafile = true
+
+[[files]]
+file = "mods/structory.pw.toml"
+hash = "187174a5f6a8a8f49fcc3baae7bf8c673829bac1a4bd1023ce0723ab17fdf1d7"
 metafile = true
 
 [[files]]
@@ -1500,4 +1552,44 @@ metafile = true
 [[files]]
 file = "mods/yungs-api.pw.toml"
 hash = "d9c0c9209bac0b693af2a7c1e47ffb28d366bad19c91df31dc6d345fa75250a1"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-dungeons.pw.toml"
+hash = "4c2830674a08ec9f10af13e4d259aa60158bd306a3996d935e678281ec0cb5fd"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-jungle-temples.pw.toml"
+hash = "ee63a5958eb1e0238257e2064d917bdaf8e528a47904bdfbe04a5758a1537e9f"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-mineshafts.pw.toml"
+hash = "0cc13a86488cf89d2989edc1636fa63c7efa2fe819246d42af35113458d5ba5b"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-nether-fortresses.pw.toml"
+hash = "c0e40691651465b4eb1037749148c2078123604195e19b582dbef3cd5914e3b1"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-ocean-monuments.pw.toml"
+hash = "9492d0854c51570bf2a6bace6267262e7573b94c40d721348996617e5d99480a"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-strongholds.pw.toml"
+hash = "1a33e6d64e88ad59b65d126c6457d582e62724167349ea184eb237435298985e"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-witch-huts.pw.toml"
+hash = "e2b23d0a1bf228d37ff8c3330150c24eb19cb875e113fae543191f34ded92ff8"
+metafile = true
+
+[[files]]
+file = "mods/yungs-cave-biomes.pw.toml"
+hash = "5a334201feff0fb2f76d486399f47d0ce5b5818c284fea895706c92bb2119470"
 metafile = true
