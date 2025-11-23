@@ -1113,6 +1113,16 @@ hash = "2f6c9613ab64a27f2ba7ab55ed6d7557ffd06dff2d9db7a7e92b2d526e96a466"
 metafile = true
 
 [[files]]
+file = "mods/natures-delight.pw.toml"
+hash = "e43823fe1729cb9b95311d3b8cb7f1428e230ac957c73bbf2d239921f96a229d"
+metafile = true
+
+[[files]]
+file = "mods/natures-spirit.pw.toml"
+hash = "e5c9d8b97345998f99cf6da31b41c5cf4875361bc94c3354be2299730b7acb04"
+metafile = true
+
+[[files]]
 file = "mods/nbt-autocomplete.pw.toml"
 hash = "a87252ea5cefb7f1db42eaf2dd523e057fa6e690c213d803aa151c808bba2a9a"
 metafile = true
@@ -1230,11 +1240,6 @@ metafile = true
 [[files]]
 file = "mods/rightclickharvest.pw.toml"
 hash = "3165000789e965102d58efe87dd0af170eba28462c3ecb53c1192592c92139a7"
-metafile = true
-
-[[files]]
-file = "mods/rrls.pw.toml"
-hash = "b78044fd79ce21750d05dc61b6aede33c4b87cdc16a26f5aff472d4f73ab623c"
 metafile = true
 
 [[files]]
@@ -1375,6 +1380,11 @@ metafile = true
 [[files]]
 file = "mods/tectonic.pw.toml"
 hash = "8ad02530347f7b0dfe84b8eb081e2eaa23cae536de0d289137902f7557fb3a33"
+metafile = true
+
+[[files]]
+file = "mods/terrablender.pw.toml"
+hash = "15962183bec2468058c70e87aa32e902a08489b0f86741088cdc9aa958ba4931"
 metafile = true
 
 [[files]]
