@@ -96,3 +96,6 @@ net.neoforged.neoforge.client.gui.ModMismatchDisconnectedScreen {
 net.minecraft.client.gui.screens.worldselection.CreateWorldScreen {
 }
 
+net.minecraft.client.gui.screens.DeathScreen {
+}
+

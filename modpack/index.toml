@@ -713,11 +713,6 @@ hash = "98e02478bc3be30b8eb4e62b8fb116a5805caea3cf557f17d36c633d840fe223"
 metafile = true
 
 [[files]]
-file = "mods/dungeons_delight.pw.toml"
-hash = "de4e1121a68239bb65134f5160a5e2f1f15e1de816eaebd3455ad6a159996282"
-metafile = true
-
-[[files]]
 file = "mods/dusty-decorations.pw.toml"
 hash = "7be6dad82ed8f4a2046c2fed206811b6aef7474ea675a2c01e16f638edd26fbd"
 metafile = true
@@ -1378,6 +1373,11 @@ hash = "402dd34a27e1b98209ba4b9860c256967f95a7baf5881f6f3fb46d571a627f8e"
 metafile = true
 
 [[files]]
+file = "mods/tectonic.pw.toml"
+hash = "8ad02530347f7b0dfe84b8eb081e2eaa23cae536de0d289137902f7557fb3a33"
+metafile = true
+
+[[files]]
 file = "mods/tiny-item-animations.pw.toml"
 hash = "922febf9d28f1db3be54a689b99180eaa62f10e92e1df6938e8d5743b801f294"
 metafile = true
@@ -1405,11 +1405,6 @@ metafile = true
 [[files]]
 file = "mods/travelers-titles.pw.toml"
 hash = "01cab903b1a7f77aa4f28c7fab24e7fa09b376b18c77b487b7ba34e0afc57813"
-metafile = true
-
-[[files]]
-file = "mods/travelersbackpack.pw.toml"
-hash = "23a924a979dd415069b343e87f4d7d4c10392e585683bcf24c0a53ef9e79cc57"
 metafile = true
 
 [[files]]
@@ -1480,6 +1475,11 @@ metafile = true
 [[files]]
 file = "mods/winter-overhaul.pw.toml"
 hash = "cef75a3276f7464779f2a293d508d1a5aa6c5504718d24977725a060397c5794"
+metafile = true
+
+[[files]]
+file = "mods/wwoo.pw.toml"
+hash = "b8691fd91e8198d001e78d7ca82c9ab05aee6fb76bebb41b1b6fd6ca98ff29c9"
 metafile = true
 
 [[files]]

@@ -3,14 +3,14 @@ type = fancymenu_layout
 layout-meta {
   identifier = %fancymenu:universal_layout%
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1763371614447
+  last_edited_time = 1763868015738
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  universal_layout_blacklist = title_screen;com.mrcrayfish.catalogue.client.screen.CatalogueModListScreen;pause_screen;join_multiplayer_screen;me.axieum.mcmod.authme.api.gui.screen.AuthMethodScreen;drippy_loading_overlay;
-  [loading_requirement_container_meta:c6accbcb-f5cf-4f84-b7c5-2748ae010cda-1763371602125] = [groups:][instances:]
+  universal_layout_blacklist = title_screen;com.mrcrayfish.catalogue.client.screen.CatalogueModListScreen;pause_screen;join_multiplayer_screen;me.axieum.mcmod.authme.api.gui.screen.AuthMethodScreen;drippy_loading_overlay;death_screen;
+  [loading_requirement_container_meta:9d5b040f-5779-4bf8-b648-994ad2217642-1763868010485] = [groups:][instances:]
 }
 
 menu_background {
