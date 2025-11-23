@@ -13,7 +13,7 @@ const { modrinthUrl, githubUrl } = Astro.props as Props;
     <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
       <div>
         <p class="font-display text-2xl">See you in the snow.</p>
-        <p class="text-sm text-white/70">NeoForge 1.21.1 · Packwiz managed · Winter ready</p>
+        <p class="text-sm text-white/70">NeoForge 1.21.1 · Winter ready · Christmas ready</p>
       </div>
       <a href={modrinthUrl} class="modrinth-button" target="_blank" rel="noreferrer noopener">
         <img src="/modrinth.svg" alt="Modrinth" class="modrinth-button__icon" loading="lazy" />
@@ -39,6 +39,6 @@ const { modrinthUrl, githubUrl } = Astro.props as Props;
         </a>
       </div>
     </div>
-    <p class="mt-6 text-xs text-white/60">© {new Date().getFullYear()} Winterlands Collective. Built with Astro 5.</p>
+    <p class="mt-6 text-xs text-white/60">© 2025-{new Date().getFullYear()} Winterlands Contributors. Built with love.</p>
   </div>
 </div>
