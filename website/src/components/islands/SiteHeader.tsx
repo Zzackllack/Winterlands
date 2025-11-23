@@ -25,11 +25,12 @@ export default function SiteHeader({ ctaHref }: Props) {
         href="/"
         className="flex items-center gap-3 text-lg font-semibold tracking-wide"
       >
-        <Image
+        <img
           src="/logo-winterlands.jpg"
           alt="Winterlands"
           width={48}
           height={48}
+          className="h-12 w-12 rounded-2xl border border-white/20 object-cover"
           loading="eager"
         />
         <span className="font-display text-xl text-glow md:text-2xl">

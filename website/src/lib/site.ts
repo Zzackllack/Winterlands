@@ -8,23 +8,25 @@ export const navLinks = [
 
 export const heroHighlights = [
   {
-    title: 'Blizzard-ready survival',
-    description: 'Bundle up with freeze meters, bonfires, and story quests built for snowy nights.',
+    title: "OOS",
+    description:
+      "Open-Source Software: Fully open-source modpack with transparent development.",
   },
   {
-    title: 'Cozy cabin tech',
-    description: 'Farmer’s delight + Create-style logistics tuned for chill, low-lag automation.',
+    title: "Themed Mods",
+    description:
+      "Farmer’s delight + Create and multiple Christmas-themed mods for the perfect winter experience.",
   },
   {
-    title: 'Festive hunts',
-    description: 'Limited-time mobs, sled races, and gift drops rotate each holiday season.',
+    title: "Winterlike Worldgen",
+    description:
+      "Multiple new World Generation Mods tuned with serene season for snowy landscapes.",
   },
-];
-
-export const stats = [
-  { label: 'Mods Packed', value: '220', detail: 'NeoForge 1.21.1' },
-  { label: 'Release Status', value: 'Pre-launch', detail: 'Playtests running' },
-  { label: 'Servers Online', value: '0', detail: 'Community rollout soon' },
+  {
+    title: "Performance Optimized",
+    description:
+      "Optimized for smooth gameplay with minimal lag, even in snowy environments.",
+  },
 ];
 
 export const socials = [

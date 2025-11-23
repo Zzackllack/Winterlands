@@ -1,14 +1,15 @@
 ---
-import FeatureCarousel from '../components/islands/FeatureCarousel.tsx';
-import Hero from '../components/islands/Hero.tsx';
+import FeatureCarousel from '../components/islands/FeatureCarousel';
+import Hero from '../components/islands/Hero';
 import SectionHeading from '../components/ui/SectionHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { featuredMods } from '../lib/modData';
+import { featuredModsBySlug } from '../lib/modData';
 import { env } from '../lib/env';
 import { mods } from '../data/mods.generated';
+import { featuredModSlugs } from '../data/featuredMods';
 import "../styles/global.css";
 
-const showcaseMods = featuredMods(mods, 3);
+const showcaseMods = featuredModsBySlug(mods, featuredModSlugs, 3);
 
 const features = [
   {

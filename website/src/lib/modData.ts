@@ -4,6 +4,27 @@ export function featuredMods(mods: ModEntry[], limit = 3) {
   return mods.slice(0, limit);
 }
 
+export function featuredModsBySlug(mods: ModEntry[], slugs: string[], fallback = 3) {
+  const lookup = new Map(mods.map((mod) => [mod.slug, mod]));
+  const picked: ModEntry[] = [];
+
+  slugs.forEach((slug) => {
+    const found = lookup.get(slug);
+    if (found) picked.push(found);
+  });
+
+  if (picked.length < fallback) {
+    mods.some((mod) => {
+      if (!picked.includes(mod)) {
+        picked.push(mod);
+      }
+      return picked.length >= fallback;
+    });
+  }
+
+  return picked.slice(0, Math.max(fallback, picked.length));
+}
+
 export interface LicenseRow {
   name: string;
   license: string;

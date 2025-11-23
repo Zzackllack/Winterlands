@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { heroHighlights, stats } from '../../lib/site';
+import { heroHighlights } from '../../lib/site';
 
 interface HeroProps {
   modrinthUrl: string;
@@ -49,15 +49,6 @@ export default function Hero({ modrinthUrl }: HeroProps) {
             <a href="/mods" className="inline-flex items-center text-white/70 transition hover:text-white">
               Browse all 220 mods →
             </a>
-          </div>
-          <div className="grid gap-6 sm:grid-cols-3">
-            {stats.map((stat) => (
-              <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-                <p className="font-display text-3xl text-white">{stat.value}</p>
-                <p className="text-xs uppercase tracking-[0.3em] text-white/60">{stat.label}</p>
-                <p className="text-sm text-white/60">{stat.detail}</p>
-              </div>
-            ))}
           </div>
         </motion.div>
         <motion.div
