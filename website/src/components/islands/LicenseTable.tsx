@@ -47,13 +47,13 @@ export default function LicenseTable({ rows }: Props) {
   const hasMore = visibleCount < rows.length;
 
   const notes = useMemo(() => {
-    const map = new Map<number, string>();
+    const list: Array<{ id: number; text: string; links?: string[] }> = [];
     rows.forEach((row) => {
       if (row.noteId && row.noteText) {
-        map.set(row.noteId, row.noteText);
+        list.push({ id: row.noteId, text: row.noteText, links: row.noteLinks });
       }
     });
-    return Array.from(map.entries()).sort(([a], [b]) => a - b);
+    return list.sort((a, b) => a.id - b.id);
   }, [rows]);
 
   const loadMore = () =>
@@ -136,12 +136,27 @@ export default function LicenseTable({ rows }: Props) {
         </button>
       )}
       {notes.length > 0 && (
-        <div className="space-y-2 rounded-2xl bg-white/5 p-4 text-xs text-white/70">
-          {notes.map(([id, text]) => (
-            <p key={id}>
-              <span className="mr-2 font-semibold text-white">{id}.</span>
-              {text}
-            </p>
+        <div className="space-y-3 rounded-2xl bg-white/5 p-4 text-xs text-white/70">
+          {notes.map(({ id, text, links }) => (
+            <div key={id} className="flex flex-wrap items-center gap-2">
+              <p className="m-0">
+                <span className="mr-2 font-semibold text-white">{id}.</span>
+                {text}
+              </p>
+              {links &&
+                links.length > 0 &&
+                links.map((href, index) => (
+                  <a
+                    key={`${id}-${index}`}
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center rounded-full border border-white/10 px-2 py-[3px] text-[11px] text-white/75 hover:border-white/20 hover:text-white"
+                  >
+                    Proof{links.length > 1 ? ` ${index + 1}` : ""}
+                  </a>
+                ))}
+            </div>
           ))}
         </div>
       )}

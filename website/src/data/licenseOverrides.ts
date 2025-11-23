@@ -17,7 +17,7 @@ export const licenseOverrides: LicenseOverrides = {
     license: "MIT License",
     sourceUrl: "https://www.curseforge.com/minecraft/mc-mods/catalogue",
   },
-  "Christmas Culinary & Decorations ": {
+  "Christmas Culinary & Decorations": {
     note: "Only distributed on CurseForge; author granted direct permission via description on project page.",
     allowByModrinth: false,
     license: "All Rights Reserved (with permission for inclusion in modpacks)",
@@ -25,14 +25,16 @@ export const licenseOverrides: LicenseOverrides = {
       "https://www.curseforge.com/minecraft/mc-mods/christmas-culinary-decorations",
   },
   "Christmas Delight (Farmers Delight Addon)": {
-    note: "Only distributed on CurseForge; author granted direct permission via private message, see website/public/Permission-ThePoupyBuTers.png.",
+    note: "Only distributed on CurseForge; author granted direct permission via private message.",
+    proofLinks: ["/Permission-ThePoupyBuTers.png"],
     allowByModrinth: false,
     license: "All Rights Reserved",
     sourceUrl:
       "https://www.curseforge.com/minecraft/mc-mods/christmas-delight-farmers-delight-addon",
   },
   "Christmas Music Discs": {
-    note: "Only distributed on CurseForge; author granted direct permission via private message, see website/public/Permission-ThePoupyBuTers.png.",
+    note: "Only distributed on CurseForge; author granted direct permission via private message.",
+    proofLinks: ["/Permission-ThePoupyBuTers.png"],
     allowByModrinth: false,
     license: "All Rights Reserved",
     sourceUrl:
@@ -51,14 +53,16 @@ export const licenseOverrides: LicenseOverrides = {
     sourceUrl: "https://www.curseforge.com/minecraft/mc-mods/framework",
   },
   "Mama's Herbs and Harvest": {
-    note: "Only distributed on CurseForge; author granted direct permission via private message, see website/public/Permission-Mama_Michelle.png.",
+    note: "Only distributed on CurseForge; author granted direct permission via private message.",
+    proofLinks: ["/Permission-Mama_Michelle.png"],
     allowByModrinth: false,
     license: "All Rights Reserved",
     sourceUrl:
       "https://www.curseforge.com/minecraft/mc-mods/mamas-herbs-and-harvest",
   },
   "Mama's Merrymaking - A Minecraft Christmas and Winter Holiday Mod": {
-    note: "Only distributed on CurseForge; author granted direct permission via private message, see website/public/Permission-Mama_Michelle.png and changed license to MIT License.",
+    note: "Only distributed on CurseForge; author granted direct permission via private message and changed license to MIT License.",
+    proofLinks: ["/Permission-Mama_Michelle.png"],
     allowByModrinth: false,
     license: "MIT License",
     sourceUrl:

@@ -11,6 +11,7 @@ export interface LicenseRow {
   allowByModrinth: boolean;
   noteId?: number;
   noteText?: string;
+  noteLinks?: string[];
 }
 
 export interface LicenseOverrides {
@@ -20,36 +21,30 @@ export interface LicenseOverrides {
         allowByModrinth?: boolean;
         license?: string;
         sourceUrl?: string;
+        proofLinks?: string[];
       }
     | undefined;
 }
 
 export function buildLicenseRows(mods: ModEntry[], overrides: LicenseOverrides = {}): LicenseRow[] {
-  const noteNumbers = new Map<string, number>();
-  let nextNoteId = 1;
-
-  return mods
-    .map((mod) => {
-      const override = overrides[mod.name];
-      const noteText = override?.note;
-      let noteId: number | undefined;
-
-      if (noteText) {
-        if (!noteNumbers.has(noteText)) {
-          noteNumbers.set(noteText, nextNoteId++);
-        }
-        noteId = noteNumbers.get(noteText);
-      }
-
-      return {
-        name: mod.name,
-        license: override?.license ?? mod.license.name ?? mod.license.id ?? 'Unknown',
-        sourceUrl: override?.sourceUrl ?? mod.links.site ?? mod.links.source,
-        allowByModrinth:
-          override?.allowByModrinth ?? mod.license.allowModrinthRedistribution ?? false,
-        noteId,
-        noteText,
-      };
-    })
+  const rows = mods
+    .map((mod) => ({
+      name: mod.name,
+      license: overrides[mod.name]?.license ?? mod.license.name ?? mod.license.id ?? 'Unknown',
+      sourceUrl: overrides[mod.name]?.sourceUrl ?? mod.links.site ?? mod.links.source,
+      allowByModrinth:
+        overrides[mod.name]?.allowByModrinth ?? mod.license.allowModrinthRedistribution ?? false,
+      noteText: overrides[mod.name]?.note,
+      noteLinks: overrides[mod.name]?.proofLinks,
+    }))
     .sort((a, b) => a.name.localeCompare(b.name));
+
+  let noteCounter = 1;
+  rows.forEach((row) => {
+    if (row.noteText) {
+      row.noteId = noteCounter++;
+    }
+  });
+
+  return rows;
 }
