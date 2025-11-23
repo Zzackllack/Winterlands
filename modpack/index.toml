@@ -395,6 +395,11 @@ file = "journeymap/config/6.0/journeymap.webmap.config"
 hash = "92ecaadb674023fb5cd2f67831547f41af6a3a90bc2ef076bc45351d363c6594"
 
 [[files]]
+file = "mods/2032-world-height.pw.toml"
+hash = "b617a01ee6459e9f47e27e8d705ca4bed7f58ea2afeb6a90641a80ad033b2b48"
+metafile = true
+
+[[files]]
 file = "mods/3dskinlayers.pw.toml"
 hash = "7b5fba1b2499c191160be6b1b01c54ace077ae7d3c5228ae4af4d360e3d0a336"
 metafile = true
@@ -532,6 +537,16 @@ metafile = true
 [[files]]
 file = "mods/christmas-music-discs.pw.toml"
 hash = "2431862f81be0d8edaaff42458dca32161506c36bed320fe73cc462672137af0"
+metafile = true
+
+[[files]]
+file = "mods/cit-resewn-neopatcher.pw.toml"
+hash = "2845c5e3f38068f06a51bfe759dfb683f810d3737f88e332470a1c4c30ffad74"
+metafile = true
+
+[[files]]
+file = "mods/cit-resewn.pw.toml"
+hash = "6d511d91e17e09d36b0b0c7065b07eb604146bc9f3df0fbc932948aaf33aa440"
 metafile = true
 
 [[files]]
@@ -900,6 +915,11 @@ hash = "6737a940d577175a7bd94e48f85b66015c9f75d4c8b5d2d6d9a2ee4d440fae15"
 metafile = true
 
 [[files]]
+file = "mods/fusion-connected-textures.pw.toml"
+hash = "35e72c6577b301ac850a959bce08ca1c8a68e58f7819191a61d20c7af536ee5d"
+metafile = true
+
+[[files]]
 file = "mods/fzzy-config.pw.toml"
 hash = "11c4ac6932c14f3ad5a2c63d7f39eee1e9a2a91ffc079d5bd917c9aa381abdfb"
 metafile = true
@@ -1117,11 +1137,6 @@ metafile = true
 [[files]]
 file = "mods/moonlight.pw.toml"
 hash = "34af73fbc06558118a046d6c4c26a555337f5e971ba59b42ca13471c57127f1f"
-metafile = true
-
-[[files]]
-file = "mods/more-armor-trims.pw.toml"
-hash = "9106f23ad514b1460c912ce8751149c60bd6f8b195af2e443b41f0ab8896dcac"
 metafile = true
 
 [[files]]
@@ -1592,4 +1607,64 @@ metafile = true
 [[files]]
 file = "mods/yungs-cave-biomes.pw.toml"
 hash = "5a334201feff0fb2f76d486399f47d0ce5b5818c284fea895706c92bb2119470"
+metafile = true
+
+[[files]]
+file = "resourcepacks/animated-ore.pw.toml"
+hash = "b02edc6bfcad19c409a41c65809ee1999ca7106e40d4f2f43038901f21d3b8ad"
+metafile = true
+
+[[files]]
+file = "resourcepacks/axolotl-bucket-variants.pw.toml"
+hash = "4ad2af5557d92880ae7a419ee34508503bc3be6f7f39a6c5fc70bf71d791f521"
+metafile = true
+
+[[files]]
+file = "resourcepacks/better-lanterns.pw.toml"
+hash = "17ea105b98d79a0be6ce20da3304f9ed1398c5d9d3ad24cea2c914a109ede78e"
+metafile = true
+
+[[files]]
+file = "resourcepacks/enchant-icons-countxd.pw.toml"
+hash = "bb2b6a511327bc8782c7c12c6be81c11fa3fcb7fa4fd10d4093a5170862e1ad5"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-flower-pots.pw.toml"
+hash = "6ea70716dbbdddf6bdbeb137208a38380159048813accecb225ca6d19ce37e97"
+metafile = true
+
+[[files]]
+file = "resourcepacks/no-pumpkin-blur.pw.toml"
+hash = "171a3c77d9e3c2e520339e415b9b73629eabf8a2f84b1cd5005ca9b6590e969f"
+metafile = true
+
+[[files]]
+file = "resourcepacks/rays-3d-ladders.pw.toml"
+hash = "53e2da580a363c839de4c196fae91751accc5e772c065fc0cc4d07b7864f3cf8"
+metafile = true
+
+[[files]]
+file = "resourcepacks/rays-3d-rails.pw.toml"
+hash = "0e80f97855da0ee8b2cba02d4cc1f3c82f50bd1ec0772645cfd5dd5d6f4e9a86"
+metafile = true
+
+[[files]]
+file = "resourcepacks/recolourful-containers-gui-hud-dark.pw.toml"
+hash = "938583466cbe1bd26038f4e099ebb053edf7f5fccab817862221569b2c93bd69"
+metafile = true
+
+[[files]]
+file = "resourcepacks/simple-grass-flowers.pw.toml"
+hash = "bc4dcbd6b77adb2180049d63ed4a8981553f06dbf3e32080022ffd87dd1fb09b"
+metafile = true
+
+[[files]]
+file = "resourcepacks/snow-side-texture.pw.toml"
+hash = "4d79cd00c10b391aae0ac311e573729c731b082d2c3e5c51c7eec3b35f8feaf8"
+metafile = true
+
+[[files]]
+file = "resourcepacks/visual-armor-trims.pw.toml"
+hash = "d88dacad6b166ce9766867b4224aa175e55cfd75caad6a77f698abee8fec9d11"
 metafile = true
