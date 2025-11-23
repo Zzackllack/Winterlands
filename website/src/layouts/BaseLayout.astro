@@ -1,6 +1,6 @@
 ---
 import SiteFooter from '../components/layout/SiteFooter.astro';
-import SiteHeader from '../components/layout/SiteHeader.astro';
+import SiteHeader from '../components/islands/SiteHeader.tsx';
 import SnowOverlay from '../components/islands/SnowOverlay.tsx';
 import { env } from '../lib/env';
 import '../styles/global.css';
@@ -27,7 +27,7 @@ const { modrinthUrl, githubSupportUrl } = env;
     <div class="noise-overlay" aria-hidden="true"></div>
     <SnowOverlay client:load />
     <header class="relative z-20">
-      <SiteHeader ctaHref={modrinthUrl} />
+      <SiteHeader client:load ctaHref={modrinthUrl} />
     </header>
     <main class="relative z-10">
       <slot />

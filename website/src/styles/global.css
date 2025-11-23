@@ -148,7 +148,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 0.55rem 1.4rem;
+  padding: 0.5rem 1.1rem;
   border-radius: 999px;
   border: 1px solid #0f3d1d;
   background: linear-gradient(180deg, #0f3418 0%, #071d0d 100%);
@@ -157,7 +157,7 @@ body {
     0 6px 18px rgba(5, 20, 9, 0.65);
   color: #e6ffe5;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   transition:
@@ -173,10 +173,18 @@ body {
 }
 
 .modrinth-button__icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.35rem;
+  height: 1.35rem;
 }
 
 .modrinth-button__accent {
   color: #40ff7b;
+}
+
+@media (max-width: 640px) {
+  .modrinth-button {
+    gap: 0.4rem;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.9rem;
+  }
 }

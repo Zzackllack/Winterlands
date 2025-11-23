@@ -8,27 +8,27 @@ interface Props {
 
 const { modrinthUrl, githubUrl } = Astro.props as Props;
 ---
-<div class="mx-auto mt-16 w-full max-w-6xl px-6 pb-12">
-  <div class="rounded-3xl border border-white/5 bg-white/5/5 p-8 backdrop-blur">
-    <div class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-      <div>
-        <p class="font-display text-2xl">See you in the snow.</p>
+<div class="mx-auto mt-16 w-full max-w-6xl px-4 pb-12 sm:px-6">
+  <div class="rounded-3xl border border-white/5 bg-white/5/5 p-6 backdrop-blur sm:p-8">
+    <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+      <div class="space-y-1">
+        <p class="font-display text-xl sm:text-2xl">See you in the snow.</p>
         <p class="text-sm text-white/70">NeoForge 1.21.1 · Winter ready · Christmas ready</p>
       </div>
-      <a href={modrinthUrl} class="modrinth-button" target="_blank" rel="noreferrer noopener">
+      <a href={modrinthUrl} class="modrinth-button w-full justify-center sm:w-auto" target="_blank" rel="noreferrer noopener">
         <img src="/modrinth.svg" alt="Modrinth" class="modrinth-button__icon" loading="lazy" />
         <span>Download on <span class="modrinth-button__accent">Modrinth</span></span>
       </a>
     </div>
-    <div class="mt-8 grid gap-6 md:grid-cols-2">
-      <div class="flex flex-wrap gap-4 text-sm text-white/70">
+    <div class="mt-6 grid gap-4 text-sm text-white/70 sm:mt-8 sm:grid-cols-2 sm:items-start">
+      <div class="flex flex-wrap gap-x-3 gap-y-2">
         {navLinks.map((link) => (
           <a href={link.href} class="hover:text-white">
             {link.label}
           </a>
         ))}
       </div>
-      <div class="flex flex-wrap justify-end gap-4 text-sm text-white/70">
+      <div class="flex flex-wrap justify-start gap-x-3 gap-y-2 sm:justify-end">
         {socials.map((item) => (
           <a href={item.href} target="_blank" rel="noreferrer" class="hover:text-white">
             {item.label}
