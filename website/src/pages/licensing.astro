@@ -3,9 +3,10 @@ import LicenseTable from '../components/islands/LicenseTable.tsx';
 import SectionHeading from '../components/ui/SectionHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { mods } from '../data/mods.generated';
+import { licenseOverrides } from '../data/licenseOverrides';
 import { buildLicenseRows } from '../lib/modData';
 
-const rows = buildLicenseRows(mods);
+const rows = buildLicenseRows(mods, licenseOverrides);
 ---
 <BaseLayout title="Winterlands Licensing" description="Every dependency approved for redistribution.">
   <section class="mx-auto max-w-6xl px-6 py-16">

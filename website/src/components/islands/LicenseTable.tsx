@@ -46,6 +46,16 @@ export default function LicenseTable({ rows }: Props) {
   );
   const hasMore = visibleCount < rows.length;
 
+  const notes = useMemo(() => {
+    const map = new Map<number, string>();
+    rows.forEach((row) => {
+      if (row.noteId && row.noteText) {
+        map.set(row.noteId, row.noteText);
+      }
+    });
+    return Array.from(map.entries()).sort(([a], [b]) => a - b);
+  }, [rows]);
+
   const loadMore = () =>
     setVisibleCount((count) => Math.min(count + PAGE_SIZE, rows.length));
 
@@ -70,7 +80,14 @@ export default function LicenseTable({ rows }: Props) {
             {visibleRows.map((row) => (
               <tr key={row.name} className="odd:bg-white/5 even:bg-white/0">
                 <td className="px-4 py-4">
-                  <p className="font-medium text-white">{row.name}</p>
+                  <p className="font-medium text-white">
+                    {row.name}
+                    {row.noteId && (
+                      <sup className="ml-1 text-[10px] font-semibold text-white/70">
+                        {row.noteId}
+                      </sup>
+                    )}
+                  </p>
                   {row.sourceUrl && (
                     <a
                       href={row.sourceUrl}
@@ -117,6 +134,16 @@ export default function LicenseTable({ rows }: Props) {
         >
           Load more licenses
         </button>
+      )}
+      {notes.length > 0 && (
+        <div className="space-y-2 rounded-2xl bg-white/5 p-4 text-xs text-white/70">
+          {notes.map(([id, text]) => (
+            <p key={id}>
+              <span className="mr-2 font-semibold text-white">{id}.</span>
+              {text}
+            </p>
+          ))}
+        </div>
       )}
       <div ref={sentinelRef} className="h-1" aria-hidden="true" />
     </div>
