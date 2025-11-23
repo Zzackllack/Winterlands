@@ -1,0 +1,12 @@
+name = "winterlands-site"
+compatibility_date = "2025-11-23"
+
+[assets]
+directory = "website/dist"
+
+[[routes]]
+pattern = "winterlands.zacklack.de"
+custom_domain = true
+
+# After first deploy, attach custom domain via:
+#   wrangler pages project update winterlands-site --production-branch=main --custom-domain=winterlands.zacklack.de
