@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useEffect, useMemo, useRef, useState } from 'react';
-import type { LicenseRow } from '../../lib/modData';
+import { useEffect, useMemo, useRef, useState } from "react";
+import type { LicenseRow } from "../../lib/modData";
 
 const PAGE_SIZE = 30;
 
@@ -10,7 +10,9 @@ interface Props {
 }
 
 export default function LicenseTable({ rows }: Props) {
-  const [visibleCount, setVisibleCount] = useState(Math.min(PAGE_SIZE, rows.length));
+  const [visibleCount, setVisibleCount] = useState(
+    Math.min(PAGE_SIZE, rows.length)
+  );
   const sentinelRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -25,21 +27,27 @@ export default function LicenseTable({ rows }: Props) {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setVisibleCount((count) => Math.min(count + PAGE_SIZE, rows.length));
+            setVisibleCount((count) =>
+              Math.min(count + PAGE_SIZE, rows.length)
+            );
           }
         });
       },
-      { rootMargin: '250px' }
+      { rootMargin: "250px" }
     );
 
     observer.observe(sentinel);
     return () => observer.disconnect();
   }, [rows.length, visibleCount]);
 
-  const visibleRows = useMemo(() => rows.slice(0, visibleCount), [rows, visibleCount]);
+  const visibleRows = useMemo(
+    () => rows.slice(0, visibleCount),
+    [rows, visibleCount]
+  );
   const hasMore = visibleCount < rows.length;
 
-  const loadMore = () => setVisibleCount((count) => Math.min(count + PAGE_SIZE, rows.length));
+  const loadMore = () =>
+    setVisibleCount((count) => Math.min(count + PAGE_SIZE, rows.length));
 
   return (
     <div className="space-y-3">
@@ -53,7 +61,9 @@ export default function LicenseTable({ rows }: Props) {
               <th className="px-4 py-3 text-left font-semibold">Mod</th>
               <th className="px-4 py-3 text-left font-semibold">License</th>
               <th className="px-4 py-3 text-left font-semibold">Source</th>
-              <th className="px-4 py-3 text-left font-semibold">Modrinth Terms</th>
+              <th className="px-4 py-3 text-left font-semibold">
+                Modrinth Terms
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -62,7 +72,12 @@ export default function LicenseTable({ rows }: Props) {
                 <td className="px-4 py-4">
                   <p className="font-medium text-white">{row.name}</p>
                   {row.sourceUrl && (
-                    <a href={row.sourceUrl} className="text-xs text-white/60" target="_blank" rel="noreferrer">
+                    <a
+                      href={row.sourceUrl}
+                      className="text-xs text-white/60"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Source →
                     </a>
                   )}
@@ -70,7 +85,12 @@ export default function LicenseTable({ rows }: Props) {
                 <td className="px-4 py-4 text-white/80">{row.license}</td>
                 <td className="px-4 py-4">
                   {row.sourceUrl ? (
-                    <a href={row.sourceUrl} className="text-white/70 hover:text-white" target="_blank" rel="noreferrer">
+                    <a
+                      href={row.sourceUrl}
+                      className="text-white/70 hover:text-white"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Project page
                     </a>
                   ) : (
@@ -81,7 +101,7 @@ export default function LicenseTable({ rows }: Props) {
                   {row.allowByModrinth ? (
                     <span className="text-emerald-300">Covered</span>
                   ) : (
-                    <span className="text-red-300">Manual review</span>
+                    <span className="text-red-300">Excluded</span>
                   )}
                 </td>
               </tr>
