@@ -48,7 +48,7 @@ export interface LicenseOverrides {
 }
 
 export function buildLicenseRows(mods: ModEntry[], overrides: LicenseOverrides = {}): LicenseRow[] {
-  const rows = mods
+  const rows: LicenseRow[] = mods
     .map((mod) => ({
       name: mod.name,
       license: overrides[mod.name]?.license ?? mod.license.name ?? mod.license.id ?? 'Unknown',

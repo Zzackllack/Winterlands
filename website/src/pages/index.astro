@@ -22,6 +22,16 @@ const features = [
     summary: 'Our Modpack bundeles with multiple optimizations to keep frame rates high and stutters low.',
     icon: 'Performance',
   },
+  {
+    title: 'Easy debugging',
+    summary: 'Our Modpack bundeles with the "Crash Assistant" mod to help diagnose and fix issues quickly.',
+    icon: 'Debugging',
+  },
+  {
+    title: 'Christmas festivities',
+    summary: 'We have include festive decorations, holiday-themed mobs, and seasonalities to bring the spirit of the holidays into your game.',
+    icon: 'Festivities',
+  },
 ];
 const { modrinthUrl } = env;
 ---
@@ -50,8 +60,8 @@ const { modrinthUrl } = env;
     <SectionHeading
       eyebrow="World Feel"
       title="Why Winterlands feels alive"
-      description="Everything—from ambience to automation—is tuned for story-rich survival sessions."
+      description="Everything from ambience to automation is tuned for a cozy winter survival experience."
     />
-    <FeatureCarousel client:visible features={features} />
+    <FeatureCarousel features={features} />
   </section>
 </BaseLayout>
