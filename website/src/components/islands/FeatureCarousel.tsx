@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
+import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { SwiperOptions } from 'swiper/types';
 import 'swiper/css';
@@ -17,7 +18,7 @@ export default function FeatureCarousel({ features }: FeatureCarouselProps) {
   const options: SwiperOptions = useMemo(
     () => ({
       loop: true,
-      autoplay: { delay: 4200 },
+      autoplay: { delay: 4200, disableOnInteraction: false, pauseOnMouseEnter: true },
       speed: 750,
       spaceBetween: 24,
       slidesPerView: 1,
@@ -29,7 +30,11 @@ export default function FeatureCarousel({ features }: FeatureCarouselProps) {
   );
 
   return (
-    <Swiper {...options} className="[&_.swiper-pagination-bullet-active]:bg-white/90">
+    <Swiper
+      {...options}
+      modules={[Autoplay]}
+      className="[&_.swiper-pagination-bullet-active]:bg-white/90"
+    >
       {features.map((feature) => (
         <SwiperSlide key={feature.title}>
           <div className="h-full rounded-3xl border border-white/10 bg-white/5 p-6">

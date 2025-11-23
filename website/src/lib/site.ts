@@ -1,9 +1,9 @@
 export const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/gallery', label: 'Gallery' },
-  { href: '/mods', label: 'Mods' },
-  { href: '/licensing', label: 'Licensing' },
-  { href: '/troubleshooting', label: 'Troubleshooting' },
+  { href: "/", label: "Home" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/mods", label: "Mods" },
+  { href: "/licensing", label: "Licensing" },
+  { href: "/troubleshooting", label: "Troubleshooting" },
 ];
 
 export const heroHighlights = [
@@ -30,7 +30,6 @@ export const heroHighlights = [
 ];
 
 export const socials = [
-  { label: 'GitHub', href: 'https://github.com/WinterlandsModpack/Winterlands' },
-  { label: 'Discord', href: 'https://discord.gg/winterlands' },
-  { label: 'Modrinth', href: 'https://modrinth.com/modpack/winterlands' },
+  { label: "GitHub", href: "https://github.com/Zzackllack/Winterlands" },
+  { label: "Modrinth", href: "https://modrinth.com/modpack/winterlands" },
 ];
