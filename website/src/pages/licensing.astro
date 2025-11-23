@@ -1,8 +1,11 @@
 ---
-import LicenseTable from '../components/sections/LicenseTable.astro';
+import LicenseTable from '../components/islands/LicenseTable.tsx';
 import SectionHeading from '../components/ui/SectionHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { mods } from '../data/mods.generated';
+import { buildLicenseRows } from '../lib/modData';
+
+const rows = buildLicenseRows(mods);
 ---
 <BaseLayout title="Winterlands Licensing" description="Every dependency approved for redistribution.">
   <section class="mx-auto max-w-6xl px-6 py-16">
@@ -11,6 +14,6 @@ import { mods } from '../data/mods.generated';
       title="Licenses & Permissions"
       description="Stay on the right side of redistribution agreements. Update a markdown file, redeploy the page."
     />
-    <LicenseTable mods={mods} />
+    <LicenseTable client:load rows={rows} />
   </section>
 </BaseLayout>

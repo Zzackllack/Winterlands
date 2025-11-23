@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { navLinks } from '../../lib/site';
 
 interface Props {
@@ -9,7 +10,14 @@ const { ctaHref } = Astro.props as Props;
 ---
 <div class="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-8">
   <a href="/" class="flex items-center gap-3 text-lg font-semibold tracking-wide">
-    <img src="/logo-winterlands.jpg" alt="Winterlands" class="h-12 w-12 rounded-2xl border border-white/20 object-cover" />
+    <Image
+      src="/logo-winterlands.jpg"
+      alt="Winterlands"
+      width={48}
+      height={48}
+      loading="eager"
+      class="h-12 w-12 rounded-2xl border border-white/20 object-cover"
+    />
     <span class="font-display text-xl text-glow">Winterlands</span>
   </a>
   <nav class="hidden items-center gap-6 text-sm md:flex">
