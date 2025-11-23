@@ -3,6 +3,7 @@ import FeatureCarousel from '../components/islands/FeatureCarousel';
 import Hero from '../components/islands/Hero';
 import SectionHeading from '../components/ui/SectionHeading.astro';
 import { featuredModSlugs } from '../data/featuredMods';
+import { modCount } from '../data/modStats';
 import { mods } from '../data/mods.generated';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { env } from '../lib/env';
@@ -36,7 +37,7 @@ const features = [
 const { modrinthUrl } = env;
 ---
 <BaseLayout title="Winterlands Modpack">
-  <Hero client:load modrinthUrl={modrinthUrl} />
+  <Hero client:load modrinthUrl={modrinthUrl} modCount={modCount} />
 
   <section class="mx-auto mt-12 max-w-6xl px-6">
     <SectionHeading

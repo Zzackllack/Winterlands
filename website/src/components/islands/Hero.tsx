@@ -6,9 +6,10 @@ import { trackEvent } from '../../lib/analytics';
 
 interface HeroProps {
   modrinthUrl: string;
+  modCount: number;
 }
 
-export default function Hero({ modrinthUrl }: HeroProps) {
+export default function Hero({ modrinthUrl, modCount }: HeroProps) {
 
   return (
     <section className="relative isolate overflow-hidden px-4 pb-14 pt-16 sm:px-8 sm:pt-22 lg:px-12">
@@ -26,12 +27,11 @@ export default function Hero({ modrinthUrl }: HeroProps) {
             Winterlands Modpack
           </h1>
           <p className="font-display text-4xl text-white sm:text-5xl">
-            Cozy camps, roaring blizzards, and holiday hunts in one download.
+            Cozy vibes, winter vibes and holiday vibes in one download.
           </p>
           <p className="max-w-2xl text-lg text-white/75">
-            220 carefully selected mods turn Minecraft into a frosty sandbox: glowing auroras, sled races, gourmet stews,
-            and Create-powered cabins that actually stay warm. We are in open playtest, so hop in early and help sculpt
-            the launch build.
+            {modCount} carefully selected mods turn Minecraft into a frosty sandbox: glowing auroras, sled races, gourmet
+            stews, and Create-powered cabins that actually stay warm. 
           </p>
           <div className="flex flex-wrap gap-4">
             <motion.a
@@ -53,7 +53,7 @@ export default function Hero({ modrinthUrl }: HeroProps) {
               className="inline-flex items-center text-white/70 transition hover:text-white"
               onClick={() => trackEvent('mods-browse-link', { location: 'hero' })}
             >
-              Browse all 220 mods →
+              Browse all {modCount} mods →
             </a>
           </div>
         </motion.div>
