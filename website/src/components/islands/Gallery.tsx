@@ -51,7 +51,7 @@ function Marquee({ images, duration, reverse = false }: { images: string[]; dura
         {images.map((src, idx) => (
           <div
             key={src + idx}
-            className="image-item relative h-40 w-60 flex-shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-black/30 sm:h-52 sm:w-72 md:h-56 md:w-80"
+            className="image-item relative h-40 w-60 shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-black/30 sm:h-52 sm:w-72 md:h-56 md:w-80"
           >
             <img src={src} alt={`Gallery scroll ${idx + 1}`} className="h-full w-full object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent" />

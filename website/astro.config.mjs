@@ -5,9 +5,11 @@ import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  site: "https://winterlands.example.com",
+  site: "https://winterlands.zacklack.de",
   output: "static",
-
+  legacy: {
+    collections: true,
+  },
   integrations: [
     react({
       include: ["**/components/**/*.tsx", "**/islands/**/*.tsx"],

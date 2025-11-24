@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { env } from '../lib/env';
 
 const { githubSupportUrl } = env;
-const issueUrl = `${githubSupportUrl}/new?title=%5BIssue%5D%20Describe%20the%20problem&labels=bug&template=bug_report.md`;
+const issueUrl = `${githubSupportUrl}/new?title=%5BIssue%5D%20Describe%20the%20problem&labels=bug&template=bug_report.yml`;
 ---
 <BaseLayout title="Troubleshooting Winterlands" description="Resolve crashes, mod conflicts, and exports with clear steps.">
   <section class="mx-auto max-w-6xl px-6 py-16 space-y-10">
@@ -74,7 +74,7 @@ const issueUrl = `${githubSupportUrl}/new?title=%5BIssue%5D%20Describe%20the%20p
         </div>
         <a
           href={issueUrl}
-          class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-[#0f1116] px-5 py-2 text-sm font-semibold text-white shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:-translate-y-0.5 hover:border-white/25 hover:bg-[#161921] focus:outline-none"
+          class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-[#0f1116] px-5 py-2 text-sm font-semibold text-white shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition hover:-translate-y-0.5 hover:border-white/25 hover:bg-[#161921] focus:outline-hidden"
           target="_blank"
           rel="noreferrer noopener"
         >
