@@ -1,13 +1,17 @@
 name = "Winterlands"
 author = "Zacklack"
 version = "4.1.4"
+description = "A cozy winter and slightly Christmas-themed Modpack, perfect for the classic 2-week Minecraft phase in winter."
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "41f0689d87244315cc5b6f6572f938d7763340e299b60f3ca19cf71824f7a135"
+hash = "38ec4a6c4bba024bb163c3ddbb0d3f15d59ccb577e0dc8a30774f5f04ce1bec5"
 
 [versions]
 minecraft = "1.21.1"
-neoforge = "21.1.213"
+neoforge = "21.1.215"
+
+[options]
+datapack-folder = "config/paxi/datapacks"

@@ -28,7 +28,7 @@ const grouped = faqs.reduce<Record<string, FAQBlock[]>>((acc, block) => {
         {entries
           .sort((a, b) => a.entry.data.order - b.entry.data.order)
           .map(({ entry, Content }) => (
-            <details class="rounded-2xl border border-white/5 bg-white/5/5 p-4">
+            <details class="rounded-2xl border border-white/5 bg-white/5 p-4">
               <summary class="cursor-pointer text-lg text-white">{entry.data.question}</summary>
               <div class="prose prose-invert prose-muted mt-3 max-w-none">
                 <Content />

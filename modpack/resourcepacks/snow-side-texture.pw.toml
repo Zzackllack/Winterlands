@@ -1,0 +1,13 @@
+name = "Snow Side Texture"
+filename = "Snow Side Texture v.1.0 - 1.21.x.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/hgi0g54q/versions/oJWCECta/Snow%20Side%20Texture%20v.1.0%20-%201.21.x.zip"
+hash-format = "sha512"
+hash = "168722a5a1b8d59134115cb91da3b5b4f8f8a3112ec91fd03f3f99646ed4ae61b159290ec9edc41dfa7e2851485bb0dc9e01a6e684674fd80f1107655d6161d3"
+
+[update]
+[update.modrinth]
+mod-id = "hgi0g54q"
+version = "oJWCECta"

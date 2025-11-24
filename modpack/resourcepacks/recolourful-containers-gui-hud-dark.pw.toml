@@ -1,0 +1,13 @@
+name = "Recolourful Containers GUI + HUD (DARK)"
+filename = "Recolourful Containers DARK 3.0.1 (1.19.4+).zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/sQCUH0Mr/versions/VxLDuGIn/Recolourful%20Containers%20DARK%203.0.1%20%281.19.4%2B%29.zip"
+hash-format = "sha512"
+hash = "15c19c5e6125f03e09119a08f310da3928d606f19d9086bf1226332bc8c20c291e208f363bfe413872d33cba44abacd2864c4d2a3b65d22ce01d03e40aa2c9e5"
+
+[update]
+[update.modrinth]
+mod-id = "sQCUH0Mr"
+version = "VxLDuGIn"

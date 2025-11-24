@@ -1,0 +1,13 @@
+name = "LittlePictureFrames - Creative Frame Recipe"
+filename = "littlepictureframes - creative frame recipe.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4DWWGDv0/versions/r98g2pQZ/littlepictureframes%20-%20creative%20frame%20recipe.zip"
+hash-format = "sha512"
+hash = "e4b18871897c97d80866fa3461ebf31b12967b2a33b3c4eac0690cc05d403fff68e79c7c3940cf6667dcd1c09abbc615d1174e67e7a0a1ccd9869f95181f9871"
+
+[update]
+[update.modrinth]
+mod-id = "4DWWGDv0"
+version = "r98g2pQZ"

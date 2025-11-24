@@ -1,0 +1,18 @@
+{
+  "join_sound1": {
+    "sounds": [
+      {
+        "name": "jinglejoin:join_sound1",
+        "stream": false
+      }
+    ]
+  },
+  "join_sound2": {
+    "sounds": [
+      {
+        "name": "jinglejoin:join_sound2",
+        "stream": false
+      }
+    ]
+  }
+}

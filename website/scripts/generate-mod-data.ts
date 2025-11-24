@@ -144,7 +144,7 @@ function pickString(...values: Array<string | null | undefined>) {
 
 function normalizeLicense(id?: string, name?: string) {
   const combined = (name ?? id ?? '').toLowerCase();
-  if (combined.includes('all-rights-reserved') || combined === 'arr') {
+  if (combined === 'all-rights-reserved' || combined === 'arr') {
     return { id: 'ARR', name: 'All Rights Reserved' } as const;
   }
   return {
