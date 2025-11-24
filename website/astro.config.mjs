@@ -1,16 +1,16 @@
-import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
-import react from '@astrojs/react';
+import mdx from "@astrojs/mdx";
+import react from "@astrojs/react";
+import { defineConfig } from "astro/config";
 
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  site: 'https://winterlands.example.com',
-  output: 'static',
+  site: "https://winterlands.example.com",
+  output: "static",
 
   integrations: [
     react({
-      include: ['**/components/**/*.tsx', '**/islands/**/*.tsx'],
+      include: ["**/components/**/*.tsx", "**/islands/**/*.tsx"],
     }),
     mdx(),
   ],
@@ -22,8 +22,5 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
-    optimizeDeps: {
-      include: ['picocolors'],
-    },
   },
 });

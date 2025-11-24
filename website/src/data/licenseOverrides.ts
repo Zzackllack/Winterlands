@@ -17,7 +17,7 @@ export const licenseOverrides: LicenseOverrides = {
     license: "MIT License",
     sourceUrl: "https://www.curseforge.com/minecraft/mc-mods/catalogue",
   },
-  "Christmas Culinary & Decorations": {
+  "Christmas Culinary & Decorations ": {
     note: "Only distributed on CurseForge; author granted direct permission via description on project page.",
     allowByModrinth: false,
     license: "All Rights Reserved (with permission for inclusion in modpacks)",
