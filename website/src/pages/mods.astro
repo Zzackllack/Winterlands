@@ -1,15 +1,15 @@
 ---
 import ModGrid from '../components/islands/ModGrid.tsx';
 import SectionHeading from '../components/ui/SectionHeading.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
 import { mods } from '../data/mods.generated';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout title="Winterlands Mod List" description="Generated straight from packwiz manifests.">
   <section class="mx-auto max-w-6xl px-6 py-16">
     <SectionHeading
       eyebrow="Mods"
       title="Browse the full stack"
-      description="Data is refreshed via pnpm generate:mods from packwiz metadata."
+      description="A list of all mods included in the Winterlands Modpack, automatically generated."
     />
     <ModGrid client:load mods={mods} />
   </section>
