@@ -1,16 +1,18 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { heroHighlights, stats } from '../../lib/site';
+import { heroHighlights } from '../../lib/site';
+import { trackEvent } from '../../lib/analytics';
 
 interface HeroProps {
   modrinthUrl: string;
+  modCount: number;
 }
 
-export default function Hero({ modrinthUrl }: HeroProps) {
+export default function Hero({ modrinthUrl, modCount }: HeroProps) {
 
   return (
-    <section className="relative isolate overflow-hidden px-6 pb-20 pt-16 sm:pt-24">
+    <section className="relative isolate overflow-hidden px-4 pb-14 pt-16 sm:px-8 sm:pt-22 lg:px-12">
       <div className="relative grid items-center gap-12 lg:grid-cols-[1.1fr_minmax(0,_0.9fr)]">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -25,12 +27,11 @@ export default function Hero({ modrinthUrl }: HeroProps) {
             Winterlands Modpack
           </h1>
           <p className="font-display text-4xl text-white sm:text-5xl">
-            Cozy camps, roaring blizzards, and holiday hunts in one download.
+            Cozy vibes, winter vibes and holiday vibes in one download.
           </p>
           <p className="max-w-2xl text-lg text-white/75">
-            220 carefully selected mods turn Minecraft into a frosty sandbox: glowing auroras, sled races, gourmet stews,
-            and Create-powered cabins that actually stay warm. We are in open playtest, so hop in early and help sculpt
-            the launch build.
+            {modCount} carefully selected mods turn Minecraft into a frosty sandbox: glowing auroras, sled races, gourmet
+            stews, and Create-powered cabins that actually stay warm. 
           </p>
           <div className="flex flex-wrap gap-4">
             <motion.a
@@ -40,24 +41,20 @@ export default function Hero({ modrinthUrl }: HeroProps) {
               rel="noreferrer noopener"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
+              onClick={() => trackEvent('modrinth-cta', { location: 'hero' })}
             >
               <img src="/modrinth.svg" alt="" className="modrinth-button__icon" />
               <span>
                 Download on <span className="modrinth-button__accent">Modrinth</span>
               </span>
             </motion.a>
-            <a href="/mods" className="inline-flex items-center text-white/70 transition hover:text-white">
-              Browse all 220 mods →
+            <a
+              href="/mods"
+              className="inline-flex items-center text-white/70 transition hover:text-white"
+              onClick={() => trackEvent('mods-browse-link', { location: 'hero' })}
+            >
+              Browse all {modCount} mods →
             </a>
-          </div>
-          <div className="grid gap-6 sm:grid-cols-3">
-            {stats.map((stat) => (
-              <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-                <p className="font-display text-3xl text-white">{stat.value}</p>
-                <p className="text-xs uppercase tracking-[0.3em] text-white/60">{stat.label}</p>
-                <p className="text-sm text-white/60">{stat.detail}</p>
-              </div>
-            ))}
           </div>
         </motion.div>
         <motion.div

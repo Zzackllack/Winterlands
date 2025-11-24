@@ -1,9 +1,11 @@
-@import "tailwindcss";
+/* Google Fonts must be imported before other @import statements so PostCSS doesn't expand
+  other imports before this one (which would put rules above the @import and trigger
+  "@import must precede all other statements" warnings). */
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Press+Start+2P&display=swap");
+@import "tailwindcss";
 
 @theme {
-  --font-sans:
-    "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   --font-display: "Space Grotesk", var(--font-sans);
   --font-block: "Press Start 2P", "Space Grotesk", sans-serif;
@@ -28,19 +30,20 @@
 
 body {
   font-family: var(--font-sans);
-  background:
-    linear-gradient(180deg, #02111f 0%, #02243f 45%, #032f52 75%, #031421 100%),
+  background: linear-gradient(
+      180deg,
+      #02111f 0%,
+      #02243f 45%,
+      #032f52 75%,
+      #031421 100%
+    ),
     radial-gradient(
       circle at 20% 10%,
       rgba(90, 208, 255, 0.35),
       transparent 55%
     ),
     radial-gradient(circle at 80% 0%, rgba(45, 106, 79, 0.25), transparent 45%),
-    radial-gradient(
-      circle at 10% 90%,
-      rgba(214, 40, 57, 0.18),
-      transparent 50%
-    ),
+    radial-gradient(circle at 10% 90%, rgba(214, 40, 57, 0.18), transparent 50%),
     var(--color-night);
   background-attachment: fixed;
   color: var(--color-snow);
@@ -77,10 +80,7 @@ body {
   border-radius: 999px;
   color: var(--color-snow);
   font-weight: 600;
-  transition:
-    background 300ms,
-    box-shadow 300ms,
-    transform 300ms;
+  transition: background 300ms, box-shadow 300ms, transform 300ms;
   &:hover {
     background: linear-gradient(
       120deg,
@@ -100,8 +100,8 @@ body {
 @utility gradient-border {
   border: 1px solid transparent;
   border-radius: var(--radius-card);
-  background:
-    linear-gradient(var(--color-night), var(--color-night)) padding-box,
+  background: linear-gradient(var(--color-night), var(--color-night))
+      padding-box,
     linear-gradient(135deg, rgba(90, 208, 255, 0.85), rgba(45, 106, 79, 0.7))
       border-box;
 }
@@ -138,9 +138,7 @@ body {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-ice);
-  text-shadow:
-    0 1px 0 #fff,
-    0 2px 3px rgba(3, 30, 52, 0.55),
+  text-shadow: 0 1px 0 #fff, 0 2px 3px rgba(3, 30, 52, 0.55),
     0 0 25px rgba(90, 208, 255, 0.65);
 }
 
@@ -148,35 +146,39 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 0.55rem 1.4rem;
+  padding: 0.5rem 1.1rem;
   border-radius: 999px;
   border: 1px solid #0f3d1d;
   background: linear-gradient(180deg, #0f3418 0%, #071d0d 100%);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08),
     0 6px 18px rgba(5, 20, 9, 0.65);
   color: #e6ffe5;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
-  transition:
-    transform 160ms ease,
-    box-shadow 160ms ease;
+  transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
 .modrinth-button:hover {
   transform: translateY(-1px);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12),
     0 8px 20px rgba(0, 0, 0, 0.55);
 }
 
 .modrinth-button__icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.35rem;
+  height: 1.35rem;
 }
 
 .modrinth-button__accent {
   color: #40ff7b;
+}
+
+@media (max-width: 640px) {
+  .modrinth-button {
+    gap: 0.4rem;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.9rem;
+  }
 }

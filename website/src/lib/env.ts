@@ -1,6 +1,6 @@
 const FALLBACKS = {
   modrinthUrl: 'https://modrinth.com/modpack/winterlands',
-  githubSupportUrl: 'https://github.com/WinterlandsModpack/Winterlands/issues',
+  githubSupportUrl: 'https://github.com/Zzackllack/Winterlands/issues',
 };
 
 export const env = {

@@ -1,8 +1,9 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import type { ModEntry } from '../../data/mods.generated';
+import { trackEvent } from '../../lib/analytics';
 
 const tabs: Array<{ value: ModEntry['side'] | 'all'; label: string }> = [
   { value: 'all', label: 'All' },
@@ -11,9 +12,13 @@ const tabs: Array<{ value: ModEntry['side'] | 'all'; label: string }> = [
   { value: 'both', label: 'Client + Server' },
 ];
 
+const PAGE_SIZE = 24;
+
 export default function ModGrid({ mods }: { mods: ModEntry[] }) {
   const [activeSide, setActiveSide] = useState<typeof tabs[number]['value']>('all');
   const [query, setQuery] = useState('');
+  const [visibleCount, setVisibleCount] = useState(Math.min(PAGE_SIZE, mods.length));
+  const sentinelRef = useRef<HTMLDivElement | null>(null);
 
   const filtered = useMemo(() => {
     return mods.filter((mod) => {
@@ -23,6 +28,36 @@ export default function ModGrid({ mods }: { mods: ModEntry[] }) {
       return matchesSide && matchesQuery;
     });
   }, [mods, activeSide, query]);
+
+  useEffect(() => {
+    setVisibleCount(Math.min(PAGE_SIZE, filtered.length));
+  }, [filtered.length, activeSide, query]);
+
+  useEffect(() => {
+    const sentinel = sentinelRef.current;
+    if (!sentinel || visibleCount >= filtered.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleCount((count) => Math.min(count + PAGE_SIZE, filtered.length));
+          }
+        });
+      },
+      { rootMargin: '300px' }
+    );
+
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [filtered.length, visibleCount]);
+
+  const visibleMods = useMemo(() => filtered.slice(0, visibleCount), [filtered, visibleCount]);
+  const hasMore = visibleCount < filtered.length;
+
+  const loadMore = () => {
+    setVisibleCount((count) => Math.min(count + PAGE_SIZE, filtered.length));
+  };
 
   return (
     <div className="space-y-6">
@@ -49,10 +84,12 @@ export default function ModGrid({ mods }: { mods: ModEntry[] }) {
         value={query}
         onChange={(event) => setQuery(event.target.value)}
       />
-      <p className="text-sm text-white/60">Showing {filtered.length} mods</p>
+      <p className="text-sm text-white/60">
+        Showing {visibleMods.length} of {filtered.length} mods
+      </p>
       <div className="grid gap-6 md:grid-cols-2">
         <AnimatePresence mode="popLayout">
-          {filtered.map((mod) => (
+          {visibleMods.map((mod) => (
             <motion.article
               key={mod.slug}
               layout
@@ -85,6 +122,9 @@ export default function ModGrid({ mods }: { mods: ModEntry[] }) {
                   className="mt-4 inline-flex items-center text-sm text-white hover:text-white/90"
                   target="_blank"
                   rel="noreferrer"
+                  onClick={() =>
+                    trackEvent('mod-link', { slug: mod.slug, source: mod.source, location: 'mod-grid' })
+                  }
                 >
                   Visit project →
                 </a>
@@ -93,6 +133,16 @@ export default function ModGrid({ mods }: { mods: ModEntry[] }) {
           ))}
         </AnimatePresence>
       </div>
+      {hasMore && (
+        <button
+          type="button"
+          onClick={loadMore}
+          className="w-full rounded-full border border-white/15 bg-white/5 px-4 py-3 text-sm text-white transition hover:bg-white/10 focus-ring"
+        >
+          Load more mods
+        </button>
+      )}
+      <div ref={sentinelRef} className="h-1" aria-hidden="true" />
     </div>
   );
 }

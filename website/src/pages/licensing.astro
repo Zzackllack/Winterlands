@@ -1,16 +1,20 @@
 ---
-import LicenseTable from '../components/sections/LicenseTable.astro';
+import LicenseTable from '../components/islands/LicenseTable';
 import SectionHeading from '../components/ui/SectionHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { mods } from '../data/mods.generated';
+import { licenseOverrides } from '../data/licenseOverrides';
+import { buildLicenseRows } from '../lib/modData';
+
+const rows = buildLicenseRows(mods, licenseOverrides);
 ---
 <BaseLayout title="Winterlands Licensing" description="Every dependency approved for redistribution.">
   <section class="mx-auto max-w-6xl px-6 py-16">
     <SectionHeading
       eyebrow="Compliance"
       title="Licenses & Permissions"
-      description="Stay on the right side of redistribution agreements. Update a markdown file, redeploy the page."
+      description="We respect the work of every mod author included in Winterlands. Below is a summary of each mod's license and our permission to redistribute it within this modpack."
     />
-    <LicenseTable mods={mods} />
+    <LicenseTable client:load rows={rows} />
   </section>
 </BaseLayout>

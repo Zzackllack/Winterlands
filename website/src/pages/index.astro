@@ -1,14 +1,16 @@
 ---
-import FeatureCarousel from '../components/islands/FeatureCarousel.tsx';
-import Hero from '../components/islands/Hero.tsx';
+import FeatureCarousel from '../components/islands/FeatureCarousel';
+import Hero from '../components/islands/Hero';
 import SectionHeading from '../components/ui/SectionHeading.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { featuredMods } from '../lib/modData';
-import { env } from '../lib/env';
+import { featuredModSlugs } from '../data/featuredMods';
+import { modCount } from '../data/modStats';
 import { mods } from '../data/mods.generated';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { env } from '../lib/env';
+import { featuredModsBySlug } from '../lib/modData';
 import "../styles/global.css";
 
-const showcaseMods = featuredMods(mods, 3);
+const showcaseMods = featuredModsBySlug(mods, featuredModSlugs, 3);
 
 const features = [
   {
@@ -17,22 +19,27 @@ const features = [
     icon: 'Biomes',
   },
   {
-    title: 'Holiday events',
-    summary: 'Timed quests and gift drops rotate monthly so returning players always have a surprise.',
-    icon: 'Events',
+    title: 'Performance tuned',
+    summary: 'Our Modpack bundles with multiple optimizations to keep frame rates high and stutters low.',
+    icon: 'Performance',
   },
   {
-    title: 'Performance tuned',
-    summary: 'Packwiz, dynamic resources, and analyzer scripts keep 220 mods smooth on mid-tier rigs.',
-    icon: 'Performance',
+    title: 'Easy debugging',
+    summary: 'Our Modpack bundles with the "Crash Assistant" mod to help diagnose and fix issues quickly.',
+    icon: 'Debugging',
+  },
+  {
+    title: 'Christmas festivities',
+    summary: 'We have included festive decorations, holiday-themed mobs, and seasonalities to bring the spirit of the holidays into your game.',
+    icon: 'Festivities',
   },
 ];
 const { modrinthUrl } = env;
 ---
 <BaseLayout title="Winterlands Modpack">
-  <Hero client:load modrinthUrl={modrinthUrl} />
+  <Hero client:load modrinthUrl={modrinthUrl} modCount={modCount} />
 
-  <section class="mx-auto mt-16 max-w-6xl px-6">
+  <section class="mx-auto mt-12 max-w-6xl px-6">
     <SectionHeading
       eyebrow="Featured Mods"
       title="Play-defining picks"
@@ -54,8 +61,8 @@ const { modrinthUrl } = env;
     <SectionHeading
       eyebrow="World Feel"
       title="Why Winterlands feels alive"
-      description="Everything—from ambience to automation—is tuned for story-rich survival sessions."
+      description="Everything from ambience to automation is tuned for a cozy winter survival experience."
     />
-    <FeatureCarousel client:visible features={features} />
+    <FeatureCarousel client:load features={features} />
   </section>
 </BaseLayout>
