@@ -836,7 +836,7 @@ metafile = true
 
 [[files]]
 file = "mods/fancymenu.pw.toml"
-hash = "7c00f19f40531a88974f97ec30c9c1e8912ad2cbc1cbb09f70f7b57dec17c125"
+hash = "2d7e927b0efdc5e79a50505151975605b355d14d7da2a475aa8a767697911651"
 metafile = true
 
 [[files]]
