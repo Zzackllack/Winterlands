@@ -355,6 +355,10 @@ file = "config/sereneseasons/seasons.toml"
 hash = "cdd3ff4084f3c478982ed6e759bf48cd48a3673ded49dad119f8ea7becef8b28"
 
 [[files]]
+file = "config/sparsestructures.json5"
+hash = "1c456f3087c2d037c2849398e596f176e2f265a83c5f3cc3c2feb43d194b4fc7"
+
+[[files]]
 file = "config/supplementaries-client.toml"
 hash = "a9ae48af66aa11bd5305444b2ac7a2eeb62f1f0c0ff34fa5ff13ff04aabd13c5"
 
@@ -461,7 +465,7 @@ metafile = true
 
 [[files]]
 file = "mods/badoptimizations.pw.toml"
-hash = "be28a9ff89c60140b2983eb91089e77bec90bc5a0379c25472be01cb14dcbb97"
+hash = "39f761298d831e49308b1507c2ac1e524f4ad07f220621e45290c810deb1c497"
 metafile = true
 
 [[files]]
@@ -501,7 +505,12 @@ metafile = true
 
 [[files]]
 file = "mods/c2me-neoforge.pw.toml"
-hash = "683dbecfc509287f8a28fe2a73f180e5a488b9751c61a5a297c581287c5a57da"
+hash = "8e4abfea25c864a1a1bd31948f95020b3486370e53d2f53bcc4f869ad95c4536"
+metafile = true
+
+[[files]]
+file = "mods/caelus.pw.toml"
+hash = "992b0dca9683f225fc774d779762d18a009f2d82b9d051e7c0b55a33a95d9238"
 metafile = true
 
 [[files]]
@@ -566,7 +575,7 @@ metafile = true
 
 [[files]]
 file = "mods/clientsort.pw.toml"
-hash = "e8645cfbb5606f2bd02e8bdfa0a9e3dff5912f2216251b3100d82c37b950a999"
+hash = "64f3db79f4903b6d7d7dec765be18de5c6b2de1b628fe8be7c3efe2785c1f549"
 metafile = true
 
 [[files]]
@@ -591,7 +600,7 @@ metafile = true
 
 [[files]]
 file = "mods/connector.pw.toml"
-hash = "c27af69a7c64206beff3e59c671934d4eb9a3dc65fd589609c5e6f6bb60421bb"
+hash = "aa242da373359065cb62d8e1094e2f17b456f3ea300db145896cf6c6aae43101"
 metafile = true
 
 [[files]]
@@ -631,7 +640,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-connected.pw.toml"
-hash = "aea6d37ae312cafb92d9456c9b16e7e8406ba03c5dab5c4ade19a204c509ec85"
+hash = "a10ca44e38b499dd749e8522b51f16815ddbb60483806a58b0845f179b6b8440"
 metafile = true
 
 [[files]]
@@ -751,7 +760,7 @@ metafile = true
 
 [[files]]
 file = "mods/dusty-decorations.pw.toml"
-hash = "7be6dad82ed8f4a2046c2fed206811b6aef7474ea675a2c01e16f638edd26fbd"
+hash = "c5b36fe570fd4951ce41dbcdce69ef7162d282451ca84442f66715ec5b4b7a53"
 metafile = true
 
 [[files]]
@@ -786,7 +795,7 @@ metafile = true
 
 [[files]]
 file = "mods/entity-model-features.pw.toml"
-hash = "dfc5252f31339a2f2b900399802f2e787ebe4d6e061bd150aaef50a20d2a6d20"
+hash = "774831f9dc9f530416b2d71ed08d52502dd6ccacbe4bd0d16adbf23701ce12bc"
 metafile = true
 
 [[files]]
@@ -1001,7 +1010,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "1c409471400cd68f5105d87fa1fdf2ae71c1ad00934a2a306abffad60d1bf86f"
+hash = "5d49dd7272a1418fabed10e3ef9b5c79c3bbb9205d83e79e301c16ad0a0e89e6"
 metafile = true
 
 [[files]]
@@ -1016,7 +1025,7 @@ metafile = true
 
 [[files]]
 file = "mods/just-enough-effect-descriptions-jeed.pw.toml"
-hash = "f5bb9b1ca3fbd24d74b4b624f5609b7902660abacd35e88e9264894d8177722a"
+hash = "eb4167185746936a9ef8cca87a2f347af91f5ffdc2b2e230cb8eedd6d0b936ae"
 metafile = true
 
 [[files]]
@@ -1116,7 +1125,7 @@ metafile = true
 
 [[files]]
 file = "mods/mes-moogs-end-structures.pw.toml"
-hash = "8f5f308ef5f265fac7efc01fd9413ed94733788cb6b141f4da7948c5b3dcc2f8"
+hash = "df92961a3bca688632e15b62bef4b8261d552d65fe81e598451d6c14992c3428"
 metafile = true
 
 [[files]]
@@ -1135,8 +1144,13 @@ hash = "eae3c14c915400de36bf547550f630de727bbf48ae0ce719b99b2ff50ceaab0d"
 metafile = true
 
 [[files]]
+file = "mods/moogs-structure-lib.pw.toml"
+hash = "9a95c07a28bda9b0374b4af72132e8405d4fbf574cbac3a3df5d2e3daefff951"
+metafile = true
+
+[[files]]
 file = "mods/moonlight.pw.toml"
-hash = "34af73fbc06558118a046d6c4c26a555337f5e971ba59b42ca13471c57127f1f"
+hash = "fdd3e68ff962be188ee0b96cf5082f137ecee9b419cc0d0d7ad9bae124e13e45"
 metafile = true
 
 [[files]]
