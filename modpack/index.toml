@@ -150,7 +150,7 @@ hash = "19698170404ef2833ca82fead99ff68be99a8295e3e231430ccb42e45d81a426"
 
 [[files]]
 file = "config/fancymenu/custom_gui_screens.txt"
-hash = "8e36b09a1bf896c524cd6aaddade6b78df730003de102067434784027e7185ab"
+hash = "dd095c46df99314ce4572f42d9729cc7744e4d6528336c1b2bab4c3db766ccf9"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
@@ -182,7 +182,7 @@ hash = "4d5eee7cdf2f0ff12aafd0856f284dd1d9d4355dbb445c99956e497a91300b1a"
 
 [[files]]
 file = "config/fancymenu/customization/drippy_loading_overlay_layout.txt"
-hash = "1d1ceec731def3edab379b58f80fc22fe14f79ed729194472b2a0721e8391d18"
+hash = "e3c3002379a675b63ec50e0bcce93673066176faa363d5bda6c9231e6337f543"
 
 [[files]]
 file = "config/fancymenu/customization/generic_dirt_message_screen_layout.txt"
@@ -254,7 +254,7 @@ hash = "dd56204b4a1cfa6df124a8e9d8f76aee6f422176575119d4b7e5a9ddb436c938"
 
 [[files]]
 file = "config/fancymenu/customization/universal_layout.txt"
-hash = "659b91fd1a7bacf7f1057bb60abe6f33592bb27fc8125389bc5a78402e75afd4"
+hash = "ef758956174b7eb5336825f4b2c37a0da1dccacb52d51f437377c5c94e634cac"
 
 [[files]]
 file = "config/fancymenu/customization/winterlands_browser_layout.txt"
@@ -274,7 +274,7 @@ hash = "0f6ecd3bee866452d736535f19d0d351b27204ddbf0461c8916c656b82ad7513"
 
 [[files]]
 file = "config/fancymenu/options.txt"
-hash = "f749f68bba5d01591e2761c1d77dd1d7e92d22f5c18ad9c446c68677d8ce2dc3"
+hash = "e086e8ba3118ec7682764196bc4c4193d042077e882d954f051658000448bb30"
 
 [[files]]
 file = "config/fancymenu/ui_themes/dark.json"
