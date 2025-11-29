@@ -1,6 +1,6 @@
 name = "AdvancementDisable"
 filename = "advancementdisable-neoforge-1.0.1+1.21.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/XIsVTmcm/versions/6McVQNC9/advancementdisable-neoforge-1.0.1%2B1.21.jar"

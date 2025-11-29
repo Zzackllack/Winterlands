@@ -1,13 +1,13 @@
 name = "Winterlands"
 author = "Zacklack"
-version = "0.131.3"
+version = "0.131.5"
 description = "A cozy winter and slightly Christmas-themed Modpack, perfect for the classic 2-week Minecraft phase in winter."
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "378cca96a5350f8a1c2c8c082f0fc3c8da080d61013b0fc80fdd085d1d505f9a"
+hash = "52e00e5da6076b013c41381278656a3903d0804ec44f7df3c6c9e397867e526d"
 
 [versions]
 minecraft = "1.21.1"

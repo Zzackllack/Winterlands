@@ -1,6 +1,6 @@
 name = "ChoiceTheorem's Overhauled Village"
 filename = "[neoforge]ctov-3.6.0b.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/fgmhI8kH/versions/OpwX8BXt/%5Bneoforge%5Dctov-3.6.0b.jar"
