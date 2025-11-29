@@ -1,0 +1,377 @@
+// ### THE MOD REQUIRES A RESTART OF THE GAME TO APPLY CHANGES ###
+{
+  // this is the main spread factor (default is 2)
+  //
+  // tips: a spread factor can be a decimal number (such as 1.5)
+  //       a spread factor of 1 means all structure's placements are not modified (useful if you want to use only custom spread factors)
+  //       a spread factor above 1 means all structures are rarer
+  //       a spread factor below 1 means all structures are more common
+  //       a spread factor of 0 disables all structures entirely
+  "spreadFactor": 2,
+
+  // Some structure mods/datapacks do not specify a custom salt or use the same salt for all their structures, which might cause structure overlap.
+  // Enabling this is supposed to reduce this phenomenon, as all structure sets will have their own salt, hashed from their id.
+  // If unsure, leave this enabled.
+  "idBasedSalt": true,
+
+  // this is a list of custom spread factors
+  "customSpreadFactors": [
+    // example of the mansion being doubled in rarity (the mod's default)
+    {
+  "structure": "beautify:botanist_house_desert",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "beautify:botanist_house_plains",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "beautify:botanist_house_savanna",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "beautify:botanist_house_snowy",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "beautify:botanist_house_taiga",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "betterdungeons:skeleton_dungeons",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "betterdungeons:small_dungeons",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "betterdungeons:small_nether_dungeons",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "betterdungeons:spider_dungeons",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "betterdungeons:zombie_dungeons",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "betterfortresses:fortress",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "betterjungletemples:jungle_temples",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "bettermineshafts:mineshafts",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "betteroceanmonuments:ocean_monument",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "betterstrongholds:stronghold",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "betterwitchhuts:witch_circle",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "betterwitchhuts:witch_hut",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:badlands_pyramids",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:black_spirals",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:campsites",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:dark_forest_settlements",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:desert_shrines",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:end_shipwrecks",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:farmsteads",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:guide_posts",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:mangrove_huts",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:mausoleums",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:ruins",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:supply_caches",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:taverns",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "explorify:watchtowers",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "formationsnether:common",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "formationsnether:ore_shards",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "formationsnether:rare",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:astral_hideaway",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:astral_meteorite",
+  "factor": 0,7//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:ender_spire",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:enderbloom_grove",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:enderkeep_courtyard",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:enderpin_spikes",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:enderskog",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:enderwatch_tower",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:endscraps",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:manuscript_shrine",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:mega_ship",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:mega_ship_basic",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:mega_ship_crashed",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:mega_ship_crashed_2",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:mega_ship_crashed_deepslate",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:mega_ship_deepslate",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:mega_ship_deepslate_2",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:mega_ship_deepslate_3",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:monolith",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:mystical_archway",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:mythic_garden",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:phantom_citadel",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:placid_prairie",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:ruined_pillar",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "mes:starlight_voyager",
+  "factor": 2,5//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:ancient_cities",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:buried_treasures",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:desert_pyramids",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:end_cities",
+  "factor": 0,8//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:igloos",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:jungle_temples",
+  "factor": 10//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:mineshafts",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:nether_complexes",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:nether_fossils",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:ocean_monuments",
+  "factor": 10//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:ocean_ruins",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:pillager_outposts",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:ruined_portals",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:shipwrecks",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:swamp_huts",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:trail_ruins",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:trial_chambers",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:villages",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "minecraft:woodland_mansions",
+  "factor": 2//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "snowyspirit:gingerbread_house",
+  "factor": 0,7//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "structory:mid_rare_ruin",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "structory:old_manor",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "structory:outcast_villager",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "structory:ruin",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "structory:ruin_quiet",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+{
+  "structure": "supplementaries:way_signs",
+  "factor": 0,5//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},
+
+    // add the structures you want to modify in the format:
+    // (don't forget to remove "//", and use dots for decimal numbers)
+    //
+    // {
+    //     "structure": "namespace:structure_name",
+    //     "factor": number
+    // },
+    //
+    // where "structure" is a structure_set or the name of a structure
+    // /!\ if you put the name of a structure, all structures in its set will be modified
+    // (example: "minecraft:village_plains" will modify all structures in the "villages" set)
+    // see https://minecraft.wiki/w/Tutorials/Custom_structures#Structure_Set for more info
+    //
+    // tip: you can dump all structure sets in a file by running the custom command /dumpstructuresets
+    // tip: the same spread factors rules apply here (set to 0 to disable said structure)
+  ]
+}
