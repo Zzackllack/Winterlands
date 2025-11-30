@@ -355,16 +355,20 @@ file = "config/sereneseasons/seasons.toml"
 hash = "cdd3ff4084f3c478982ed6e759bf48cd48a3673ded49dad119f8ea7becef8b28"
 
 [[files]]
-file = "config/sparsestructures.json5"
-hash = "1c456f3087c2d037c2849398e596f176e2f265a83c5f3cc3c2feb43d194b4fc7"
-
-[[files]]
 file = "config/supplementaries-client.toml"
 hash = "a9ae48af66aa11bd5305444b2ac7a2eeb62f1f0c0ff34fa5ff13ff04aabd13c5"
 
 [[files]]
 file = "config/supplementaries-common.toml"
 hash = "e4fc4edf82c0ce179180a63b3080588913e7fbd7c657f0de6496fc1a517fc1ee"
+
+[[files]]
+file = "config/vanillabackport-client.toml"
+hash = "021c02aec7ffcc09d811a218f274f47062eaf77d8ae4ac9ac0897839a88161fa"
+
+[[files]]
+file = "config/vanillabackport-common.toml"
+hash = "3674342d7bcac4fe16dfea2579f34d18e90d7b218e0e103a6b35959dad5ef01f"
 
 [[files]]
 file = "journeymap/config/6.0/journeymap.core.config"
