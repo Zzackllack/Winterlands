@@ -869,11 +869,6 @@ hash = "a3b04a9264d646324d11c200635aa5ff314fbcd5f9777d182c6d587e2d3a5801"
 metafile = true
 
 [[files]]
-file = "mods/fastboot.pw.toml"
-hash = "9ecbea3080b9c5c9927aa7c2933c868ac6f75fdcabce905e704d427312fea8ff"
-metafile = true
-
-[[files]]
 file = "mods/fastevent.pw.toml"
 hash = "e8f80a31178b51937be55f6c78038c38d6b23f38905688edfa9ca5adab2cbc31"
 metafile = true
