@@ -30,7 +30,7 @@ export const licenseOverrides: LicenseOverrides = {
     allowByModrinth: false,
     license: "All Rights Reserved",
     sourceUrl:
-      "https://www.curseforge.com/minecraft/mc-mods/christmas-delight-farmers-delight-addon",
+      "https://www.curseforge.com/minecraft/mc-mods/christmas-delight",
   },
   "Christmas Music Discs": {
     note: "Only distributed on CurseForge; author granted direct permission via private message.",
