@@ -1,0 +1,13 @@
+name = "Colourful Containers: Modded GUI Compat"
+filename = "§5§lModded §f§lContainers§8.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/eJB0aDIf/versions/O7Z5GGGw/%C2%A75%C2%A7lModded%20%C2%A7f%C2%A7lContainers%C2%A78.zip"
+hash-format = "sha512"
+hash = "5d1943f44f290535ee895428f81667731c20778572f16a6a0558a5fd2a144eac82b2ac7714c550734ea5bcc1bf60b8ef68b2b6db3265ec30def9150c686308bc"
+
+[update]
+[update.modrinth]
+mod-id = "eJB0aDIf"
+version = "O7Z5GGGw"

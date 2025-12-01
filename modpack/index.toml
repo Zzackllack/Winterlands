@@ -993,6 +993,11 @@ hash = "f67aa60c765593a8c70f78296a460349c6aef5f4a16d173eae02e8803b545ad4"
 metafile = true
 
 [[files]]
+file = "mods/items-displayed-forge.pw.toml"
+hash = "dd18a83618d87de69fa341e775e58f3e7df6452eb657ae9f95125461c1eb0a3c"
+metafile = true
+
+[[files]]
 file = "mods/jade-addons-forge.pw.toml"
 hash = "8cd8400cb4e2c5ba60c8a359a7b6ff501078d2056eab0aba7f6b0ac77b7a0694"
 metafile = true
@@ -1638,6 +1643,26 @@ hash = "17ea105b98d79a0be6ce20da3304f9ed1398c5d9d3ad24cea2c914a109ede78e"
 metafile = true
 
 [[files]]
+file = "resourcepacks/colourful-containers-dark-mode-gui.pw.toml"
+hash = "e39f96aa846a204ae45b4a06a5ecc2d3c6ebb9a01f3703579c015524459ceb86"
+metafile = true
+
+[[files]]
+file = "resourcepacks/colourful-containers-gui.pw.toml"
+hash = "786e09b54ace7c7bd1d8ebda25d7ba34745cd2678c78cd8557d4ed54aa885195"
+metafile = true
+
+[[files]]
+file = "resourcepacks/colourful-containers-modded-dark-mode-gui-compat.pw.toml"
+hash = "7136c046bc46c860b56ce0b0d723134331c7096cfa086a07717f10ebd4164c48"
+metafile = true
+
+[[files]]
+file = "resourcepacks/colourful-containers-modded-gui-compat.pw.toml"
+hash = "5d8bd60e362142723e93b99d7d0f5f33d47b242dcb6566eec08f1745ce0a328f"
+metafile = true
+
+[[files]]
 file = "resourcepacks/enchant-icons-countxd.pw.toml"
 hash = "bb2b6a511327bc8782c7c12c6be81c11fa3fcb7fa4fd10d4093a5170862e1ad5"
 metafile = true
@@ -1660,11 +1685,6 @@ metafile = true
 [[files]]
 file = "resourcepacks/rays-3d-rails.pw.toml"
 hash = "0e80f97855da0ee8b2cba02d4cc1f3c82f50bd1ec0772645cfd5dd5d6f4e9a86"
-metafile = true
-
-[[files]]
-file = "resourcepacks/recolourful-containers-gui-hud-dark.pw.toml"
-hash = "938583466cbe1bd26038f4e099ebb053edf7f5fccab817862221569b2c93bd69"
 metafile = true
 
 [[files]]
