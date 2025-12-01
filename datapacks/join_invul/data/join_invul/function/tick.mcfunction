@@ -19,20 +19,9 @@ execute as @a[scores={ji_time=1..}] run scoreboard players operation @s ji_sec =
 # Convert ticks to seconds: ji_sec = ji_sec / 20
 execute as @a[scores={ji_time=1..}] run scoreboard players operation @s ji_sec /= #second ji_const
 
-# Show the remaining seconds in the actionbar.
-# Change however you like; this is just an example.
+# Show the remaining seconds in the actionbar (JSON must be on a single line!)
 # Example output: "Spawn Protection: 42 seconds remaining"
-execute as @a[scores={ji_time=1..}] run title @s actionbar {
-  "text": "",
-  "extra": [
-    {"text": "Spawn Protection: ", "color": "aqua"},
-    {
-      "score": {"name": "@s", "objective": "ji_sec"},
-      "color": "yellow"
-    },
-    {"text": " Sekunden verbleibend", "color": "white"}
-  ]
-}
+execute as @a[scores={ji_time=1..}] run title @s actionbar {"text":"","extra":[{"text":"Spawn Protection: ","color":"aqua"},{"score":{"name":"@s","objective":"ji_sec"},"color":"yellow"},{"text":" Sekunden verbleibend","color":"white"}]}
 
 # 4) When the timer reaches 0, remove invulnerability and clear the actionbar.
 #    We also restrict this to non-creative, non-spectator players.
