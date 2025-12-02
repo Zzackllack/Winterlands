@@ -3,13 +3,24 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1763920898713
+  last_edited_time = 1764377895452
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:a3836edb-5196-4c47-bb77-0fd8ecc02521-1763920773299] = [groups:][instances:]
+  [loading_requirement_container_meta:66f92d04-3e1e-4022-a43c-952f503b5b3d-1764377748897] = [groups:][instances:]
+}
+
+customization {
+  action = setscale
+  scale = 3.0
+}
+
+customization {
+  action = autoscale
+  basewidth = 2560
+  baseheight = 1441
 }
 
 menu_background {
@@ -44,6 +55,47 @@ layout_action_executable_blocks {
 }
 
 element {
+  color = #FFFFFFFF
+  element_type = drippy_vanilla_bar
+  instance_identifier = 68df96f2-7aa0-43f4-9d48-504b635fe86c-1763920816315
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2560
+  auto_sizing_base_screen_height = 1441
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -357
+  y = 71
+  width = 718
+  height = 10
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 64e496c6-1952-44d0-9bcc-f5998667197e-1763920816315
+  [loading_requirement_container_meta:64e496c6-1952-44d0-9bcc-f5998667197e-1763920816315] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
+}
+
+element {
   source = [source:local]/config/fancymenu/assets/winterlands-schriftzug.png
   repeat_texture = false
   nine_slice_texture = false
@@ -60,15 +112,15 @@ element {
   fade_out = no_fading
   fade_out_speed = 1.0
   base_opacity = 1.0
-  auto_sizing = true
+  auto_sizing = false
   auto_sizing_base_screen_width = 2562
   auto_sizing_base_screen_height = 1443
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -386
-  y = -52
-  width = 772
-  height = 104
+  x = -383
+  y = -50
+  width = 767
+  height = 101
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -82,42 +134,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
-}
-
-element {
-  color = #FFFFFFFF
-  element_type = drippy_vanilla_bar
-  instance_identifier = 68df96f2-7aa0-43f4-9d48-504b635fe86c-1763920816315
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = true
-  auto_sizing_base_screen_width = 2562
-  auto_sizing_base_screen_height = 1443
-  sticky_anchor = false
-  anchor_point = element
-  anchor_point_element = 727bbbc3-55e1-424b-8bda-561b3b751396-1763371923694
-  x = 26
-  y = 119
-  width = 723
-  height = 10
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 64e496c6-1952-44d0-9bcc-f5998667197e-1763920816315
-  [loading_requirement_container_meta:64e496c6-1952-44d0-9bcc-f5998667197e-1763920816315] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity_v2 = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 vanilla_button {
@@ -156,8 +178,8 @@ vanilla_button {
   auto_sizing_base_screen_height = 1443
   sticky_anchor = false
   anchor_point = vanilla
-  x = 187
-  y = 395
+  x = 186
+  y = 394
   width = 480
   height = 10
   stretch_x = false
@@ -173,6 +195,12 @@ vanilla_button {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
   is_hidden = true
   automated_button_clicks = 0
 }
@@ -213,7 +241,7 @@ vanilla_button {
   auto_sizing_base_screen_height = 1443
   sticky_anchor = false
   anchor_point = vanilla
-  x = 187
+  x = 186
   y = 180
   width = 480
   height = 120
@@ -230,6 +258,12 @@ vanilla_button {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
   is_hidden = true
   automated_button_clicks = 0
 }
